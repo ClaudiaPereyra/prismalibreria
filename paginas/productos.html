@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Prisma</title>
+    <!--Logo de la página-->
+    <link rel="shortcut icon" href="../multimedia/ico.ico" type="image/x-icon">
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Ramaraja&family=Tienne&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="padreAside">
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/productos.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Cuadernos y agendas</a></li>
+                        <li><a href="#">Biromes y Bolígrafos</a></li>
+                        <li><a href="#">Lettering</a></li>
+                        <li><a href="#">Adhesivos</a></li>
+                        <li><a href="#">Arte</a></li>
+                        <li><a href="#">Marcadores</a></li>
+                        <li><a href="#">Microfibras</a></li>
+                        <li><a href="#">Biromes</a></li>
+                    </ul>
+                </li>
+                <li><a href="../paginas/ofertas.html">Ofertas</a></li>
+                <li><a href="../paginas/institucional.html">Institucional</a></li>
+                <li><a href="../paginas/novedades.html">Novedades</a></li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+            <form class="buscar">
+                <label for="buscar"></label>
+                <input type="buscar" name="buscar" id="" placeholder="Buscar">
+                <input type="submit" value="Buscar">
+            </form>
+        </nav>
+    </header>
+
+    <section class="tituloProducto">
+        <h1>PRODUCTOS</h1>
+        <h3 class="h3Productos">Artículos de librería escolares, para oficinas, universitarios, etc</h3>
+        <div class="ordenarPor">
+            <label for="filtro">Ordenar por:</label>
+            <select name="Ordenar por:" id="">
+                <option value="Más Vendido">Más Vendido</option>
+                <option value="Precio: Mayor a Menor">Precio: Mayor a Menor</option>
+                <option value="Viudo/a">Precio: Menor a Mayor</option>
+                <option value="A - Z">A - Z</option>
+                <option value="Z - A">Z - A</option>
+                <option value="Más Viejo al más Nuevo">Más Viejo al más Nuevo</option>
+                <option value="Más Nuevo al más Viejo">Más Nuevo al más Viejo</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="container ajuste3">
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 1.jpeg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">MARCADORES MOOVING PUNTA PINCELADOS</h3>
+                <p class="card__description precio">$890,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $296,67</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 2.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">MICROFIBRAS MOOVING INFINITOS LUMINOSOS</h3>
+                <p class="card__description precio">$620,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $206,67</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 3.jpeg" alt="Productos" class="card__image">
+                <h3 class="card__title">LAPIZ CRESKO CON GOMA PEQUEÑA SIMONES</h3>
+                <p class="card__description precio">$150,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $50,00</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 4.png" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">WATERBRUSH PENS X 6 PUNTAS</h3>
+                <p class="card__description precio">$1150,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $383,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 5.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">MICROFIBRAS MOOVING INFINITOS PASTELES</h3>
+                <p class="card__description precio">$620,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $206,67</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 6.png" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">RESALTADORES FILGO LIGHTER FINE ESSENTIAL</h3>
+                <p class="card__description precio">$340,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $113,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 7.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">LÁPIZ DE GRAFITO FILGO CUERPO PASTEL</h3>
+                <p class="card__description precio">$40,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $13,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 8.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">RESALTADORES FILGO LIGHTER FINE GALAXY</h3>
+                <p class="card__description precio">$340,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $133,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 9.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">MICROFIBRA FILGO LINER PASTEL X 6 COLORES</h3>
+                <p class="card__description precio">$530,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $176,67</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 10.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">SACAPUNTAS SIMBALL POLKA</h3>
+                <p class="card__description precio">$90,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $30,00</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 11.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">CUADERNO INTELIGENTE A5 FAIRLY</h3>
+                <p class="card__description precio">$2.890,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $963,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 12.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">CUADERNO INTELIGENTE ORIGINAL A5 ARCOIRIS</h3>
+                <p class="card__description precio">$2.890,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $963,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 13.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">CUADERNO INTELIGENTE ORIGINAL A5 CANDY SPLASH</h3>
+                <p class="card__description precio">$2.890,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $963,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 14.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">BLOCK REYSA PARA DIBUJO A5</h3>
+                <p class="card__description precio">$600,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $200,00</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 15.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">MICROFIBRAS FILGO NEÓN</h3>
+                <p class="card__description precio">$510,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $170,00</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 16.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">CORRECTOR EZCO 7 ML. PASTEL</h3>
+                <p class="card__description precio">$110,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $36,67</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 17.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">GUÍA DE LETTERING</h3>
+                <p class="card__description precio">$1600,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $533,33</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 18.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">RESALTADOR TRABI HIGH TEXTER</h3>
+                <p class="card__description precio">$90,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $30,00</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 19.jpg" alt="Productos" class="card__image">
+                <h3 class="card__title">MARCADORES SIMBALL HITS BRUSH BLISTER X 5</h3>
+                <p class="card__description precio">$665,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $221,67</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+            <div class="cardsProductos">
+                <img src="../multimedia/producto 20.jpg" alt="Productos" class="card__image ajuste2">
+                <h3 class="card__title">MINAS PIZZINI 0,7</h3>
+                <p class="card__description precio">$120,00</p>
+                <p class="card__description">3 CUOTAS SIN INTERÉS DE $40,00</p>
+                <a href="#" class="btn">AGREGAR AL CARRITO</a>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="btnProductos">MOSTRAR MÁS PRODUCTOS</a>
+        </div>
+    </section>
+
+    <aside class="asideProductos">
+        <div class="contenedorAside">
+            <h2 class="filtro">FILTROS</h2>
+            <h3 class="h3Productos">Categoría</h3>
+            <ul class="categorias">
+                <li><a href="#" class="btnAside">Cuadernos y agendas</a></li>
+                <li><a href="#" class="btnAside">Biromes y Bolígrafos</a></li>
+                <li><a href="#" class="btnAside">Lettering</a></li>
+                <li><a href="#" class="btnAside">Adhesivos</a></li>
+                <li><a href="#" class="btnAside">Arte</a></li>
+                <li><a href="#" class="btnAside">Marcadores</a></li>
+                <li><a href="#" class="btnAside">Microfibras</a></li>
+                <li><a href="#" class="btnAside">Biromes</a></li>
+            </ul>
+        </div>
+        <div class="contenedorAside">
+            <h3 class="h3Productos"> Marcas</h3>
+            <a href="#" class="btnAside">Arte</a>
+            <a href="#" class="btnAside">Filgo</a>
+            <a href="#" class="btnAside">Maped</a>
+            <a href="#" class="btnAside">Mooving</a>
+            <a href="#" class="btnAside">Pizzini</a>
+            <a href="#" class="btnAside">Rivadavia</a>
+            <a href="#" class="btnAside">Simball</a>
+        </div>
+        <div class="contenedorAside">
+            <h3 class="h3Productos"> Color</h3>
+            <a href="#" class="btnAside">Amarillo</a>
+            <a href="#" class="btnAside">Celeste</a>
+            <a href="#" class="btnAside">Negro</a>
+            <a href="#" class="btnAside">Rosa</a>
+            <a href="#" class="btnAside">Violeta</a>
+            <a href="#" class="btnAside">Azul</a>
+            <a href="#" class="btnAside">Rojo</a>
+        </div>
+    </aside>
+
+    <section>
+        <div class="whatsapp">
+            <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
+        </div>
+    </section>
+
+    <footer class="footer footerOfertas">
+        <form class="separacion">
+            <label for="email">Recibí nuestras novedades</label>
+            <input type="email" name="email" id="" placeholder="Ingresa tu email">
+            <input type="submit" value="¡UNITE!">
+        </form>
+        <p class="separacion">Seguinos en:</p>
+        <ul class="redes">
+            <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
+            <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
+            <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
+        </ul>
+        <p class="separacion">Contacto</p>
+        <div class="contacto">
+            <ul class="listaContacto">
+                <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
+                <li>Teléfono: 0379 488-8858</li>
+                <li>Whatsapp: +5493794736427</li>
+                <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
+                <li>E-mail: claudiapereyra02166@gmail.com</li>
+            </ul>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+        </div>
+        <div class="logofinal">
+            <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado"></a>
+            <h3>2022 (C) </h3>
+        </div>
+    </footer>
+
+</body>
+
+</html>

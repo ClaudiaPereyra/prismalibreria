@@ -1,0 +1,988 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: textos;
+  src: url(../plantillas/JTMarnie-Light.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logoPrincipal {
+  width: 120px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+}
+
+.navbar {
+  background-color: rgb(221, 125, 178);
+  height: 200px;
+  position: relative;
+  font-family: textos;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 10px;
+  font-size: 15px;
+  width: 1100px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(3, 3, 3);
+  border-style: double;
+  border-width: 3px;
+}
+
+.menu li a:hover {
+  color: rgb(241, 234, 239);
+}
+
+.submenu {
+  display: none;
+  width: 20%;
+  position: absolute;
+  background-color: rgb(212, 209, 209);
+  list-style-type: none;
+  border: double 5px;
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.buscar {
+  /* display: flex;
+  justify-content: end; */
+  margin-left: 95rem;
+  font-family: textos;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 2rem;
+  font-family: "Lobster", cursive;
+  /* background-color: rgb(190, 185, 185); */
+}
+
+.bodyHtml {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+
+.cards {
+  width: 20rem;
+  margin: 3rem;
+  display: inline-block;
+  padding: 1rem 1rem 3rem 1rem;
+  font-family: textos;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(249, 249, 250);
+}
+
+.card__image {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  height: 200px;
+}
+
+.cards2 {
+  width: 10rem;
+  /* margin: 3rem; */
+  display: inline-block;
+  padding: 0.5rem;
+  font-family: textos;
+  font-size: 10px;
+}
+
+.card__description {
+  text-align: center;
+  font-size: 13px;
+  margin: 10px;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn {
+  background-color: rgb(157, 119, 192);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px rgb(163, 40, 163);
+  border-right: ridge 2px rgb(163, 40, 163);
+  color: black;
+  font-family: textos;
+}
+
+.btnOfertas {
+  background-color: rgb(157, 119, 192);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px rgb(163, 40, 163);
+  border-right: ridge 2px rgb(163, 40, 163);
+  color: black;
+  font-family: textos;
+  font-size: 18px;
+  width: 300px;
+  margin-left: 500px;
+}
+
+/* ajustes de las imagenes de servicios index */
+.ajuste1 {
+  width: 8rem;
+  height: 8.5rem;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.iconoWtp {
+  width: 100px;
+}
+
+.footer {
+  background-color: rgb(221, 125, 178);
+  border: double 5px;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.separacion {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Lobster", cursive;
+}
+
+.redes {
+  display: flex;
+  justify-content: start;
+}
+
+.redes img {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.redes li {
+  list-style-type: none;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.listaContacto {
+  list-style-type: none;
+}
+
+.mapa {
+  position: relative;
+  bottom: 4rem;
+  right: 6rem;
+}
+
+.logofinal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logofinal img {
+  width: 15rem;
+}
+
+.bodyHtml {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "novedades novedades novedades"
+    "ofertas ofertas ofertas"
+    "servicios servicios servicios"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.novedades {
+  grid-area: novedades;
+}
+
+.ofertas {
+  grid-area: ofertas;
+}
+
+.servicios {
+  grid-area: servicios;
+  margin-top: 100px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* PRODUCTOS */
+/* botones de la seccion de productos */
+.padreAside {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover;
+}
+
+.cardsProductos {
+  width: 20rem;
+  margin: 1rem;
+  display: inline-block;
+  font-family: textos;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(249, 249, 250);
+}
+
+.btnAside {
+  background-color: rgb(245, 241, 248);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px rgb(163, 40, 163);
+  border-right: ridge 2px rgb(163, 40, 163);
+  color: black;
+  font-family: textos;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.categorias li {
+  list-style-type: none;
+}
+
+.categorias li a {
+  background-color: rgb(245, 241, 248);
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-family: textos;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* ajustes de imagenes de pagina productos */
+.ajuste2 {
+  height: 300px;
+}
+
+.contenedorAside {
+  width: 200px;
+  padding: 45px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.h3Productos {
+  font-family: textos;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.ordenarPor {
+  font-family: textos;
+  font-size: 15px;
+  margin-left: 55rem;
+  margin-bottom: 20px;
+  z-index: 500;
+}
+
+.filtro {
+  font-family: textos;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.btnProductos {
+  background-color: rgb(157, 119, 192);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px rgb(163, 40, 163);
+  border-right: ridge 2px rgb(163, 40, 163);
+  color: black;
+  font-family: textos;
+  font-size: 18px;
+  width: 300px;
+  margin-left: 298px;
+}
+
+.footerOfertas {
+  margin-top: 100px;
+}
+
+.padreAside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header"
+    "titulo titulo titulo titulo titulo"
+    "aside aside productos productos productos"
+    "footer footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+
+}
+
+.tituloProducto {
+  grid-area: titulo;
+}
+
+.productos {
+  grid-area: productos;
+  grid-column: 2/6;
+}
+
+.asideProductos {
+  grid-area: aside;
+  grid-column: 1/2;
+}
+
+.footer {
+  grid-area: footer
+}
+
+/* ofertas */
+.padreOferta {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover;
+}
+
+
+.padreOferta {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header "
+    "ofertas "
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.seccionOfertas {
+  grid-area: ofertas;
+}
+
+.footer {
+  grid-area: footer
+}
+
+/* novedades */
+.padreNovedades {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover;
+}
+
+.padreNovedades {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header "
+    "novedades "
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.seccionNovedades {
+  grid-area: novedades;
+}
+
+.footer {
+  grid-area: footer
+}
+
+/* institucional */
+
+.sobreNosotros {
+  font-size: 30px;
+  -webkit-text-fill-color: rgb(3, 3, 3);
+  -webkit-text-stroke-color: rgb(190, 61, 121);
+  -webkit-text-stroke: 1px;
+  font-family: "Lobster", cursive;
+  padding: 50px;
+}
+
+.padreInstitucional {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header "
+    "institucional "
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.seccionInstitucional {
+  grid-area: institucional;
+  background-image: url(../multimedia/sobre\ nosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.footer {
+  grid-area: footer
+}
+
+/* contacto */
+.tituloContac {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 35px;
+}
+
+.btnForm {
+  border-radius: 4px;
+  display: inline-block;
+  padding: 20px 15px;
+  border-right: outset 3px rgb(120, 28, 212);
+  border-bottom: outset 3px rgb(120, 28, 212);
+  font-family: textos;
+  color: rgb(243, 242, 242);
+  background-color: rgba(101, 42, 156, 0.692);
+  font-weight: bold;
+  font-size: 15px;
+  margin: 10px;
+  width: 320px;
+}
+
+.btnForm:hover {
+  background-color: rgba(169, 136, 199, 0.808);
+}
+
+.btnForm:active {
+  background-color: rgba(228, 165, 215, 0.849);
+}
+
+.consultas {
+  width: 350px;
+  /* display: inline-block; */
+  background-color: aliceblue;
+  padding: 20px;
+  color: rgb(78, 73, 73);
+  font-family: textos;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.seccionContact {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 60px;
+  justify-content: end;
+}
+
+.field {
+  outline: none;
+  border: solid 1px #ccc;
+  padding: 10px;
+  font-family: textos;
+  border-radius: 3px;
+  width: 300px;
+  margin: 10px;
+}
+
+.field1 {
+  outline: none;
+  border: solid 1px #ccc;
+  padding: 10px;
+  font-family: textos;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.field:focus {
+  border: ridge 2px rgba(169, 101, 238, 0.452);
+}
+
+.contactanos {
+  font-family: textos;
+  font-size: 15px;
+  margin-top: 100px;
+  padding: 50px;
+  line-height: 1.6;
+}
+
+.contactanosAjuste {
+  margin: 20px;
+}
+
+.ico {
+  padding-right: 10px;
+}
+
+.padreContacto {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "telefono formulario"
+    "servicios servicios"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.tituloContacto {
+  grid-area: titulo;
+  grid-column: 1/3;
+}
+
+.seccionContact {
+  grid-area: formulario;
+}
+
+.contactanos {
+  grid-area: telefono;
+}
+
+.serviciosContact {
+  grid-area: servicios;
+  grid-column: 1/3;
+}
+
+.footer {
+  grid-area: footer
+}
+
+.containerContact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+
+/* tamaño TABLET */
+@media screen and (max-width:768px) {
+
+  .bodyHtml {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "novedades novedades "
+      "ofertas ofertas "
+      "servicios servicios "
+      "footer footer ";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .novedades {
+    grid-area: novedades;
+  }
+
+  .ofertas {
+    grid-area: ofertas;
+  }
+
+  .servicios {
+    grid-area: servicios;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .logoPrincipal {
+    width: 90px;
+    position: relative;
+    top: 5px;
+    left: 350px;
+  }
+
+  .menu {
+    width: 750px;
+    padding-top: 50px;
+  }
+
+  .buscar {
+    margin-left: 29rem;
+    margin-top: 55px
+  }
+
+  .navbar {
+    height: 250px;
+  }
+
+  .btnOfertas {
+    margin-left: 250px;
+  }
+
+  .mapa {
+    right: 10px;
+  }
+
+  .submenu {
+    width: 30%;
+  }
+  /* productos */
+.padreAside {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "aside productos"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+
+}
+
+.tituloProducto {
+  grid-area: titulo;
+}
+
+.productos {
+  grid-area: productos;
+  grid-column: 2/6;
+}
+
+.asideProductos {
+  grid-area: aside;
+  grid-column: 1/2;
+}
+
+.footer {
+  grid-area: footer
+}
+
+.ordenarPor {
+  margin-left: 27rem;
+}
+
+.contenedorAside {
+  width: 154px;
+  padding: 0px;
+}
+
+.cardsProductos {
+  margin: 0px;
+  width: 19rem;
+  margin-bottom: 12px;
+}
+
+.btn {
+  padding: 6px;
+  font-size: 13px;
+}
+
+.btnProductos {
+  margin-left: 100px;
+}
+
+/* institucional */
+.sobreNosotros {
+  padding: 10px 20px
+}
+
+.logofinal img {
+  width: 60px;
+}
+
+.whatsapp img {
+  width: 60px;
+}
+
+/* contacto */
+.tituloContac {
+  font-size: 35px;
+}
+
+.seccionContact {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .contactanos {
+  padding: 10px 20px;
+  }
+
+}
+
+
+/* tamaño MOBILE */
+@media screen and (max-width:480px) {
+
+  .bodyHtml {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "novedades"
+      "ofertas"
+      "servicios"
+      "footer";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .novedades {
+    grid-area: novedades;
+  }
+
+  .ofertas {
+    grid-area: ofertas;
+  }
+
+  .servicios {
+    grid-area: servicios;
+    margin-top: 100px;
+  }
+
+  .footer {
+    grid-area: footer;
+    
+  }
+
+  .logoPrincipal {
+    width: 120px;
+    position: relative;
+    top: 40px;
+    left: 280px;
+  }
+  .navbar{
+  width: 480px;
+  }
+  .menu{
+    width: 380px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0px;
+  }
+  .menu li{
+    padding: 10px;
+  }
+  .menu li a{
+    padding: 5px;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: thistle;
+  }
+
+  .buscar {
+    margin-left: 230px;
+    margin-top: 55px
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+
+  .container {
+    justify-content: start;
+  }
+
+
+  .cards {
+    margin: 0px;
+    padding: 10px 20px;
+    
+  }
+  .card__image {
+    height: 190px;
+    width: 80%;
+  }
+
+  .ajuste1 {
+    width: 8rem;
+    height: 8.5rem;
+  }
+  .cards2 {
+    padding: 30px 30px;
+  }
+
+  .btnOfertas {
+    margin-left: 110px;
+  }
+  .mapa {
+    display: none;
+    /* width: 0px;
+    height: 0px; */
+  }
+  .contacto {
+  font-size: 1.1rem;
+  }
+  .whatsapp {
+    left: 400px;
+  }
+
+
+/* productos */
+.ordenarPor{
+  margin-left: 10rem;
+}
+.padreAside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "titulo"
+    "productos"
+    "footer";
+  }
+  .header {
+    grid-area: header;
+  
+  }
+  
+  .tituloProducto {
+    grid-area: titulo;
+  }
+  
+  .productos {
+    grid-area: productos;
+  }
+  
+  .footer {
+    grid-area: footer
+  }
+  
+  .asideProductos{
+    display: none;
+  }
+  
+  .ajuste3 {
+    justify-content: center;
+  } 
+/* nosotros */
+.sobreNosotros{
+  font-size: 28px;
+}
+
+
+/* Contactos */
+
+.padreContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "titulo"
+    "formulario"
+    "telefono"
+    "servicios"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.tituloContacto {
+  grid-area: titulo;
+}
+
+.seccionContact {
+  grid-area: formulario;
+}
+
+.contactanos {
+  grid-area: telefono;
+}
+
+.serviciosContact {
+  grid-area: servicios;
+}
+
+.footer {
+  grid-area: footer
+}
+
+.seccionContact {
+  margin-left: 30px;
+}
+.contactanos {
+  margin-left: 30px;
+}
+
+}
