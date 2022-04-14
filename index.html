@@ -8,8 +8,9 @@
     <title>Librería Prisma</title>
     <!--Logo de la página-->
     <link rel="shortcut icon" href="./multimedia/ico.ico" type="image/x-icon">
-    <!--Hoja de estilo-->
+    <!-- Boostrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--Hoja de estilo-->
     <link rel="stylesheet" href="./estilo/estilo.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +20,14 @@
         rel="stylesheet">
 </head>
 
-<body class="bodyHtml">
-    <header class="header">
+<body class="conteiner-fluid prod">
+    <header class="row header">
         <nav class="navbar">
-            <a href="./index.html"><img src="./multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
-            <ul class="menu">
+            <div class="col-lg-2 col-sm-12 col-xs-12">
+                <a href="./index.html"><img src="./multimedia/ico.ico" alt="logo linkeado"
+                        class="logoPrincipal"></a>
+            </div>
+            <ul class="col-lg-7 col-sm-8 col-xs-12 menu">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./paginas/productos.html">Productos</a>
                     <ul class="submenu">
@@ -42,31 +46,33 @@
                 <li><a href="./paginas/novedades.html">Novedades</a></li>
                 <li><a href="./paginas/contacto.html">Contacto</a></li>
             </ul>
-            <form class="buscar">
-                <label for="buscar"></label>
-                <input type="buscar" name="buscar" id="" placeholder="Buscar">
-                <input type="submit" value="Buscar">
-            </form>
+            <div class="col-lg-3 col-sm-12 col-xs-5">
+                <form class=" buscar">
+                    <label for="buscar"></label>
+                    <input type="buscar" name="buscar" id="" placeholder="Buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
         </nav>
     </header>
-    <section class="novedades">
-        <h1>Novedades</h1>
+    <section class="row novedades">
+        <h1 class="col-lg-12 col-sm-12 col-xs-12">Novedades</h1>
         <!--Aquí va un carrusel de imágenes-->
-        <div class="container">
+        <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1">
             <div class="cards">
-                <img src="./multimedia/Novedades 1.jpg" alt="Novedades" class="card__image">
+                <img src="./multimedia/Novedades 1.jpg" alt="Novedades" class="card__image img-fluid">
                 <h3 class="card__title">Nuevos productos ingresados esta semana</h3>
             </div>
             <div class="cards">
-                <img src="./multimedia/Novedades 2.jpg" alt="Novedades" class="card__image">
+                <img src="./multimedia/Novedades 2.jpg" alt="Novedades" class="card__image img-fluid">
                 <h3 class="card__title">Volvieron las promociones con tarjetas!!!</h3>
             </div>
         </div>
     </section>
-    <section class="ofertas">
-        <h1>Ofertas</h1>
+    <section class="row ofertas">
+        <h1 class="col-lg-12 col-sm-12 col-xs-12">Ofertas</h1>
         <!--Aquí va un carrusel de imágenes con sus respectivas características debajo de cada imágen-->
-        <div class="container">
+        <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1">
             <div class="cards">
                 <img src="./multimedia/oferta 1.jpg" alt="Ofertas" class="card__image">
                 <h3 class="card__title">ORGANIZADOR DE ACRÍLOCO DE 4 CAJONES
@@ -123,14 +129,14 @@
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
         </div>
-        <div class="btnHover">
+        <div class="col-12 btnHover">
             <a href="#" class="btnOfertas">MOSTRAR MÁS PRODUCTOS</a>
         </div>
     </section>
 
-    <section class="servicios">
-        <h1>Servicios</h1>
-        <div class="container">
+    <section class="row servicios">
+        <h1 class="col-12">Servicios</h1>
+        <div class="col-12 contenedor1">
             <div class="cards2">
                 <img src="./multimedia/Importante 1.jpg" alt="Envíos" class="card__image ajuste1">
                 <h3 class="card__title">ENVIANOS TU PEDIDO</h3>
@@ -150,25 +156,25 @@
                 <p>Tus datos son confidenciales y están protegidos</p>
             </div>
         </div>
-        <div class="whatsapp">
+        <div class="col-12 whatsapp">
             <img src="./multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
         </div>
     </section>
 
-    <footer class="footer">
-        <form class="separacion">
-            <label for="email">Recibí nuestras novedades</label>
+    <footer class="row footer">
+        <form class="col-lg-12 col-sm-12 col-xs-12 separacion">
+            <label for="email">Recibí nuestras novedades:</label>
             <input type="email" name="email" id="" placeholder="Ingresa tu email">
             <input type="submit" value="¡UNITE!">
         </form>
-        <p class="separacion">Seguinos en:</p>
-        <ul class="redes">
+        <p class="col-lg-2 col-sm-3 col-xs-2 separacion">Seguinos en:</p>
+        <ul class="col-lg-10 col-sm-9 col-xs-10 redes">
             <li><a href="#"> <img src="./multimedia/instagram.png" alt=""></a></li>
             <li><a href="#"> <img src="./multimedia/whatsapp.ico" alt=""> </a></li>
             <li><a href="#"> <img src="./multimedia/facebook.png" alt=""> </a></li>
         </ul>
-        <p class="separacion">Contacto</p>
-        <div class="contacto">
+        <p class="col-lg-1 col-sm-2 col-xs-2 separacion">Contacto:</p>
+        <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
             <ul class="listaContacto">
                 <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
                 <li>Teléfono: 0379 488-8858</li>
@@ -176,49 +182,20 @@
                 <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
                 <li>E-mail: claudiapereyra02166@gmail.com</li>
             </ul>
-            <iframe
+        </div>
+        <div class="col-lg-5 col-sm-3 col-xs-5"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
                 width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
-        <div class="logofinal">
+        <div class="col-lg-12 col-sm-12 col-xs-12 logofinal">
             <a href="./index.html"><img src="./multimedia/ico.ico" alt="logo linkeado"></a>
-            <h3>2022 (C) </h3>
+        </div>
+        <div>
+            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano">2022 (C) </h3>
         </div>
     </footer>
+    <!-- Boostrap -->
     <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

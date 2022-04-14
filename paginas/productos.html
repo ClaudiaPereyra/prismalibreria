@@ -8,6 +8,8 @@
     <title>Librería Prisma</title>
     <!--Logo de la página-->
     <link rel="shortcut icon" href="../multimedia/ico.ico" type="image/x-icon">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilo-->
     <link rel="stylesheet" href="../estilo/estilo.css">
     <!--Google Fonts-->
@@ -18,11 +20,13 @@
         rel="stylesheet">
 </head>
 
-<body class="padreAside">
-    <header class="header">
+<body class="conteiner-fluid prod">
+    <header class="row header">
         <nav class="navbar">
-            <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
-            <ul class="menu">
+            <div class="col-2 ">
+                <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
+            </div>
+            <ul class="col-7 menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/productos.html">Productos</a>
                     <ul class="submenu">
@@ -41,18 +45,20 @@
                 <li><a href="../paginas/novedades.html">Novedades</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
             </ul>
-            <form class="buscar">
-                <label for="buscar"></label>
-                <input type="buscar" name="buscar" id="" placeholder="Buscar">
-                <input type="submit" value="Buscar">
-            </form>
+            <div class="col-3">
+                <form class=" buscar">
+                    <label for="buscar"></label>
+                    <input type="buscar" name="buscar" id="" placeholder="Buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
         </nav>
     </header>
 
-    <section class="tituloProducto">
-        <h1>PRODUCTOS</h1>
-        <h3 class="h3Productos">Artículos de librería escolares, para oficinas, universitarios, etc</h3>
-        <div class="ordenarPor">
+    <section class="row tituloProducto">
+        <h1 class="col-12">PRODUCTOS</h1>
+        <h3 class="col-12 h3Productos">Artículos de librería escolares, para oficinas, universitarios, etc</h3>
+        <div class="col-12 ordenarPor">
             <label for="filtro">Ordenar por:</label>
             <select name="Ordenar por:" id="">
                 <option value="Más Vendido">Más Vendido</option>
@@ -66,8 +72,41 @@
         </div>
     </section>
 
-    <section class="productos">
-        <div class="container ajuste3">
+    <section class="row productos">
+        <div class="col-3">
+            <div class="contenedorAside">
+                <h2 class="filtro">FILTROS</h2>
+                <h3 class="h3Productos">Cuadernos y agendas</h3>
+                <a href="#" class="btnAside">Biromes y Bolígrafos</a>
+                <a href="#" class="btnAside">Lettering</a>
+                <a href="#" class="btnAside">Adhesivos</a>
+                <a href="#" class="btnAside">Arte</a>
+                <a href="#" class="btnAside">Marcadores</a>
+                <a href="#" class="btnAside">Microfibras</a>
+                <a href="#" class="btnAside">Biromes</a>
+            </div>
+            <div class="contenedorAside">
+                <h3 class="h3Productos"> Marcas</h3>
+                <a href="#" class="btnAside">Arte</a>
+                <a href="#" class="btnAside">Filgo</a>
+                <a href="#" class="btnAside">Maped</a>
+                <a href="#" class="btnAside">Mooving</a>
+                <a href="#" class="btnAside">Pizzini</a>
+                <a href="#" class="btnAside">Rivadavia</a>
+                <a href="#" class="btnAside">Simball</a>
+            </div>
+            <div class="contenedorAside">
+                <h3 class="h3Productos"> Color</h3>
+                <a href="#" class="btnAside">Amarillo</a>
+                <a href="#" class="btnAside">Celeste</a>
+                <a href="#" class="btnAside">Negro</a>
+                <a href="#" class="btnAside">Rosa</a>
+                <a href="#" class="btnAside">Violeta</a>
+                <a href="#" class="btnAside">Azul</a>
+                <a href="#" class="btnAside">Rojo</a>
+            </div>
+        </div>
+        <div class="col-9 contenedor1 ajuste3">
             <div class="cardsProductos">
                 <img src="../multimedia/producto 1.jpeg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">MARCADORES MOOVING PUNTA PINCELADOS</h3>
@@ -209,68 +248,32 @@
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
         </div>
+    </section>
+    <section class="row">
         <div class="btnHover">
             <a href="#" class="btnProductos">MOSTRAR MÁS PRODUCTOS</a>
         </div>
     </section>
-
-    <aside class="asideProductos">
-        <div class="contenedorAside">
-            <h2 class="filtro">FILTROS</h2>
-            <h3 class="h3Productos">Categoría</h3>
-            <ul class="categorias">
-                <li><a href="#" class="btnAside">Cuadernos y agendas</a></li>
-                <li><a href="#" class="btnAside">Biromes y Bolígrafos</a></li>
-                <li><a href="#" class="btnAside">Lettering</a></li>
-                <li><a href="#" class="btnAside">Adhesivos</a></li>
-                <li><a href="#" class="btnAside">Arte</a></li>
-                <li><a href="#" class="btnAside">Marcadores</a></li>
-                <li><a href="#" class="btnAside">Microfibras</a></li>
-                <li><a href="#" class="btnAside">Biromes</a></li>
-            </ul>
-        </div>
-        <div class="contenedorAside">
-            <h3 class="h3Productos"> Marcas</h3>
-            <a href="#" class="btnAside">Arte</a>
-            <a href="#" class="btnAside">Filgo</a>
-            <a href="#" class="btnAside">Maped</a>
-            <a href="#" class="btnAside">Mooving</a>
-            <a href="#" class="btnAside">Pizzini</a>
-            <a href="#" class="btnAside">Rivadavia</a>
-            <a href="#" class="btnAside">Simball</a>
-        </div>
-        <div class="contenedorAside">
-            <h3 class="h3Productos"> Color</h3>
-            <a href="#" class="btnAside">Amarillo</a>
-            <a href="#" class="btnAside">Celeste</a>
-            <a href="#" class="btnAside">Negro</a>
-            <a href="#" class="btnAside">Rosa</a>
-            <a href="#" class="btnAside">Violeta</a>
-            <a href="#" class="btnAside">Azul</a>
-            <a href="#" class="btnAside">Rojo</a>
-        </div>
-    </aside>
 
     <section>
         <div class="whatsapp">
             <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
         </div>
     </section>
-
-    <footer class="footer footerOfertas">
-        <form class="separacion">
-            <label for="email">Recibí nuestras novedades</label>
+    <footer class="row footer footerOfertas">
+        <form class="col-12 separacion">
+            <label for="email">Recibí nuestras novedades:</label>
             <input type="email" name="email" id="" placeholder="Ingresa tu email">
             <input type="submit" value="¡UNITE!">
         </form>
-        <p class="separacion">Seguinos en:</p>
-        <ul class="redes">
+        <p class="col-2 separacion">Seguinos en:</p>
+        <ul class="col-10 redes">
             <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
             <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
             <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
         </ul>
-        <p class="separacion">Contacto</p>
-        <div class="contacto">
+        <p class="col-1 separacion">Contacto:</p>
+        <div class="col-5 contacto">
             <ul class="listaContacto">
                 <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
                 <li>Teléfono: 0379 488-8858</li>
@@ -278,16 +281,20 @@
                 <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
                 <li>E-mail: claudiapereyra02166@gmail.com</li>
             </ul>
-            <iframe
+        </div>
+        <div class="col-6"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
                 width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
-        <div class="logofinal">
+        <div class="col-12 logofinal">
             <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado"></a>
-            <h3>2022 (C) </h3>
+        </div>
+        <div>
+            <h3 class="col-12 ano">2022 (C) </h3>
         </div>
     </footer>
-
+    <!-- Boostrap -->
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
