@@ -12,16 +12,34 @@ html {
   font-size: 62.5%;
 }
 
+@keyframes girar {
+  0% {transform: rotateY(0deg);}
+  25% {transform: rotateY(100deg);}
+  50% {transform: rotateY(200deg);}
+  75% {transform: rotateY(300deg);}
+  100% {transform: rotateY(360deg);}
+}
+
 .logoPrincipal {
   width: 150px;
   position: relative;
   top: 5px;
   left: 50px;
+  animation-name: girar;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: calc(1);
+  animation-timing-function: linear;
 }
 
+
+
+
 .navbar {
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 43%, rgba(203,179,214,1) 59%);
+  /* background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
+  background-image: url(../multimedia/logo2.png);
+  background-position: center;
   height: 200px;
   position: relative;
   font-family: textos;
@@ -29,12 +47,10 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 
 .menu {
   display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    font-size: 15px;
-    position: absolute;
-    margin-left: 240px;
-    margin-top: 35px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 85px;
 }
 
 .menu li {
@@ -59,7 +75,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 
 .submenu {
   display: none;
-  width: 35%;
+  width: 20%;
   position: absolute;
   background-color: rgb(224, 218, 218);
   list-style-type: none;
@@ -67,12 +83,13 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
   z-index: 1000;
   border-radius: 15px;
   border-color: #c396d8;
+  padding-left: 0px;
 }
 
-.submenu li:hover{
+.submenu li:hover {
   transform: scale(1.1);
   transition: all 1s;
-  }
+}
 
 .submenu li a {
   display: block;
@@ -88,14 +105,17 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 .buscar {
   /* display: flex; */
   font-family: textos;
-  margin-left: 4rem;
-   margin-top: 60px;
+  margin-left: 3rem;
+  margin-top: 75px;
+  margin-right: 20px;
 }
+
+
 
 h1 {
   text-align: center;
   font-size: 40px;
-  padding: 2rem;
+  padding: 2rem 0rem;
   font-family: "Lobster", cursive;
   /* background-color: rgb(190, 185, 185); */
 }
@@ -105,10 +125,18 @@ h1 {
   background-size: cover;
 }
 
+
+.carroContent {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .contenedor1 {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   margin-bottom: 70px;
 }
@@ -116,7 +144,6 @@ h1 {
 .cards {
   width: 20rem;
   margin: 3rem;
-  display: inline-block;
   padding: 1rem 1rem 3rem 1rem;
   font-family: textos;
   font-size: 15px;
@@ -124,9 +151,9 @@ h1 {
   background-color: rgb(249, 249, 250);
 }
 
-.cards:hover{
-transform: scale(1.1);
-transition: all 1s;
+.cards:hover {
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 .card__image {
@@ -138,14 +165,11 @@ transition: all 1s;
 
 .cards2 {
   width: 15rem;
-  /* margin: 3rem; */
   display: inline-block;
   padding: 0.5rem;
   font-family: textos;
   font-size: 10px;
 }
-
-
 
 .card__description {
   text-align: center;
@@ -156,6 +180,10 @@ transition: all 1s;
 .precio {
   font-size: 20px;
   font-weight: 800;
+}
+
+.precio2 {
+  text-decoration: line-through;
 }
 
 .btn {
@@ -183,10 +211,11 @@ transition: all 1s;
   margin-left: 500px;
 }
 
-.btnOfertas :hover{
+.btnOfertas :hover {
   transform: scale(1.1);
   transition: all 1s;
-  }
+}
+
 /* ajustes de las imagenes de servicios index */
 .ajuste1 {
   width: 8rem;
@@ -195,7 +224,7 @@ transition: all 1s;
 
 .whatsapp {
   position: fixed;
-  left: 1120px ;
+  left: 1140px;
   bottom: 20px;
   z-index: 1000;
 }
@@ -205,12 +234,20 @@ transition: all 1s;
 }
 
 .footer {
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 43%, rgba(203,179,214,1) 59%);
+  /* background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
+  background-image: url(../multimedia/logo2.png);
+  background-position: center;
   border: double 5px;
   padding: 20px;
   font-size: 2rem;
 }
+
+.controlFooter {
+  width: 30%;
+  margin-left: 20px;
+}
+
 
 .separacion {
   padding-bottom: 10px;
@@ -244,6 +281,9 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 
 .listaContacto {
   list-style-type: none;
+  position: relative;
+  top: 10px;
+  right: 28px;
 }
 
 .mapa {
@@ -262,45 +302,14 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
   width: 15rem;
   margin-top: 20px;
 }
+
 .ano {
   display: flex;
   justify-content: center;
   font-family: "Lobster", cursive;
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-/* .bodyHtml {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header"
-    "novedades novedades novedades"
-    "ofertas ofertas ofertas"
-    "servicios servicios servicios"
-    "footer footer footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.novedades {
-  grid-area: novedades;
-}
-
-.ofertas {
-  grid-area: ofertas;
-}
-
-.servicios {
-  grid-area: servicios;
-  margin-top: 100px;
-}
-
-.footer {
-  grid-area: footer;
-} */
 
 /* PRODUCTOS */
 /* botones de la seccion de productos */
@@ -319,10 +328,20 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
   background-color: rgb(249, 249, 250);
 }
 
-.cardsProductos :hover{
+.contenedor2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+
+.cardsProductos:hover {
   transform: scale(1.1);
   transition: all 1s;
-  }
+}
+
+
 .btnAside {
   background-color: rgb(245, 241, 248);
   text-decoration: none;
@@ -358,7 +377,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 .ordenarPor {
   font-family: textos;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   z-index: 500;
   display: flex;
   justify-content: center
@@ -394,39 +413,6 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
   margin-top: 100px;
 }
 
-/* .padreAside {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header header header"
-    "titulo titulo titulo titulo titulo"
-    "aside aside productos productos productos"
-    "footer footer footer footer footer";
-}
-
-.header {
-  grid-area: header;
-
-}
-
-.tituloProducto {
-  grid-area: titulo;
-}
-
-.productos {
-  grid-area: productos;
-  grid-column: 2/6;
-}
-
-.asideProductos {
-  grid-area: aside;
-  grid-column: 1/2;
-}
-
-.footer {
-  grid-area: footer
-} */
 
 /* ofertas */
 .padreOferta {
@@ -435,95 +421,42 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 }
 
 
-.padreOferta {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header "
-    "ofertas "
-    "footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.seccionOfertas {
-  grid-area: ofertas;
-}
-
-.footer {
-  grid-area: footer
-}
-
 /* novedades */
 .padreNovedades {
   background-image: url("../multimedia/fondo.jpg");
   background-size: cover;
 }
 
-.padreNovedades {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header "
-    "novedades "
-    "footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.seccionNovedades {
-  grid-area: novedades;
-}
-
-.footer {
-  grid-area: footer
-}
 
 /* institucional */
 
 .sobreNosotros {
-  font-size: 30px;
+  font-size: 35px;
   -webkit-text-fill-color: rgb(3, 3, 3);
   -webkit-text-stroke-color: rgb(190, 61, 121);
   -webkit-text-stroke: 1px;
   font-family: "Lobster", cursive;
-  padding: 50px;
+  padding: 0px 20px;
+  text-align: justify;
 }
 
-.padreInstitucional {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header "
-    "institucional "
-    "footer";
-}
-
-.header {
-  grid-area: header;
-}
 
 .seccionInstitucional {
-  grid-area: institucional;
   background-image: url(../multimedia/sobre\ nosotros.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
 }
 
-.footer {
-  grid-area: footer
-}
 
 /* contacto */
+
+.listContact {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: solid rgb(231, 242, 252) ;
+}
+
 .tituloContac {
   font-family: "Lobster", cursive;
   text-align: center;
@@ -555,24 +488,28 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 }
 
 .consultas {
-  width: 350px;
-  /* display: inline-block; */
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 43%, rgba(203,179,214,1) 59%);
+  width: 400px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%);
   padding: 20px;
   color: rgb(78, 73, 73);
   font-family: textos;
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
-  margin: 15px;
+  height: 460px;
+}
+
+.ajuste7 {
+  margin-top: 60px;
+  margin-right: 70px;
 }
 
 .seccionContact {
   display: flex;
   flex-flow: row nowrap;
   margin-top: 60px;
-  justify-content: end;
+  justify-content: start;
 }
 
 .field {
@@ -581,8 +518,8 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
   padding: 10px;
   font-family: textos;
   border-radius: 3px;
-  width: 300px;
-  margin: 10px;
+  width: 350px;
+  margin-bottom: 10px;
 }
 
 .field1 {
@@ -601,55 +538,23 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 .contactanos {
   font-family: textos;
   font-size: 15px;
-  margin-top: 100px;
-  padding: 50px;
+  padding: 60px 0px 60px 20px;
   line-height: 1.6;
+  margin-top: 60px;
 }
 
 .contactanosAjuste {
   margin: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ajuste6 {
+  margin-top: 70px;
 }
 
 .ico {
   padding-right: 10px;
-}
-
-.padreContacto {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header"
-    "titulo titulo"
-    "telefono formulario"
-    "servicios servicios"
-    "footer footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.tituloContacto {
-  grid-area: titulo;
-  grid-column: 1/3;
-}
-
-.seccionContact {
-  grid-area: formulario;
-}
-
-.contactanos {
-  grid-area: telefono;
-}
-
-.serviciosContact {
-  grid-area: servicios;
-  grid-column: 1/3;
-}
-
-.footer {
-  grid-area: footer
 }
 
 .containerContact {
@@ -662,190 +567,175 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(244,244,244,1) 
 /* tamaño TABLET */
 @media screen and (max-width:768px) {
 
-  /* .bodyHtml {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header header"
-      "novedades novedades "
-      "ofertas ofertas "
-      "servicios servicios "
-      "footer footer ";
+
+
+  /* productos */
+  .prod{
+    background-position: right;
   }
 
-  .header {
-    grid-area: header;
-  }
-
-  .novedades {
-    grid-area: novedades;
-  }
-
-  .ofertas {
-    grid-area: ofertas;
-  }
-
-  .servicios {
-    grid-area: servicios;
-  }
-
-  .footer {
-    grid-area: footer;
-  } */
-
-  /* .logoPrincipal {
-    width: 90px;
-    position: relative;
+  .logoPrincipal {
     top: 5px;
     left: 350px;
-  }
-
-  .menu {
-    width: 750px;
-    padding-top: 50px;
-  }
-
-  .buscar {
-    margin-left: 29rem;
-    margin-top: 55px
+    width: 100px;
   }
 
   .navbar {
     height: 250px;
   }
 
+  .menu {
+    margin-top: 20px;
+  }
+
+  .submenu {
+    padding-left: 0px;
+    width: 35%;
+  }
+
+
+  .buscar {
+    margin-left: 30rem;
+    margin-top: 5px;
+    margin-right: 200px;
+  }
+
+  .cards {
+    margin: 2rem;
+  }
+
   .btnOfertas {
     margin-left: 250px;
   }
 
-  .mapa {
+  .redes {
+    position: relative;
     right: 10px;
+    top: 8px;
   }
 
-  .submenu {
-    width: 30%;
-  } */
-  /* productos */
-/* .padreAside {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header"
-    "titulo titulo"
-    "aside productos"
-    "footer footer";
-}
+  .mapa {
+    width: 200px;
+    height: 200px;
+    left: 5rem;
+  }
 
-.header {
-  grid-area: header;
+  .listaContacto {
+    position: relative;
+    right: 40px;
+    top: 10px;
+  }
 
-}
+  .ordenarPor {
+    margin-left: 0rem;
+  }
 
-.tituloProducto {
-  grid-area: titulo;
-}
+  .contenedorAside {
+    width: 95%;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+  }
 
-.productos {
-  grid-area: productos;
-  grid-column: 2/6;
-}
+  .contenedor2 {
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-evenly;
+  }
 
-.asideProductos {
-  grid-area: aside;
-  grid-column: 1/2;
-}
 
-.footer {
-  grid-area: footer
-} */
+  .cardsProductos {
+    margin: 0px;
+    width: 16rem;
+    height: auto;
+    margin: 1px 2px 30px 1px;
+    font-family: textos;
 
-.logoPrincipal {
-  top: 5px;
-  left: 350px;
-  width: 100px;
-}
-.navbar{
-  height: 250px;
-}
-.menu{
-  /* position: absolute; */
-  margin-left: 115px;
-  margin-top: 50px;
-}
+  }
 
-.buscar{
-  margin-left: 30rem;
-  margin-top: 75px;
-}
+  .card__image {
+    height: 150px;
+    width: 90%;
+  }
 
-.btnOfertas{
-  margin-left: 250px;
-}
+  .cards__title {
+    line-height: 0px;
+  }
 
-.redes{
-  position: relative;
-  right: 10px;
-  top: 8px;
-}
-.mapa{
-left: 0rem;
-}
+  .btn {
+    padding: 6px;
+    font-size: 13px;
+  }
 
-.listaContacto{
-  position: relative;
-  right: 0px;
-}
-.ordenarPor {
-  margin-left: 27rem;
-}
+  .btnProductos {
+    margin-left: 250px;
+  }
 
-.contenedorAside {
-  width: 154px;
-  padding: 0px;
-}
+  .controlFooter {
+    width: 40%;
+    margin-left: 20px;
+  }
+  
 
-.cardsProductos {
-  margin: 0px;
-  width: 19rem;
-  margin-bottom: 12px;
-}
 
-.btn {
-  padding: 6px;
-  font-size: 13px;
-}
+  /* institucional */
 
-.btnProductos {
-  margin-left: 300px;
-}
 
-/* institucional */
-.sobreNosotros {
-  padding: 10px 20px
-}
+  .sobreNosotros {
+    padding: 0px 20px;
+    font-size: 30px;
+    text-align: justify;
+  }
 
-.logofinal img {
-  width: 60px;
-}
 
-.whatsapp img {
-  width: 60px;
-}
+  .logofinal img {
+    width: 60px;
+  }
 
-/* contacto */
-.tituloContac {
-  font-size: 35px;
-}
+  .whatsapp {
+    left: 660px;
+  }
 
-.seccionContact {
-  display: flex;
-  flex-direction: column;
+  .whatsapp img {
+    width: 80px;
+  }
+
+  /* contacto */
+  .tituloContac {
+    font-size: 35px;
+  }
+
+  .seccionContact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
   }
 
   .contactanos {
-  padding: 10px 20px;
+    padding: 10px 20px;
+  }
+
+  .contentContactanos {
+    justify-content: center;
+  }
+
+  .ajuste1 {
+    width: 8rem;
+    height: 8.5rem;
+  }
+
+  .contactanosAjuste {
+    margin-left: 50px;
+  }
+
+  .consultas {
+    width: 360px;
+
+  }
+
+  .field {
+    width: 310px;
   }
 
 }
@@ -854,210 +744,256 @@ left: 0rem;
 /* tamaño MOBILE */
 @media screen and (max-width:375px) {
 
-  /* .bodyHtml {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header"
-      "novedades"
-      "ofertas"
-      "servicios"
-      "footer";
+  .carroContent {
+  flex-flow: row wrap;
   }
 
-  .header {
-    grid-area: header;
+  .carousel-inner img {
+    width: auto;
+    height: 100px;
   }
-
-  .novedades {
-    grid-area: novedades;
-  }
-
-  .ofertas {
-    grid-area: ofertas;
-  }
-
-  .servicios {
-    grid-area: servicios;
-    margin-top: 100px;
-  }
-
-  .footer {
-    grid-area: footer;
-    
-  } */
 
   .logoPrincipal {
     width: 120px;
     position: relative;
-   margin-bottom: 200px;
     left: 135px;
   }
-  .navbar{
-  width: 375px;
-  height: 400px;
+
+  .navbar {
+    width: 385px;
+    height: 400px;
   }
-  .menu{
+
+  .menu {
     flex-flow: row wrap;
     align-items: flex-start;
-    padding-top: 0px;
-    margin-left: 5px;
+    /* padding-top: 0px;
+    padding-left: 0px; */
+    margin-top: 0px;
+    margin-bottom: 3rem;
   }
-  .menu li{
+
+  .menu li {
     padding: 10px;
   }
-  .menu li a{
-    padding: 5px;
+
+  .menu li a {
+    padding: 6px;
     border-style: ridge;
     border-width: 2px;
-    border-radius: 15px;
+    border-radius: 10px;
     border-color: thistle;
   }
 
-  .buscar {
-    /* margin-left: 230px;
-    margin-top: 55px */
-    display: none;
-  }
-  
-  h1 {
-    font-size: 30px;
+  .submenu {
+    width: 59%;
+    padding-left: 0px;
   }
 
-  .contenedor1 {
-    justify-content: center;
+  .submenu li {
+    padding: 2px 0px;
   }
-  .ajuste4 {
-    flex-wrap: wrap;
+
+  .submenu li a {
+    margin: 3px 8px;
+  }
+
+  .buscar {
+    position: absolute;
+    left: 110px;
+    top: 340px;
+    margin: 0px;
+  }
+
+  .h1inicio {
+    margin-bottom: 25px;
+  }
+
+
+  .contenedor1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: flex-start;
   }
 
   .cards {
     margin: 0px;
-    padding: 10px 20px;
-    width: 15rem;
+    width: 16rem;
     height: auto;
-    /* display: inline-block; */
-    padding: 1rem 1rem 3rem 1rem;
+    margin: 1px 2px 30px 1px;
     font-family: textos;
-    
   }
+
+  h1 {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 0px;
+  }
+
+  .h3Productos {
+    padding-top: 1rem;
+  }
+
+  .productos {
+    box-sizing: content-box;
+  }
+
+  .elementosAside {
+    display: none;
+  }
+
+  .contenedor2 {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .ajuste4 {
+    flex-wrap: wrap;
+  }
+
+  .cardsProductos {
+    margin: 0px;
+    width: 16rem;
+    height: auto;
+    margin: 1px 2px 30px 1px;
+    font-family: textos;
+
+  }
+
   .card__image {
-    height: 170px;
-    width: 60%;
+    height: 150px;
+    width: 90%;
+  }
+
+  .btnProductos {
+    margin-left: 40px;
+  }
+
+
+
+  .ajuste6 {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .servicios {
+    margin-top: 100px;
+    align-content: space-around;
+  }
+
+  .cards2 {
+    padding: 10px 10px;
+    display: flex;
+    width: 100%;
   }
 
   .ajuste1 {
     width: 8rem;
     height: 8.5rem;
+    margin-right: 20px;
   }
-  .cards2 {
-    padding: 30px 30px;
+
+  .cards3 {
+    display: flex;
+    flex-direction: column;
   }
 
   .btnOfertas {
-    margin-left: 60px;
+    margin-left: 40px;
   }
+
+  .separacion {
+    font-size: 13px;
+  }
+
+  .ajuste5 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .redes {
+    padding-left: 10px;
+  }
+
   .mapa {
     display: none;
     /* width: 0px;
     height: 0px; */
   }
+
   .contacto {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 15px;
+    right: 20px;
   }
+
+  .listaContacto {
+    top: 0px;
+    left: 0px;
+  }
+
   .whatsapp {
-    left: 400px;
+    left: 290px;
+  }
+
+  .whatsapp img {
+    width: 60px;
+  }
+
+  .controlFooter {
+    width: 35%;
+    margin-left: 10px;
+    height: 20px;
+  }
+
+  .btnFooter{
+    padding: 0px;
+    height: 20px;
+  }
+
+  /* productos */
+  .ordenarPor {
+    margin-left: 0px;
   }
 
 
-/* productos */
-.ordenarPor{
-  margin-left: 10rem;
-}
-/* .padreAside {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "titulo"
-    "productos"
-    "footer";
+  /* nosotros */
+  .sobreNosotros {
+    font-size: 22px;
+    text-align: center;
   }
-  .header {
-    grid-area: header;
-  
+
+
+
+  /* CONTACTOS */
+
+
+  .consultas {
+    width: 340px;
+    margin-left: 10px;
   }
-  
-  .tituloProducto {
-    grid-area: titulo;
+
+  .btnForm {
+    width: 290px;
   }
-  
-  .productos {
-    grid-area: productos;
+
+  .field {
+    width: 290px;
   }
-  
-  .footer {
-    grid-area: footer
-  } */
-  
-  /* .asideProductos{
-    display: none; */
+
+  .seccionContact {
+    margin-left: 10px;
   }
-  
-  .ajuste3 {
-    justify-content: center;
-  } 
-/* nosotros */
-.sobreNosotros{
-  font-size: 28px;
+
+  .contactanos {
+    margin-left: 0px;
+  }
+
+  .serviciosContact {
+    margin-left: 10px;
+  }
+
 }
-
-
-/* Contactos */
-
-.padreContacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "titulo"
-    "formulario"
-    "telefono"
-    "servicios"
-    "footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.tituloContacto {
-  grid-area: titulo;
-}
-
-.seccionContact {
-  grid-area: formulario;
-}
-
-.contactanos {
-  grid-area: telefono;
-}
-
-.serviciosContact {
-  grid-area: servicios;
-}
-
-.footer {
-  grid-area: footer
-}
-
-.seccionContact {
-  margin-left: 30px;
-}
-.contactanos {
-  margin-left: 30px;
-}
-

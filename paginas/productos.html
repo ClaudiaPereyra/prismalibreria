@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilo-->
     <link rel="stylesheet" href="../estilo/estilo.css">
+     <!-- AOS animate -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +22,13 @@
         rel="stylesheet">
 </head>
 
-<body class="conteiner-fluid prod">
+<body class="container-fluid prod">
     <header class="row header">
         <nav class="navbar">
-            <div class="col-2 ">
+            <div class="col-lg-2 col-sm-12 col-xs-12">
                 <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
             </div>
-            <ul class="col-7 menu">
+            <ul class="col-lg-7 col-sm-12 col-xs-12 menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/productos.html">Productos</a>
                     <ul class="submenu">
@@ -45,20 +47,20 @@
                 <li><a href="../paginas/novedades.html">Novedades</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
             </ul>
-            <div class="col-3">
-                <form class=" buscar">
-                    <label for="buscar"></label>
-                    <input type="buscar" name="buscar" id="" placeholder="Buscar">
-                    <input type="submit" value="Buscar">
+            <div class="col-lg-3 col-sm-12 col-xs-5">
+                <form class="d-flex buscar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
     </header>
 
     <section class="row tituloProducto">
-        <h1 class="col-12">PRODUCTOS</h1>
-        <h3 class="col-12 h3Productos">Artículos de librería escolares, para oficinas, universitarios, etc</h3>
-        <div class="col-12 ordenarPor">
+        <h1 class="col-lg-12 col-sm-12 col-xs-12">PRODUCTOS</h1>
+        <h3 class="col-lg-12 col-sm-12 col-xs-12 h3Productos">Artículos de librería escolares, para oficinas,
+            universitarios, etc</h3>
+        <div class="col-lg-12 col-sm-12 col-xs-12 ordenarPor">
             <label for="filtro">Ordenar por:</label>
             <select name="Ordenar por:" id="">
                 <option value="Más Vendido">Más Vendido</option>
@@ -73,7 +75,7 @@
     </section>
 
     <section class="row productos">
-        <div class="col-3">
+        <div class="col-lg-3 col-sm-3 elementosAside">
             <div class="contenedorAside">
                 <h2 class="filtro">FILTROS</h2>
                 <h3 class="h3Productos">Cuadernos y agendas</h3>
@@ -106,141 +108,141 @@
                 <a href="#" class="btnAside">Rojo</a>
             </div>
         </div>
-        <div class="col-9 contenedor1 ajuste3">
-            <div class="cardsProductos">
+        <div class="col-lg-9 col-sm-9 col-xs-12 contenedor2">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 1.jpeg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">MARCADORES MOOVING PUNTA PINCELADOS</h3>
                 <p class="card__description precio">$890,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $296,67</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 2.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">MICROFIBRAS MOOVING INFINITOS LUMINOSOS</h3>
                 <p class="card__description precio">$620,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $206,67</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 3.jpeg" alt="Productos" class="card__image">
                 <h3 class="card__title">LAPIZ CRESKO CON GOMA PEQUEÑA SIMONES</h3>
                 <p class="card__description precio">$150,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $50,00</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 4.png" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">WATERBRUSH PENS X 6 PUNTAS</h3>
                 <p class="card__description precio">$1150,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $383,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 5.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">MICROFIBRAS MOOVING INFINITOS PASTELES</h3>
                 <p class="card__description precio">$620,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $206,67</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 6.png" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">RESALTADORES FILGO LIGHTER FINE ESSENTIAL</h3>
                 <p class="card__description precio">$340,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $113,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 7.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">LÁPIZ DE GRAFITO FILGO CUERPO PASTEL</h3>
                 <p class="card__description precio">$40,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $13,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 8.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">RESALTADORES FILGO LIGHTER FINE GALAXY</h3>
                 <p class="card__description precio">$340,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $133,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 9.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">MICROFIBRA FILGO LINER PASTEL X 6 COLORES</h3>
                 <p class="card__description precio">$530,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $176,67</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 10.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">SACAPUNTAS SIMBALL POLKA</h3>
                 <p class="card__description precio">$90,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $30,00</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 11.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">CUADERNO INTELIGENTE A5 FAIRLY</h3>
                 <p class="card__description precio">$2.890,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $963,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 12.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">CUADERNO INTELIGENTE ORIGINAL A5 ARCOIRIS</h3>
                 <p class="card__description precio">$2.890,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $963,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 13.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">CUADERNO INTELIGENTE ORIGINAL A5 CANDY SPLASH</h3>
                 <p class="card__description precio">$2.890,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $963,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 14.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">BLOCK REYSA PARA DIBUJO A5</h3>
                 <p class="card__description precio">$600,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $200,00</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 15.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">MICROFIBRAS FILGO NEÓN</h3>
                 <p class="card__description precio">$510,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $170,00</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 16.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">CORRECTOR EZCO 7 ML. PASTEL</h3>
                 <p class="card__description precio">$110,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $36,67</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 17.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">GUÍA DE LETTERING</h3>
                 <p class="card__description precio">$1600,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $533,33</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 18.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">RESALTADOR TRABI HIGH TEXTER</h3>
                 <p class="card__description precio">$90,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $30,00</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 19.jpg" alt="Productos" class="card__image">
                 <h3 class="card__title">MARCADORES SIMBALL HITS BRUSH BLISTER X 5</h3>
                 <p class="card__description precio">$665,00</p>
                 <p class="card__description">3 CUOTAS SIN INTERÉS DE $221,67</p>
                 <a href="#" class="btn">AGREGAR AL CARRITO</a>
             </div>
-            <div class="cardsProductos">
+            <div data-aos="zoom-in-down" class="cardsProductos">
                 <img src="../multimedia/producto 20.jpg" alt="Productos" class="card__image ajuste2">
                 <h3 class="card__title">MINAS PIZZINI 0,7</h3>
                 <p class="card__description precio">$120,00</p>
@@ -249,7 +251,7 @@
             </div>
         </div>
     </section>
-    <section class="row">
+    <section class="col-lg-12 col-sm-12 col-xs-12 row">
         <div class="btnHover">
             <a href="#" class="btnProductos">MOSTRAR MÁS PRODUCTOS</a>
         </div>
@@ -261,19 +263,22 @@
         </div>
     </section>
     <footer class="row footer footerOfertas">
-        <form class="col-12 separacion">
+        <form class="col-lg-12 col-sm-12 col-xs-12 separacion d-flex">
             <label for="email">Recibí nuestras novedades:</label>
-            <input type="email" name="email" id="" placeholder="Ingresa tu email">
-            <input type="submit" value="¡UNITE!">
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" aria-label="email">
+            <button class="btn btn-outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-        <p class="col-2 separacion">Seguinos en:</p>
-        <ul class="col-10 redes">
-            <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
-            <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
-            <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
-        </ul>
-        <p class="col-1 separacion">Contacto:</p>
-        <div class="col-5 contacto">
+
+        <p class="col-lg-2 col-sm-2 col-xs-3 separacion ajuste5">Seguinos en:</p>
+        <div class="col-lg-10 col-sm-10 col-xs-5">
+            <ul class="redes">
+                <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
+                <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
+                <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
+            </ul>
+        </div>
+        <p class="col-lg-1 col-sm-2 col-xs-3 separacion">Contacto:</p>
+        <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
             <ul class="listaContacto">
                 <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
                 <li>Teléfono: 0379 488-8858</li>
@@ -282,19 +287,26 @@
                 <li>E-mail: claudiapereyra02166@gmail.com</li>
             </ul>
         </div>
-        <div class="col-6"><iframe
+        <div class="col-lg-5 col-sm-3 col-xs-5"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
                 width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
-        <div class="col-12 logofinal">
+        <div class="col-lg-12 col-sm-12 col-xs-12 logofinal">
             <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado"></a>
         </div>
         <div>
-            <h3 class="col-12 ano">2022 (C) </h3>
+            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano">2022 (C) </h3>
         </div>
     </footer>
     <!-- Boostrap -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 2000
+			});
+    </script>
 </body>
 
 </html>

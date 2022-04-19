@@ -8,6 +8,8 @@
     <title>Librería Prisma</title>
     <!--Logo de la página-->
     <link rel="shortcut icon" href="../multimedia/ico.ico" type="image/x-icon">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilo-->
     <link rel="stylesheet" href="../estilo/estilo.css">
     <!--Google Fonts-->
@@ -18,11 +20,13 @@
         rel="stylesheet">
 </head>
 
-<body class="padreInstitucional">
-    <header class="header">
+<body class="container-fluid prod">
+    <header class="row header">
         <nav class="navbar">
-            <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
-            <ul class="menu">
+            <div class="col-lg-2 col-sm-12 col-xs-12">
+                <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado" class="logoPrincipal"></a>
+            </div>
+            <ul class="col-lg-7 col-sm-12 col-xs-12 menu">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/productos.html">Productos</a>
                     <ul class="submenu">
@@ -41,16 +45,17 @@
                 <li><a href="../paginas/novedades.html">Novedades</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
             </ul>
-            <form class="buscar">
-                <label for="buscar"></label>
-                <input type="buscar" name="buscar" id="" placeholder="Buscar">
-                <input type="submit" value="Buscar">
-            </form>
+            <div class="col-lg-3 col-sm-12 col-xs-5">
+                <form class="d-flex buscar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+            </div>
         </nav>
     </header>
-    <section class="seccionInstitucional">
-        <h1>Sobre Nosotros</h1>
-        <p class="sobreNosotros">Librería Prisma es una empresa familiar, fundada en 2011 en la ciudad de Corrientes.
+    <section class="row seccionInstitucional">
+        <h1 class="col-lg-12 col-sm-12 col-xs-12">Sobre Nosotros</h1>
+        <p class="col-lg-12 col-sm-12 col-xs-12 sobreNosotros">Librería Prisma es una empresa familiar, fundada en 2011 en la ciudad de Corrientes.
             Desde su comienzo fue
             nuestro objetivo primordial ofrecerle a nuestros clientes calidad tanto en los productos como en atención y
             asesoramiento.
@@ -60,20 +65,23 @@
             <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
         </div>
     </section>
-    <footer class="footer">
-        <form class="separacion">
-            <label for="email">Recibí nuestras novedades</label>
-            <input type="email" name="email" id="" placeholder="Ingresa tu email">
-            <input type="submit" value="¡UNITE!">
+    <footer class="row footer">
+        <form class="col-lg-12 col-sm-12 col-xs-12 separacion d-flex">
+            <label for="email">Recibí nuestras novedades:</label>
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" aria-label="email">
+            <button class="btn btn-outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-        <p class="separacion">Seguinos en:</p>
-        <ul class="redes">
-            <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
-            <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
-            <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
-        </ul>
-        <p class="separacion">Contacto</p>
-        <div class="contacto">
+
+        <p class="col-lg-2 col-sm-2 col-xs-3 separacion ajuste5">Seguinos en:</p>
+        <div class="col-lg-10 col-sm-10 col-xs-5">
+            <ul class="redes">
+                <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
+                <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
+                <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
+            </ul>
+        </div>
+        <p class="col-lg-1 col-sm-2 col-xs-3 separacion">Contacto:</p>
+        <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
             <ul class="listaContacto">
                 <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
                 <li>Teléfono: 0379 488-8858</li>
@@ -81,15 +89,20 @@
                 <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
                 <li>E-mail: claudiapereyra02166@gmail.com</li>
             </ul>
-            <iframe
+        </div>
+        <div class="col-lg-5 col-sm-3 col-xs-5"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
                 width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
-        <div class="logofinal">
+        <div class="col-lg-12 col-sm-12 col-xs-12 logofinal">
             <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado"></a>
-            <h3>2022 (C) </h3>
+        </div>
+        <div>
+            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano">2022 (C) </h3>
         </div>
     </footer>
+    <!-- Boostrap -->
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 
