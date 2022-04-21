@@ -1,0 +1,93 @@
+.prod {
+    background: $fondo_pag;
+    background-size: cover;
+}
+
+.cardsProductos {
+    width: 20rem;
+    margin: 1rem;
+    display: inline-block;
+    font-family: textos;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(249, 249, 250);
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+}
+
+.contenedor2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.btnAside {
+    background-color: rgb(245, 241, 248);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: ridge 2px rgb(163, 40, 163);
+    border-right: ridge 2px rgb(163, 40, 163);
+    color: black;
+    font-family: textos;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  /* ajustes de imagenes de pagina productos */
+  .ajuste2 {
+    height: 300px;
+  }
+  
+  .contenedorAside {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  .h3Productos {
+    font-family: textos;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .ordenarPor {
+    font-family: textos;
+    font-size: 15px;
+    margin-bottom: 50px;
+    z-index: 500;
+    display: flex;
+    justify-content: center
+  }
+  
+  .filtro {
+    font-family: textos;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .btnProductos {
+    background-color: rgb(157, 119, 192);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: ridge 2px rgb(163, 40, 163);
+    border-right: ridge 2px rgb(163, 40, 163);
+    color: black;
+    font-family: textos;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 520px;
+  }
+
+  .footerOfertas {
+    margin-top: 100px;
+  }
+  

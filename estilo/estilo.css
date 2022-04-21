@@ -163,6 +163,12 @@ h1 {
   height: 200px;
 }
 
+/* ajustes de las imagenes de servicios index */
+.ajuste1 {
+  width: 8rem;
+  height: 8.5rem;
+}
+
 .cards2 {
   width: 15rem;
   display: inline-block;
@@ -197,30 +203,6 @@ h1 {
   font-family: textos;
 }
 
-.btnOfertas {
-  background-color: rgb(157, 119, 192);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  border-bottom: ridge 2px rgb(163, 40, 163);
-  border-right: ridge 2px rgb(163, 40, 163);
-  color: black;
-  font-family: textos;
-  font-size: 18px;
-  width: 300px;
-  margin-left: 500px;
-}
-
-.btnOfertas :hover {
-  transform: scale(1.1);
-  transition: all 1s;
-}
-
-/* ajustes de las imagenes de servicios index */
-.ajuste1 {
-  width: 8rem;
-  height: 8.5rem;
-}
 
 .whatsapp {
   position: fixed;
@@ -404,11 +386,6 @@ h1 {
   margin-left: 720px;
 }
 
-/* .btnHover:hover{
-  transform: scale(1.1);
-  transition: all 1s;
-  } */
-
 .footerOfertas {
   margin-top: 100px;
 }
@@ -418,6 +395,25 @@ h1 {
 .padreOferta {
   background-image: url("../multimedia/fondo.jpg");
   background-size: cover;
+}
+
+.btnOfertas {
+  background-color: rgb(157, 119, 192);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px rgb(163, 40, 163);
+  border-right: ridge 2px rgb(163, 40, 163);
+  color: black;
+  font-family: textos;
+  font-size: 18px;
+  width: 300px;
+  margin-left: 500px;
+}
+
+.btnOfertas :hover {
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 

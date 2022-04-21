@@ -1,0 +1,23 @@
+@import "variables";
+@import "index";
+@import "productos";
+@import "ofertas";
+@import "novedades";
+@import "institucional";
+@import "contacto";
+@import "mediaqueries";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: textos;
+    src: url(../plantillas/JTMarnie-Light.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+

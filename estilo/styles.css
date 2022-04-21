@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@keyframes girar {
+  0% {
+    transform: rotateY(0deg); }
+  25% {
+    transform: rotateY(100deg); }
+  50% {
+    transform: rotateY(200deg); }
+  75% {
+    transform: rotateY(300deg); }
+  100% {
+    transform: rotateY(360deg); } }
+
+.logoPrincipal {
+  width: 150px;
+  position: relative;
+  top: 5px;
+  left: 50px;
+  animation-name: girar;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: calc(1);
+  animation-timing-function: linear; }
+
+.navbar {
+  /* background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
+  background: url(../multimedia/logo2.png);
+  background-position: center;
+  height: 200px;
+  position: relative;
+  font-family: textos; }
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 85px; }
+  .menu li {
+    list-style-type: none; }
+    .menu li:hover .submenu {
+      display: block; }
+  .menu li a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: #030303;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #c396d8;
+    font-weight: bold; }
+    .menu li a:hover {
+      color: #6b676a; }
+
+.submenu {
+  display: none;
+  width: 20%;
+  position: absolute;
+  background-color: #e0dada;
+  list-style-type: none;
+  border: solid 2px;
+  z-index: 1000;
+  border-radius: 15px;
+  border-color: #c396d8;
+  padding-left: 0px; }
+  .submenu li:hover {
+    transform: scale(1.1);
+    transition: all 1s; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none; }
+
+.buscar {
+  font-family: textos;
+  margin-left: 3rem;
+  margin-top: 75px;
+  margin-right: 20px; }
+
+.btnBuscar {
+  background-color: #9d77c0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px #a328a3;
+  border-right: ridge 2px #a328a3;
+  color: white;
+  font-family: textos;
+  font-size: 13px;
+  font-weight: 600; }
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 2rem 0rem;
+  font-family: "Lobster", cursive;
+  /* background-color: rgb(190, 185, 185); */ }
+
+.inicio {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover; }
+
+.carroContent {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+
+.contenedor1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 70px; }
+
+.cards {
+  width: 20rem;
+  margin: 3rem;
+  padding: 1rem 1rem 3rem 1rem;
+  font-family: textos;
+  font-size: 15px;
+  text-align: center;
+  background-color: #f9f9fa; }
+  .cards:hover {
+    transform: scale(1.1);
+    transition: all 1s; }
+
+.card__image {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  height: 200px; }
+
+/* ajustes de las imagenes de servicios index */
+.ajuste1 {
+  width: 8rem;
+  height: 8.5rem; }
+
+.cards2 {
+  width: 15rem;
+  display: inline-block;
+  padding: 0.5rem;
+  font-family: textos;
+  font-size: 10px; }
+
+.card__description {
+  text-align: center;
+  font-size: 13px;
+  margin: 10px; }
+
+.precio {
+  font-size: 20px;
+  font-weight: 800; }
+
+.precio2 {
+  text-decoration: line-through; }
+
+.btn {
+  background-color: #9d77c0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px #a328a3;
+  border-right: ridge 2px #a328a3;
+  color: white;
+  font-family: textos;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100%; }
+
+.whatsapp {
+  position: fixed;
+  left: 1140px;
+  bottom: 20px;
+  z-index: 1000; }
+
+.iconoWtp {
+  width: 100px; }
+
+.footer {
+  /* background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
+  background-image: url(../multimedia/logo2.png);
+  background-position: center;
+  border: double 5px;
+  padding: 20px;
+  font-size: 2rem; }
+
+.controlFooter {
+  width: 30%;
+  margin-left: 20px; }
+
+.btnUnite {
+  background-color: #9d77c0;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  border-bottom: ridge 2px #a328a3;
+  border-right: ridge 2px #a328a3;
+  color: white;
+  font-family: textos;
+  font-size: 19px;
+  font-weight: 600; }
+
+.separacion {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Lobster", cursive; }
+
+.redes {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  right: 80px;
+  top: 9px; }
+  .redes li {
+    list-style-type: none;
+    padding-right: 10px; }
+  .redes img {
+    width: 30px;
+    padding-right: 10px; }
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem; }
+
+.listaContacto {
+  list-style-type: none;
+  position: relative;
+  top: 10px;
+  right: 28px; }
+
+.mapa {
+  position: relative;
+  bottom: 1rem;
+  left: 20rem; }
+
+.logofinal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .logofinal img {
+    width: 15rem;
+    margin-top: 20px; }
+
+.ano {
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  margin-top: 20px; }
+
+.prod {
+  background: url("../multimedia/fondo.jpg");
+  background-size: cover; }
+
+.cardsProductos {
+  width: 20rem;
+  margin: 1rem;
+  display: inline-block;
+  font-family: textos;
+  font-size: 15px;
+  text-align: center;
+  background-color: #f9f9fa; }
+  .cardsProductos:hover {
+    transform: scale(1.1);
+    transition: all 1s; }
+
+.contenedor2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 70px; }
+
+.btnAside {
+  background-color: #f5f1f8;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px #a328a3;
+  border-right: ridge 2px #a328a3;
+  color: black;
+  font-family: textos;
+  display: flex;
+  flex-flow: column nowrap; }
+
+/* ajustes de imagenes de pagina productos */
+.ajuste2 {
+  height: 300px; }
+
+.contenedorAside {
+  width: 90%;
+  font-size: 15px;
+  text-align: center;
+  padding-left: 20px; }
+
+.h3Productos {
+  font-family: textos;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center; }
+
+.ordenarPor {
+  font-family: textos;
+  font-size: 15px;
+  margin-bottom: 50px;
+  z-index: 500;
+  display: flex;
+  justify-content: center; }
+
+.filtro {
+  font-family: textos;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.btnProductos {
+  background-color: #9d77c0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px #a328a3;
+  border-right: ridge 2px #a328a3;
+  color: black;
+  font-family: textos;
+  font-size: 18px;
+  width: 300px;
+  margin-left: 520px; }
+
+.footerOfertas {
+  margin-top: 100px; }
+
+.padreOferta {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover; }
+
+.btnOfertas {
+  background-color: #9d77c0;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: ridge 2px #a328a3;
+  border-right: ridge 2px #a328a3;
+  color: black;
+  font-family: textos;
+  font-size: 18px;
+  width: 300px;
+  margin-left: 500px; }
+  .btnOfertas:hover {
+    transform: scale(1.1);
+    transition: all 1s; }
+
+.padreNovedades {
+  background-image: url("../multimedia/fondo.jpg");
+  background-size: cover; }
+
+.sobreNosotros {
+  font-size: 35px;
+  -webkit-text-fill-color: #030303;
+  -webkit-text-stroke-color: #be3d79;
+  -webkit-text-stroke: 1px;
+  font-family: "Lobster", cursive;
+  padding: 0px 30px 80px 30px;
+  text-align: justify; }
+
+.seccionInstitucional {
+  background-image: url(../multimedia/sobre_nosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.listContact {
+  background-color: white;
+  border-radius: 10px;
+  border: solid #e7f2fc; }
+
+.tituloContac {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 35px; }
+
+.btnForm {
+  border-radius: 4px;
+  display: inline-block;
+  padding: 20px 15px;
+  border-right: outset 3px #781cd4;
+  border-bottom: outset 3px #781cd4;
+  font-family: textos;
+  color: #f3f2f2;
+  background-color: rgba(101, 42, 156, 0.692);
+  font-weight: bold;
+  font-size: 15px;
+  margin: 10px;
+  width: 320px; }
+  .btnForm:hover {
+    background-color: rgba(169, 136, 199, 0.808); }
+  .btnForm:active {
+    background-color: rgba(228, 165, 215, 0.849); }
+
+.consultas {
+  width: 400px;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #f4f4f4 43%, #cbb3d6 59%);
+  padding: 20px;
+  color: #4e4949;
+  font-family: textos;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 460px; }
+
+.ajuste7 {
+  margin-top: 60px;
+  margin-right: 70px; }
+
+.seccionContact {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 60px;
+  justify-content: start; }
+
+.field {
+  outline: none;
+  border: solid 1px #ccc;
+  padding: 10px;
+  font-family: textos;
+  border-radius: 3px;
+  width: 350px;
+  margin-bottom: 10px; }
+  .field:focus {
+    border: ridge 2px rgba(169, 101, 238, 0.452); }
+
+.field1 {
+  outline: none;
+  border: solid 1px #ccc;
+  padding: 10px;
+  font-family: textos;
+  border-radius: 3px;
+  margin: 10px; }
+
+.contactanos {
+  font-family: textos;
+  font-size: 15px;
+  padding: 60px 0px 60px 20px;
+  line-height: 1.6;
+  margin-top: 60px; }
+
+.contactanosAjuste {
+  margin: 20px;
+  font-weight: bold;
+  text-align: center; }
+
+.ajuste6 {
+  margin-top: 70px; }
+
+.ico {
+  padding-right: 10px; }
+
+.containerContact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px; }
+
+/* tamaño TABLET */
+@media screen and (max-width: 768px) {
+  /* index */
+  .prod {
+    background-position: right; }
+  .logoPrincipal {
+    top: 5px;
+    left: 350px;
+    width: 100px; }
+  .navbar {
+    height: 250px; }
+  .menu {
+    margin-top: 20px; }
+  .submenu {
+    padding-left: 0px;
+    width: 35%; }
+  .buscar {
+    margin-left: 30rem;
+    margin-top: 5px;
+    margin-right: 200px; }
+  .cards {
+    margin: 2rem; }
+  .redes {
+    position: relative;
+    right: 10px;
+    top: 8px; }
+  .mapa {
+    width: 200px;
+    height: 200px;
+    left: 5rem; }
+  .logofinal img {
+    width: 60px; }
+  .whatsapp {
+    left: 660px; }
+  .whatsapp img {
+    width: 80px; }
+  .listaContacto {
+    position: relative;
+    right: 40px;
+    top: 10px; }
+  .btnOfertas {
+    margin-left: 250px; }
+  .ordenarPor {
+    margin-left: 0rem; }
+  .contenedorAside {
+    width: 95%;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px; }
+  .contenedor2 {
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-evenly; }
+  .cardsProductos {
+    margin: 0px;
+    width: 16rem;
+    height: auto;
+    margin: 1px 2px 30px 1px;
+    font-family: textos; }
+  .card__image {
+    height: 150px;
+    width: 90%; }
+  .cards__title {
+    line-height: 0px; }
+  .btn {
+    padding: 6px;
+    font-size: 13px; }
+  .btnProductos {
+    margin-left: 250px; }
+  .controlFooter {
+    width: 40%;
+    margin-left: 20px; }
+  /* institucional */
+  .sobreNosotros {
+    padding: 0px 20px;
+    font-size: 30px;
+    text-align: justify; }
+  /* contacto */
+  .tituloContac {
+    font-size: 35px; }
+  .seccionContact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center; }
+  .contactanos {
+    padding: 10px 20px; }
+  .contentContactanos {
+    justify-content: center; }
+  .ajuste1 {
+    width: 8rem;
+    height: 8.5rem; }
+  .contactanosAjuste {
+    margin-left: 50px; }
+  .consultas {
+    width: 360px; }
+  .field {
+    width: 310px; } }
+
+/* tamaño MOBILE */
+@media screen and (max-width: 414px) {
+  .carroContent {
+    flex-flow: row wrap; }
+  .carousel-inner img {
+    width: auto;
+    height: 140px; }
+  .logoPrincipal {
+    width: 120px;
+    position: relative;
+    left: 135px; }
+  .navbar {
+    width: 100%;
+    height: 400px; }
+  .menu {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-bottom: 3rem; }
+    .menu li {
+      padding: 10px; }
+      .menu li a {
+        padding: 6px;
+        border-style: ridge;
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: thistle; }
+  .submenu {
+    width: 50%;
+    padding-left: 0px; }
+    .submenu li {
+      padding: 2px 0px; }
+      .submenu li a {
+        margin: 3px 8px; }
+  .buscar {
+    position: absolute;
+    left: 110px;
+    top: 340px;
+    margin: 0px; }
+  .h1inicio {
+    margin-bottom: 25px; }
+  .contenedor1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: flex-start; }
+  .cards {
+    margin: 0px;
+    width: 16rem;
+    height: auto;
+    margin: 1px 2px 30px 1px;
+    font-family: textos; }
+  h1 {
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 0px; }
+  .h3Productos {
+    padding-top: 1rem; }
+  .productos {
+    box-sizing: content-box; }
+  .elementosAside {
+    display: none; }
+  .contenedor2 {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+  .ajuste4 {
+    flex-wrap: wrap; }
+  .cardsProductos {
+    margin: 0px;
+    width: 16rem;
+    height: auto;
+    margin: 1px 2px 30px 1px;
+    font-family: textos; }
+  .card__image {
+    height: 150px;
+    width: 90%; }
+  .btnProductos {
+    margin-left: 60px; }
+  .ajuste6 {
+    flex-direction: column;
+    margin-bottom: 40px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: textos;
+  src: url(../plantillas/JTMarnie-Light.ttf); }
+
+html {
+  font-size: 62.5%; }
