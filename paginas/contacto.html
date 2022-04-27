@@ -11,7 +11,6 @@
     <!-- Boostrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilo-->
-    <!-- <link rel="stylesheet" href="../estilo/estilo.css"> -->
     <link rel="stylesheet" href="../estilo/styles.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +21,7 @@
     <link rel="stylesheet" href="../multimedia/css/all.min.css">
 </head>
 
-<body class="container-fluid prod">
+<body class="container-fluid fondo">
     <header class="row header">
         <nav class="navbar">
             <div class="col-lg-2 col-sm-12 col-xs-12">
@@ -50,110 +49,111 @@
             <div class="col-lg-3 col-sm-12 col-xs-5">
                 <form class="d-flex buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btnBuscar btn-outline-success" type="submit">Buscar</button>
-                  </form>
+                    <button class="btnBuscar colorButton btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </nav>
     </header>
-
-    <section class="row tituloContacto">
-        <h3 class="col-lg-12 col-sm-12 col-xs-12 tituloContac">Contacto</h3>
-    </section>
-
-
-    <section class="row contentContactanos">
-        <aside class="col-lg-4 col-sm-8 col-xs-12 contactanos">
-            <div class="listContact">
-                <h3 class="contactanosAjuste"> Contactanos</h3>
-                <p class="contactanosAjuste">Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00
-                    a
-                    13:00
-                    hs.</p>
-                <p class="contactanosAjuste"><i class="ico fa-solid fa-phone"></i>+543794736428</p>
-                <p class="contactanosAjuste"><i class="ico fa-solid fa-envelope"></i>claudiapereyra02166@gmail.com</p>
-            </div>
-        </aside>
-        <article class="col-lg-4 col-sm-6 col-xs-12">
-            <div class="seccionContact">
-                <form class="consultas">
-                    <p>Nombre:</p>
-                    <label for="nombre"></label>
-                    <input type="nombre" placeholder="ingrese su nombre" name="nombre" class="field">
-                    <p>E-mail:</p>
-                    <label for="email"></label>
-                    <input type="email" placeholder="ingrese su email" name="email" class="field">
-                    <p>Telefono:</p>
-                    <label for="telefono"></label>
-                    <input type="telefono" placeholder="ingrese su teléfono" name="telefono" class="field">
-                    <p>Contraseña:</p>
-                    <label for="contraseña"></label>
-                    <input type="password" placeholder="ingrese su contraseña" name="contraseña" class="field">
-                    <!-- casilla de chequeo-->
-                    <p>¿Desea recibir nuestro newslatter?</p>
-                    <input type="checkbox" value="1" class="field1">
+    <main>
+        <section class="row">
+            <h3 class="col-lg-12 col-sm-12 col-xs-12 tituloContac font2">Contacto</h3>
+        </section>
+        <section class="row">
+            <aside class="col-lg-4 col-sm-8 col-xs-12 contactanos">
+                <div class="listContact">
+                    <h3 class="contactanosAjuste"> Contactanos</h3>
+                    <p class="contactanosAjuste">Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de
+                        10:00
+                        a
+                        13:00
+                        hs.</p>
+                    <p class="contactanosAjuste"><i class="ico fa-solid fa-phone"></i>+543794736428</p>
+                    <p class="contactanosAjuste"><i class="ico fa-solid fa-envelope"></i>claudiapereyra02166@gmail.com
+                    </p>
+                </div>
+            </aside>
+            <article class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="seccionContact">
+                    <form class="consultas">
+                        <p>Nombre:</p>
+                        <label for="nombre"></label>
+                        <input type="nombre" placeholder="ingrese su nombre" name="nombre" class="field">
+                        <p>E-mail:</p>
+                        <label for="email"></label>
+                        <input type="email" placeholder="ingrese su email" name="email" class="field">
+                        <p>Telefono:</p>
+                        <label for="telefono"></label>
+                        <input type="telefono" placeholder="ingrese su teléfono" name="telefono" class="field">
+                        <p>Contraseña:</p>
+                        <label for="contraseña"></label>
+                        <input type="password" placeholder="ingrese su contraseña" name="contraseña" class="field">
+                        <!-- casilla de chequeo-->
+                        <p>¿Desea recibir nuestro newslatter?</p>
+                        <input type="checkbox" value="1" class="field1">
+                    </form>
+                </div>
+            </article>
+            <article class="col-lg-4 col-sm-6 col-xs-12">
+                <form class="consultas ajuste7">
+                    <!-- Text area-->
+                    <p>Mensaje:</p>
+                    <textarea name="" id="" cols="30" rows="11" placeholder="Detalle de consulta"
+                        class="field"></textarea>
+                    <!--Botones del formulario-->
+                    <input type="submit" value="E n v i a r   m e n s a j e" class="btnForm colorButton">
                 </form>
-            </div>
-        </article>
-
-        <article class="col-lg-4 col-sm-6 col-xs-12">
-            <form class="consultas ajuste7">
-                <!-- Text area-->
-                <p>Mensaje:</p>
-                <textarea name="" id="" cols="30" rows="11" placeholder="Detalle de consulta" class="field"></textarea>
-                <!--Botones del formulario-->
-                <input type="submit" value="E n v i a r   m e n s a j e" class="btnForm">
-            </form>
-        </article>
-    </section>
-
-    <section class="row serviciosContact">
-        <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1 ajuste6">
-            <div class="cards2">
-                <img src="../multimedia/Importante 1.jpg" alt="Envíos" class="card__image ajuste1">
-                <div class="cards3">
-                    <h3 class="card__title">ENVIANOS TU PEDIDO</h3>
-                    <p>Te ofrecemos retirar por sucursal o enviamos tu
-                        pedido
-                        donde
-                        quieras.</p>
+            </article>
+        </section>
+        <section class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1 ajuste6">
+                <div class="cards2">
+                    <img src="../multimedia/Importante 1.jpg" alt="Envíos" class="card__image ajuste1">
+                    <div class="cards3">
+                        <h3 class="card__title">ENVIANOS TU PEDIDO</h3>
+                        <p>Te ofrecemos retirar por sucursal o enviamos tu
+                            pedido
+                            donde
+                            quieras.</p>
+                    </div>
+                </div>
+                <div class="cards2">
+                    <img src="../multimedia/Importante 2.jpg" alt="LLamanos" class="card__image ajuste1">
+                    <div class="cards3">
+                        <h3 class="card__title">LLAMANOS: 0394 488-8858</h3>
+                        <p>Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</p>
+                    </div>
+                </div>
+                <div class="cards2">
+                    <img src="../multimedia/Importante 3.jpg" alt="Seguridad" class="card__image ajuste1">
+                    <div class="cards3">
+                        <h3 class="card__title"> SITIO SEGURO</h3>
+                        <p>Tus datos son confidenciales y están protegidos</p>
+                    </div>
                 </div>
             </div>
-            <div class="cards2">
-                <img src="../multimedia/Importante 2.jpg" alt="LLamanos" class="card__image ajuste1">
-                <div class="cards3">
-                    <h3 class="card__title">LLAMANOS: 0394 488-8858</h3>
-                    <p>Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</p>
-                </div>
+        </section>
+        <section>
+            <div class="whatsapp">
+                <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
             </div>
-            <div class="cards2">
-                <img src="../multimedia/Importante 3.jpg" alt="Seguridad" class="card__image ajuste1">
-                <div class="cards3">
-                    <h3 class="card__title"> SITIO SEGURO</h3>
-                    <p>Tus datos son confidenciales y están protegidos</p>
-                </div>
-            </div>
-        </div>
-        <div class="whatsapp">
-            <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer class="row footer">
-        <form class="col-lg-12 col-sm-12 col-xs-12 separacion d-flex">
+        <form class="col-lg-12 col-sm-12 col-xs-12 separacion font2 d-flex">
             <label for="email">Recibí nuestras novedades:</label>
-            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" aria-label="email">
-            <button class="btnUnite btn-outline-success btnFooter " type="submit">¡UNITE!</button>
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email"
+                aria-label="email">
+            <button class="btnUnite colorButton btn-outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-
-        <p class="col-lg-2 col-sm-2 col-xs-3 separacion ajuste5">Seguinos en:</p>
+        <p class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</p>
         <div class="col-lg-10 col-sm-10 col-xs-5">
             <ul class="redes">
-                <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
-                <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
-                <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
+                <li><a href="#"> <img src="../multimedia/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt="whatsapp"> </a></li>
+                <li><a href="#"> <img src="../multimedia/facebook.png" alt="facebook"> </a></li>
             </ul>
         </div>
-        <p class="col-lg-1 col-sm-2 col-xs-3 separacion">Contacto:</p>
+        <p class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</p>
         <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
             <ul class="listaContacto">
                 <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
@@ -171,7 +171,7 @@
             <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado"></a>
         </div>
         <div>
-            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano">2022 (C) </h3>
+            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano font2">2022 (C) </h3>
         </div>
     </footer>
     <!-- Boostrap -->

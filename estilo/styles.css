@@ -23,13 +23,10 @@
   animation-timing-function: linear; }
 
 .navbar {
-  /* background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
   background: url(../multimedia/logo2.png);
   background-position: center;
   height: 200px;
-  position: relative;
-  font-family: textos; }
+  position: relative; }
 
 .menu {
   display: flex;
@@ -45,12 +42,10 @@
     text-decoration: none;
     padding: 10px;
     margin: 10px;
-    color: #030303;
-    border-style: solid;
-    border-width: 2px;
+    border: solid 2px #c396d8;
     border-radius: 10px;
-    border-color: #c396d8;
-    font-weight: bold; }
+    font-weight: bold;
+    color: black; }
     .menu li a:hover {
       color: #6b676a; }
 
@@ -58,50 +53,32 @@
   display: none;
   width: 20%;
   position: absolute;
-  background-color: #e0dada;
-  list-style-type: none;
-  border: solid 2px;
+  background-color: #ebdee9;
+  border: solid 2px #c396d8;
   z-index: 1000;
   border-radius: 15px;
-  border-color: #c396d8;
   padding-left: 0px; }
   .submenu li:hover {
     transform: scale(1.1);
     transition: all 1s; }
   .submenu li a {
     display: block;
-    padding: 15px;
-    color: black;
-    text-decoration: none; }
+    padding: 15px; }
 
 .buscar {
-  font-family: textos;
-  margin-left: 3rem;
-  margin-top: 75px;
-  margin-right: 20px; }
+  margin: 7.5rem 2rem 0rem 3rem; }
 
 .btnBuscar {
-  background-color: #9d77c0;
-  text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
-  color: white;
-  font-family: textos;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600; }
 
 h1 {
   text-align: center;
   font-size: 40px;
   padding: 2rem 0rem;
-  font-family: "Lobster", cursive;
-  /* background-color: rgb(190, 185, 185); */ }
-
-.inicio {
-  background-image: url("../multimedia/fondo.jpg");
-  background-size: cover; }
+  font-family: "Lobster", cursive; }
 
 .carroContent {
   display: flex;
@@ -120,7 +97,6 @@ h1 {
   width: 20rem;
   margin: 3rem;
   padding: 1rem 1rem 3rem 1rem;
-  font-family: textos;
   font-size: 15px;
   text-align: center;
   background-color: #f9f9fa; }
@@ -129,22 +105,11 @@ h1 {
     transition: all 1s; }
 
 .card__image {
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  height: 200px; }
+  width: 80%; }
 
-/* ajustes de las imagenes de servicios index */
-.ajuste1 {
-  width: 8rem;
-  height: 8.5rem; }
-
-.cards2 {
-  width: 15rem;
-  display: inline-block;
-  padding: 0.5rem;
-  font-family: textos;
-  font-size: 10px; }
+.card__title {
+  font-weight: 600;
+  line-height: 1.4; }
 
 .card__description {
   text-align: center;
@@ -159,21 +124,28 @@ h1 {
   text-decoration: line-through; }
 
 .btn {
-  background-color: #9d77c0;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
-  color: white;
-  font-family: textos;
   font-size: 13px;
   font-weight: 600;
   width: 100%; }
 
+.cards2 {
+  width: 15rem;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 13px;
+  text-align: center; }
+
+/* ajustes de las imagenes de servicios index */
+.ajuste1 {
+  width: 8rem;
+  height: 8.5rem; }
+
 .whatsapp {
   position: fixed;
-  left: 1140px;
+  left: 1220px;
   bottom: 20px;
   z-index: 1000; }
 
@@ -181,8 +153,6 @@ h1 {
   width: 100px; }
 
 .footer {
-  /* background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
   background-image: url(../multimedia/logo2.png);
   background-position: center;
   border: double 5px;
@@ -194,25 +164,19 @@ h1 {
   margin-left: 20px; }
 
 .btnUnite {
-  background-color: #9d77c0;
   text-decoration: none;
-  padding: 5px;
+  padding: 2px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
-  color: white;
   font-family: textos;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 600; }
 
 .separacion {
   padding-bottom: 10px;
-  padding-top: 10px;
-  font-family: "Lobster", cursive; }
+  padding-top: 10px; }
 
 .redes {
   display: flex;
-  justify-content: start;
   position: relative;
   right: 80px;
   top: 9px; }
@@ -220,19 +184,13 @@ h1 {
     list-style-type: none;
     padding-right: 10px; }
   .redes img {
-    width: 30px;
+    width: 40px;
     padding-right: 10px; }
-
-.contacto {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2rem; }
 
 .listaContacto {
   list-style-type: none;
   position: relative;
-  top: 10px;
-  right: 28px; }
+  top: 10px; }
 
 .mapa {
   position: relative;
@@ -240,28 +198,28 @@ h1 {
   left: 20rem; }
 
 .logofinal {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  text-align: center; }
   .logofinal img {
     width: 15rem;
     margin-top: 20px; }
 
 .ano {
-  display: flex;
-  justify-content: center;
-  font-family: "Lobster", cursive;
+  text-align: center;
   margin-top: 20px; }
 
-.prod {
-  background: url("../multimedia/fondo.jpg");
-  background-size: cover; }
+.h3Productos {
+  padding: 2rem;
+  text-align: center; }
+
+.ordenarPor {
+  font-size: 15px;
+  margin-bottom: 50px;
+  z-index: 500;
+  text-align: center; }
 
 .cardsProductos {
   width: 20rem;
   margin: 1rem;
-  display: inline-block;
-  font-family: textos;
   font-size: 15px;
   text-align: center;
   background-color: #f9f9fa; }
@@ -281,16 +239,11 @@ h1 {
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
+  border-right: ridge 2px #d66ec5;
+  border-bottom: ridge 2px #d66ec5;
   color: black;
-  font-family: textos;
   display: flex;
   flex-flow: column nowrap; }
-
-/* ajustes de imagenes de pagina productos */
-.ajuste2 {
-  height: 300px; }
 
 .contenedorAside {
   width: 90%;
@@ -298,71 +251,32 @@ h1 {
   text-align: center;
   padding-left: 20px; }
 
-.h3Productos {
-  font-family: textos;
-  font-size: 1.5rem;
-  padding: 2rem;
-  text-align: center; }
-
-.ordenarPor {
-  font-family: textos;
-  font-size: 15px;
-  margin-bottom: 50px;
-  z-index: 500;
-  display: flex;
-  justify-content: center; }
-
 .filtro {
-  font-family: textos;
-  font-size: 2.5rem;
-  text-align: center; }
+  font-size: 2.5rem; }
 
 .btnProductos {
-  background-color: #9d77c0;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
-  color: black;
-  font-family: textos;
   font-size: 18px;
-  width: 300px;
   margin-left: 520px; }
 
 .footerOfertas {
   margin-top: 100px; }
 
-.padreOferta {
-  background-image: url("../multimedia/fondo.jpg");
-  background-size: cover; }
-
 .btnOfertas {
-  background-color: #9d77c0;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
-  color: black;
-  font-family: textos;
   font-size: 18px;
-  width: 300px;
   margin-left: 500px; }
   .btnOfertas:hover {
     transform: scale(1.1);
     transition: all 1s; }
 
-.padreNovedades {
-  background-image: url("../multimedia/fondo.jpg");
-  background-size: cover; }
-
 .sobreNosotros {
   font-size: 35px;
   -webkit-text-fill-color: #030303;
-  -webkit-text-stroke-color: #be3d79;
-  -webkit-text-stroke: 1px;
-  font-family: "Lobster", cursive;
   padding: 0px 30px 80px 30px;
   text-align: justify; }
 
@@ -372,62 +286,47 @@ h1 {
   background-position: center;
   background-repeat: no-repeat; }
 
+.tituloContac {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 35px; }
+
+.contactanos {
+  font-size: 15px;
+  padding: 60px 0px 60px 20px;
+  line-height: 1.6;
+  margin-top: 60px; }
+
 .listContact {
   background-color: white;
   border-radius: 10px;
   border: solid #e7f2fc; }
 
-.tituloContac {
-  font-family: "Lobster", cursive;
-  text-align: center;
-  font-size: 50px;
-  margin-top: 35px; }
-
-.btnForm {
-  border-radius: 4px;
-  display: inline-block;
-  padding: 20px 15px;
-  border-right: outset 3px #781cd4;
-  border-bottom: outset 3px #781cd4;
-  font-family: textos;
-  color: #f3f2f2;
-  background-color: rgba(101, 42, 156, 0.692);
+.contactanosAjuste {
+  margin: 20px;
   font-weight: bold;
-  font-size: 15px;
-  margin: 10px;
-  width: 320px; }
-  .btnForm:hover {
-    background-color: rgba(169, 136, 199, 0.808); }
-  .btnForm:active {
-    background-color: rgba(228, 165, 215, 0.849); }
+  text-align: center; }
+
+.ico {
+  padding-right: 10px; }
+
+.seccionContact {
+  margin-top: 60px; }
 
 .consultas {
   width: 400px;
-  background: #eeaeca;
-  background: radial-gradient(circle, #eeaeca 0%, #f4f4f4 43%, #cbb3d6 59%);
+  background: #d2a7d6;
   padding: 20px;
   color: #4e4949;
-  font-family: textos;
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
   height: 460px; }
 
-.ajuste7 {
-  margin-top: 60px;
-  margin-right: 70px; }
-
-.seccionContact {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-top: 60px;
-  justify-content: start; }
-
 .field {
   outline: none;
   border: solid 1px #ccc;
   padding: 10px;
-  font-family: textos;
   border-radius: 3px;
   width: 350px;
   margin-bottom: 10px; }
@@ -436,42 +335,30 @@ h1 {
 
 .field1 {
   outline: none;
-  border: solid 1px #ccc;
-  padding: 10px;
-  font-family: textos;
-  border-radius: 3px;
   margin: 10px; }
 
-.contactanos {
-  font-family: textos;
-  font-size: 15px;
-  padding: 60px 0px 60px 20px;
-  line-height: 1.6;
-  margin-top: 60px; }
+.ajuste7 {
+  margin-top: 60px;
+  margin-right: 70px; }
 
-.contactanosAjuste {
-  margin: 20px;
+.btnForm {
+  border-radius: 4px;
+  padding: 20px 15px;
   font-weight: bold;
-  text-align: center; }
+  margin: 10px;
+  width: 320px; }
+  .btnForm:hover {
+    background-color: rgba(169, 136, 199, 0.808); }
+  .btnForm:active {
+    background-color: rgba(228, 165, 215, 0.849); }
 
 .ajuste6 {
   margin-top: 70px; }
 
-.ico {
-  padding-right: 10px; }
-
-.containerContact {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px; }
-
 /* tamaño TABLET */
 @media screen and (max-width: 768px) {
   /* index */
-  .prod {
-    background-position: right; }
   .logoPrincipal {
-    top: 5px;
     left: 350px;
     width: 100px; }
   .navbar {
@@ -479,86 +366,53 @@ h1 {
   .menu {
     margin-top: 20px; }
   .submenu {
-    padding-left: 0px;
     width: 35%; }
   .buscar {
     margin-left: 30rem;
     margin-top: 5px;
     margin-right: 200px; }
   .cards {
-    margin: 2rem; }
+    margin: 0.7rem; }
   .redes {
-    position: relative;
-    right: 10px;
-    top: 8px; }
+    right: 10px; }
+  .controlFooter {
+    width: 40%; }
   .mapa {
     width: 200px;
-    height: 200px;
-    left: 5rem; }
+    left: 5rem;
+    top: 14px; }
   .logofinal img {
-    width: 60px; }
-  .whatsapp {
-    left: 660px; }
-  .whatsapp img {
     width: 80px; }
-  .listaContacto {
-    position: relative;
-    right: 40px;
-    top: 10px; }
+  .whatsapp {
+    left: 665px; }
+    .whatsapp img {
+      width: 80px; }
   .btnOfertas {
     margin-left: 250px; }
-  .ordenarPor {
-    margin-left: 0rem; }
   .contenedorAside {
     width: 95%;
-    padding: 0px 0px 0px 10px;
-    font-size: 14px; }
+    padding: 0px 0px 0px 10px; }
   .contenedor2 {
-    align-items: flex-start;
     padding-left: 0px;
-    padding-right: 0px;
-    justify-content: space-evenly; }
+    padding-right: 0px; }
   .cardsProductos {
-    margin: 0px;
     width: 16rem;
-    height: auto;
-    margin: 1px 2px 30px 1px;
-    font-family: textos; }
-  .card__image {
-    height: 150px;
-    width: 90%; }
-  .cards__title {
-    line-height: 0px; }
+    margin: 1px 2px 30px 1px; }
   .btn {
-    padding: 6px;
-    font-size: 13px; }
+    padding: 6px; }
   .btnProductos {
     margin-left: 250px; }
-  .controlFooter {
-    width: 40%;
-    margin-left: 20px; }
   /* institucional */
   .sobreNosotros {
-    padding: 0px 20px;
-    font-size: 30px;
-    text-align: justify; }
+    font-size: 30px; }
   /* contacto */
   .tituloContac {
     font-size: 35px; }
-  .seccionContact {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    justify-content: center; }
   .contactanos {
-    padding: 10px 20px; }
-  .contentContactanos {
-    justify-content: center; }
-  .ajuste1 {
-    width: 8rem;
-    height: 8.5rem; }
-  .contactanosAjuste {
-    margin-left: 50px; }
+    padding: 10px 20px;
+    margin-left: 145px; }
+  .seccionContact {
+    margin-left: 10px; }
   .consultas {
     width: 360px; }
   .field {
@@ -566,86 +420,118 @@ h1 {
 
 /* tamaño MOBILE */
 @media screen and (max-width: 414px) {
-  .carroContent {
-    flex-flow: row wrap; }
-  .carousel-inner img {
-    width: auto;
-    height: 140px; }
   .logoPrincipal {
     width: 120px;
-    position: relative;
     left: 135px; }
   .navbar {
-    width: 100%;
     height: 400px; }
   .menu {
     flex-flow: row wrap;
-    align-items: flex-start;
     margin-top: 0px;
     margin-bottom: 3rem; }
     .menu li {
-      padding: 10px; }
+      padding: 12px 10px; }
       .menu li a {
         padding: 6px;
-        border-style: ridge;
-        border-width: 2px;
-        border-radius: 10px;
-        border-color: thistle; }
+        border-style: ridge; }
   .submenu {
-    width: 50%;
-    padding-left: 0px; }
+    width: 50%; }
     .submenu li {
       padding: 2px 0px; }
       .submenu li a {
         margin: 3px 8px; }
   .buscar {
     position: absolute;
-    left: 110px;
+    left: 130px;
     top: 340px;
     margin: 0px; }
-  .h1inicio {
-    margin-bottom: 25px; }
-  .contenedor1 {
-    padding-left: 0px;
-    padding-right: 0px;
-    align-items: flex-start; }
+  .btnBuscar {
+    padding: 2px 4px;
+    font-size: 10px; }
+  .carroContent {
+    flex-flow: row wrap; }
   .cards {
-    margin: 0px;
     width: 16rem;
-    height: auto;
-    margin: 1px 2px 30px 1px;
-    font-family: textos; }
+    margin: 1px 2px 30px 1px; }
+  .separacion {
+    font-size: 15px; }
+  .ajuste5 {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  .redes {
+    padding-left: 10px; }
+  .redes img {
+    width: 33px; }
+  .mapa {
+    display: none; }
+  .contacto {
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 15px;
+    right: 20px; }
+  .listaContacto {
+    top: 0px; }
+  .whatsapp {
+    left: 330px; }
+    .whatsapp img {
+      width: 60px; }
+  .controlFooter {
+    margin-left: 10px;
+    height: 20px; }
+  .btnUnite {
+    font-size: 8px; }
   h1 {
-    font-size: 30px;
-    padding-top: 2rem;
-    padding-bottom: 0px; }
+    font-size: 30px; }
   .h3Productos {
     padding-top: 1rem; }
-  .productos {
-    box-sizing: content-box; }
   .elementosAside {
     display: none; }
-  .contenedor2 {
-    padding-left: 0px;
-    padding-right: 0px;
-    align-items: flex-start;
-    justify-content: space-evenly; }
-  .ajuste4 {
-    flex-wrap: wrap; }
-  .cardsProductos {
-    margin: 0px;
-    width: 16rem;
-    height: auto;
-    margin: 1px 2px 30px 1px;
-    font-family: textos; }
-  .card__image {
-    height: 150px;
-    width: 90%; }
   .btnProductos {
     margin-left: 60px; }
-  .ajuste6 {
-    flex-direction: column;
-    margin-bottom: 40px; } }
+  .btnOfertas {
+    margin-left: 60px; }
+  .sobreNosotros {
+    font-size: 22px;
+    text-align: center; }
+  .contactanos {
+    margin-left: 0px; }
+  .consultas {
+    width: 340px;
+    margin-left: 20px; }
+  .field {
+    width: 290px; }
+  .ajuste7 {
+    position: relative;
+    left: 15px; }
+  .btnForm {
+    width: 290px; }
+  .cards2 {
+    padding: 10px 10px;
+    display: flex;
+    width: 100%; }
+  .ajuste1 {
+    margin-right: 20px; } }
+
+/* tamaño MOBILE */
+@media screen and (max-width: 375px) {
+  .submenu {
+    width: 55%; }
+  .buscar {
+    left: 110px; }
+  .whatsapp {
+    left: 295px; }
+  .separacion {
+    font-size: 12px; }
+  .contacto {
+    font-size: 1.2rem; }
+  .btnProductos {
+    margin-left: 40px; }
+  .btnOfertas {
+    margin-left: 40px; }
+  .consultas {
+    margin-left: 3px; }
+  .ajuste7 {
+    left: 7px; } }
 
 * {
   margin: 0;
@@ -657,3 +543,19 @@ h1 {
 
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: textos; }
+
+.fondo {
+  background-image: url("../multimedia/fondo.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.colorButton {
+  background-color: #9d77c0;
+  border: outset #d37ed4;
+  color: white; }
+
+.font2 {
+  font-family: "Lobster", cursive; }

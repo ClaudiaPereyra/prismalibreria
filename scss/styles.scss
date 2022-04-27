@@ -21,3 +21,26 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: textos;
+}
+
+.fondo {
+    background-image: url("../multimedia/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+// color de los botones
+.colorButton {
+    background-color: #9d77c0;
+    border: outset #d37ed4;
+    color: white;
+}
+
+.font2 {
+    font-family: "Lobster", cursive;
+}
+
+
+

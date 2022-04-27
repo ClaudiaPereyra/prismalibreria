@@ -13,11 +13,21 @@ html {
 }
 
 @keyframes girar {
-  0% {transform: rotateY(0deg);}
-  25% {transform: rotateY(100deg);}
-  50% {transform: rotateY(200deg);}
-  75% {transform: rotateY(300deg);}
-  100% {transform: rotateY(360deg);}
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(100deg);
+  }
+  50% {
+    transform: rotateY(200deg);
+  }
+  75% {
+    transform: rotateY(300deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .logoPrincipal {
@@ -32,12 +42,7 @@ html {
   animation-timing-function: linear;
 }
 
-
-
-
 .navbar {
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
   background-image: url(../multimedia/logo2.png);
   background-position: center;
   height: 200px;
@@ -103,28 +108,23 @@ html {
 }
 
 .buscar {
-  /* display: flex; */
   font-family: textos;
   margin-left: 3rem;
   margin-top: 75px;
   margin-right: 20px;
 }
 
-
-
 h1 {
   text-align: center;
   font-size: 40px;
   padding: 2rem 0rem;
   font-family: "Lobster", cursive;
-  /* background-color: rgb(190, 185, 185); */
 }
 
 .inicio {
   background-image: url("../multimedia/fondo.jpg");
   background-size: cover;
 }
-
 
 .carroContent {
   display: flex;
@@ -193,7 +193,6 @@ h1 {
 }
 
 .btn {
-  background-color: rgb(157, 119, 192);
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -202,7 +201,6 @@ h1 {
   color: black;
   font-family: textos;
 }
-
 
 .whatsapp {
   position: fixed;
@@ -216,8 +214,6 @@ h1 {
 }
 
 .footer {
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
   background-image: url(../multimedia/logo2.png);
   background-position: center;
   border: double 5px;
@@ -229,7 +225,6 @@ h1 {
   width: 30%;
   margin-left: 20px;
 }
-
 
 .separacion {
   padding-bottom: 10px;
@@ -292,7 +287,6 @@ h1 {
   margin-top: 20px;
 }
 
-
 /* PRODUCTOS */
 /* botones de la seccion de productos */
 .prod {
@@ -322,7 +316,6 @@ h1 {
   transform: scale(1.1);
   transition: all 1s;
 }
-
 
 .btnAside {
   background-color: rgb(245, 241, 248);
@@ -362,7 +355,7 @@ h1 {
   margin-bottom: 50px;
   z-index: 500;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .filtro {
@@ -371,9 +364,7 @@ h1 {
   text-align: center;
 }
 
-
 .btnProductos {
-  background-color: rgb(157, 119, 192);
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -390,7 +381,6 @@ h1 {
   margin-top: 100px;
 }
 
-
 /* ofertas */
 .padreOferta {
   background-image: url("../multimedia/fondo.jpg");
@@ -398,7 +388,6 @@ h1 {
 }
 
 .btnOfertas {
-  background-color: rgb(157, 119, 192);
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -416,13 +405,11 @@ h1 {
   transition: all 1s;
 }
 
-
 /* novedades */
 .padreNovedades {
   background-image: url("../multimedia/fondo.jpg");
   background-size: cover;
 }
-
 
 /* institucional */
 
@@ -436,7 +423,6 @@ h1 {
   text-align: justify;
 }
 
-
 .seccionInstitucional {
   background-image: url(../multimedia/sobre\ nosotros.jpg);
   background-size: cover;
@@ -444,13 +430,12 @@ h1 {
   background-repeat: no-repeat;
 }
 
-
 /* contacto */
 
 .listContact {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  border: solid rgb(231, 242, 252) ;
+  border: solid rgb(231, 242, 252);
 }
 
 .tituloContac {
@@ -486,7 +471,12 @@ h1 {
 .consultas {
   width: 400px;
   background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(244, 244, 244, 1) 43%,
+    rgba(203, 179, 214, 1) 59%
+  );
   padding: 20px;
   color: rgb(78, 73, 73);
   font-family: textos;
@@ -559,14 +549,10 @@ h1 {
   margin-top: 50px;
 }
 
-
 /* tamaño TABLET */
-@media screen and (max-width:768px) {
-
-
-
+@media screen and (max-width: 768px) {
   /* productos */
-  .prod{
+  .prod {
     background-position: right;
   }
 
@@ -588,7 +574,6 @@ h1 {
     padding-left: 0px;
     width: 35%;
   }
-
 
   .buscar {
     margin-left: 30rem;
@@ -639,14 +624,12 @@ h1 {
     justify-content: space-evenly;
   }
 
-
   .cardsProductos {
     margin: 0px;
     width: 16rem;
     height: auto;
     margin: 1px 2px 30px 1px;
     font-family: textos;
-
   }
 
   .card__image {
@@ -671,18 +654,14 @@ h1 {
     width: 40%;
     margin-left: 20px;
   }
-  
-
 
   /* institucional */
-
 
   .sobreNosotros {
     padding: 0px 20px;
     font-size: 30px;
     text-align: justify;
   }
-
 
   .logofinal img {
     width: 60px;
@@ -727,21 +706,17 @@ h1 {
 
   .consultas {
     width: 360px;
-
   }
 
   .field {
     width: 310px;
   }
-
 }
 
-
 /* tamaño MOBILE */
-@media screen and (max-width:414px) {
-
+@media screen and (max-width: 414px) {
   .carroContent {
-  flex-flow: row wrap;
+    flex-flow: row wrap;
   }
 
   .carousel-inner img {
@@ -803,7 +778,6 @@ h1 {
     margin-bottom: 25px;
   }
 
-
   .contenedor1 {
     padding-left: 0px;
     padding-right: 0px;
@@ -853,7 +827,6 @@ h1 {
     height: auto;
     margin: 1px 2px 30px 1px;
     font-family: textos;
-
   }
 
   .card__image {
@@ -871,7 +844,6 @@ h1 {
   }
 
   .servicios {
-    /* margin-top: 100px; */
     align-content: space-around;
   }
 
@@ -939,16 +911,10 @@ h1 {
     height: 20px;
   }
 
-  .btnFooter{
-    padding: 0px;
-    height: 20px;
-  }
-
   /* productos */
   .ordenarPor {
     margin-left: 0px;
   }
-
 
   /* nosotros */
   .sobreNosotros {
@@ -956,10 +922,7 @@ h1 {
     text-align: center;
   }
 
-
-
   /* CONTACTOS */
-
 
   .consultas {
     width: 340px;
@@ -989,267 +952,36 @@ h1 {
   .serviciosContact {
     margin-left: 10px;
   }
-
 }
 
-
 /* tamaño MOBILE */
-@media screen and (max-width:375px) {
-
-  .carroContent {
-  flex-flow: row wrap;
-  }
-
-  .carousel-inner img {
-    width: auto;
-    height: 140px;
-  }
-
-  .logoPrincipal {
-    width: 120px;
-    position: relative;
-    left: 135px;
-  }
-
-  .navbar {
-    width: 385px;
-    height: 400px;
-  }
-
-  .menu {
-    flex-flow: row wrap;
-    align-items: flex-start;
-    /* padding-top: 0px;
-    padding-left: 0px; */
-    margin-top: 0px;
-    margin-bottom: 3rem;
-  }
-
-  .menu li {
-    padding: 10px;
-  }
-
-  .menu li a {
-    padding: 6px;
-    border-style: ridge;
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: thistle;
-  }
-
+@media screen and (max-width: 375px) {
   .submenu {
-    width: 59%;
-    padding-left: 0px;
+    width: 55%;
   }
-
-  .submenu li {
-    padding: 2px 0px;
-  }
-
-  .submenu li a {
-    margin: 3px 8px;
-  }
-
   .buscar {
-    position: absolute;
     left: 110px;
-    top: 340px;
-    margin: 0px;
-  }
-
-  .h1inicio {
-    margin-bottom: 25px;
-  }
-
-
-  .contenedor1 {
-    padding-left: 0px;
-    padding-right: 0px;
-    align-items: flex-start;
-  }
-
-  .cards {
-    margin: 0px;
-    width: 16rem;
-    height: auto;
-    margin: 1px 2px 30px 1px;
-    font-family: textos;
-  }
-
-  h1 {
-    font-size: 30px;
-    padding-top: 2rem;
-    padding-bottom: 0px;
-  }
-
-  .h3Productos {
-    padding-top: 1rem;
-  }
-
-  .productos {
-    box-sizing: content-box;
-  }
-
-  .elementosAside {
-    display: none;
-  }
-
-  .contenedor2 {
-    padding-left: 0px;
-    padding-right: 0px;
-    align-items: flex-start;
-    justify-content: space-evenly;
-  }
-
-  .ajuste4 {
-    flex-wrap: wrap;
-  }
-
-  .cardsProductos {
-    margin: 0px;
-    width: 16rem;
-    height: auto;
-    margin: 1px 2px 30px 1px;
-    font-family: textos;
-
-  }
-
-  .card__image {
-    height: 150px;
-    width: 90%;
-  }
-
-  .btnProductos {
-    margin-left: 40px;
-  }
-
-  .ajuste6 {
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-
-  .servicios {
-    /* margin-top: 100px; */
-    align-content: space-around;
-  }
-
-  .cards2 {
-    padding: 10px 10px;
-    display: flex;
-    width: 100%;
-  }
-
-  .ajuste1 {
-    width: 8rem;
-    height: 8.5rem;
-    margin-right: 20px;
-  }
-
-  .cards3 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .btnOfertas {
-    margin-left: 40px;
-  }
-
-  .separacion {
-    font-size: 13px;
-  }
-
-  .ajuste5 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-
-  .redes {
-    padding-left: 10px;
-  }
-
-  .mapa {
-    display: none;
-    /* width: 0px;
-    height: 0px; */
-  }
-
-  .contacto {
-    font-size: 1.1rem;
-    position: relative;
-    bottom: 15px;
-    right: 20px;
-  }
-
-  .listaContacto {
-    top: 0px;
-    left: 0px;
   }
 
   .whatsapp {
-    left: 290px;
+    left: 295px;
   }
-
-  .whatsapp img {
-    width: 60px;
+  .separacion {
+    font-size: 12px;
   }
-
-  .controlFooter {
-    width: 35%;
-    margin-left: 10px;
-    height: 20px;
+  .contacto {
+    font-size: 1.2rem;
   }
-
-  .btnFooter{
-    padding: 0px;
-    height: 20px;
+  .btnProductos {
+    margin-left: 40px;
   }
-
-  /* productos */
-  .ordenarPor {
-    margin-left: 0px;
+  .btnOfertas {
+    margin-left: 40px;
   }
-
-
-  /* nosotros */
-  .sobreNosotros {
-    font-size: 22px;
-    text-align: center;
-  }
-
-
-
-  /* CONTACTOS */
-
-
   .consultas {
-    width: 340px;
     margin-left: 3px;
   }
-
   .ajuste7 {
-    position: relative;
     left: 7px;
   }
-
-  .btnForm {
-    width: 290px;
-  }
-
-  .field {
-    width: 290px;
-  }
-
-  .seccionContact {
-    margin-left: 10px;
-  }
-
-  .contactanos {
-    margin-left: 0px;
-  }
-
-  .serviciosContact {
-    margin-left: 10px;
-  }
-
 }
-

@@ -33,13 +33,10 @@
 }
 
 .navbar {
-    /* background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
     background: $fondo_navfoot;
     background-position: center;
     height: 200px;
     position: relative;
-    font-family: textos;
 }
 
 .menu {
@@ -61,12 +58,10 @@
         text-decoration: none;
         padding: 10px;
         margin: 10px;
-        color: rgb(3, 3, 3);
-        border-style: solid;
-        border-width: 2px;
+        border: solid 2px #c396d8;
         border-radius: 10px;
-        border-color: #c396d8;
         font-weight: bold;
+        color: black;
 
         &:hover {
             color: rgb(107, 103, 106);
@@ -78,12 +73,10 @@
     display: none;
     width: 20%;
     position: absolute;
-    background-color: rgb(224, 218, 218);
-    list-style-type: none;
-    border: solid 2px;
+    background-color: rgb(235, 222, 233);
+    border: solid 2px #c396d8;
     z-index: 1000;
     border-radius: 15px;
-    border-color: #c396d8;
     padding-left: 0px;
 
 
@@ -95,29 +88,18 @@
     li a {
         display: block;
         padding: 15px;
-        color: black;
-        text-decoration: none;
     }
 
 }
 
 .buscar {
-    font-family: textos;
-    margin-left: 3rem;
-    margin-top: 75px;
-    margin-right: 20px;
+    margin: 7.5rem 2rem 0rem 3rem;
 }
 
 .btnBuscar {
-    background-color: #9d77c0;
-  text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  border-bottom: ridge 2px #a328a3;
-  border-right: ridge 2px #a328a3;
-  color: white;
-  font-family: textos;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -126,12 +108,6 @@ h1 {
     font-size: 40px;
     padding: 2rem 0rem;
     font-family: "Lobster", cursive;
-    /* background-color: rgb(190, 185, 185); */
-}
-
-.inicio {
-    background-image: $fondo_pag;
-    background-size: cover;
 }
 
 .carroContent {
@@ -153,7 +129,6 @@ h1 {
     width: 20rem;
     margin: 3rem;
     padding: 1rem 1rem 3rem 1rem;
-    font-family: textos;
     font-size: 15px;
     text-align: center;
     background-color: rgb(249, 249, 250);
@@ -165,24 +140,12 @@ h1 {
 }
 
 .card__image {
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    height: 200px;
+    width: 80%;
 }
 
-/* ajustes de las imagenes de servicios index */
-.ajuste1 {
-    width: 8rem;
-    height: 8.5rem;
-}
-
-.cards2 {
-    width: 15rem;
-    display: inline-block;
-    padding: 0.5rem;
-    font-family: textos;
-    font-size: 10px;
+.card__title {
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .card__description {
@@ -201,22 +164,31 @@ h1 {
 }
 
 .btn {
-    background-color: rgb(157, 119, 192);
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    border-bottom: ridge 2px rgb(163, 40, 163);
-    border-right: ridge 2px rgb(163, 40, 163);
-    color: white;
-    font-family: textos;
     font-size: 13px;
     font-weight: 600;
     width: 100%;
 }
 
+.cards2 {
+    width: 15rem;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ajustes de las imagenes de servicios index */
+.ajuste1 {
+    width: 8rem;
+    height: 8.5rem;
+}
+
 .whatsapp {
     position: fixed;
-    left: 1140px;
+    left: 1220px;
     bottom: 20px;
     z-index: 1000;
 }
@@ -226,8 +198,6 @@ h1 {
 }
 
 .footer {
-    /* background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(244, 244, 244, 1) 43%, rgba(203, 179, 214, 1) 59%); */
     background-image: $fondo_navfoot;
     background-position: center;
     border: double 5px;
@@ -241,15 +211,11 @@ h1 {
 }
 
 .btnUnite {
-    background-color: #9d77c0;
     text-decoration: none;
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
-    border-bottom: ridge 2px #a328a3;
-    border-right: ridge 2px #a328a3;
-    color: white;
     font-family: textos;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -257,12 +223,10 @@ h1 {
 .separacion {
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: "Lobster", cursive;
 }
 
 .redes {
     display: flex;
-    justify-content: start;
     position: relative;
     right: 80px;
     top: 9px;
@@ -273,22 +237,16 @@ h1 {
     }
 
     img {
-        width: 30px;
+        width: 40px;
         padding-right: 10px;
     }
 }
 
-.contacto {
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-}
 
 .listaContacto {
     list-style-type: none;
     position: relative;
     top: 10px;
-    right: 28px;
 }
 
 .mapa {
@@ -298,9 +256,7 @@ h1 {
 }
 
 .logofinal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 
     img {
         width: 15rem;
@@ -309,8 +265,6 @@ h1 {
 }
 
 .ano {
-    display: flex;
-    justify-content: center;
-    font-family: "Lobster", cursive;
+    text-align: center;
     margin-top: 20px;
 }

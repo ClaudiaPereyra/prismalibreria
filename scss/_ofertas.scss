@@ -1,19 +1,10 @@
-.padreOferta {
-    background-image: $fondo_pag;
-    background-size: cover;
-}
+
 
 .btnOfertas {
-    background-color: rgb(157, 119, 192);
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    border-bottom: ridge 2px rgb(163, 40, 163);
-    border-right: ridge 2px rgb(163, 40, 163);
-    color: black;
-    font-family: textos;
     font-size: 18px;
-    width: 300px;
     margin-left: 500px;
 
     &:hover {

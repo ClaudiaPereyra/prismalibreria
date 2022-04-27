@@ -11,7 +11,6 @@
     <!-- Boostrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--Hoja de estilo-->
-    <!-- <link rel="stylesheet" href="../estilo/estilo.css"> -->
     <link rel="stylesheet" href="../estilo/styles.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +20,7 @@
         rel="stylesheet">
 </head>
 
-<body class="container-fluid prod">
+<body class="container-fluid fondo">
     <header class="row header">
         <nav class="navbar">
             <div class="col-lg-2 col-sm-12 col-xs-12">
@@ -49,112 +48,114 @@
             <div class="col-lg-3 col-sm-12 col-xs-5">
                 <form class="d-flex buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btnBuscar btn-outline-success" type="submit">Buscar</button>
-                  </form>
+                    <button class="btnBuscar colorButton btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </nav>
     </header>
-
-    <section class="row novedades">
-        <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Novedades</h1>
-        <!--Aquí va un carrusel de imágenes-->
-        <div id="carouselExampleCaptions" class="col-lg-12 col-sm-12 col-xs-12 contenedor1 carousel slide"
-            data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../multimedia/Novedades 1.gif" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <!-- <h5>Nuevos productos ingresados esta semana</h5>
-                        <p>Nuevos productos ingresados esta semana</p> -->
+    <main>
+        <section class="row novedades">
+            <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Novedades</h1>
+            <div id="carouselExampleCaptions" class="col-lg-12 col-sm-12 col-xs-12 contenedor1 carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../multimedia/Novedades 1.gif" class="d-block w-100" alt="Novedades1">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Novedades 2.gif" class="d-block w-100" alt="Novedades2">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Novedades 3.gif" class="d-block w-100" alt="Novedades3">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../multimedia/Novedades 2.gif" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <!-- <h5>Volvieron las promociones con tarjetas!!!</h5> -->
-                        <!-- <p>Volvieron las promociones con tarjetas!!!
-                        </p> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="row novedades">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../multimedia/Novedades 4 super soft.png" class="d-block w-100" alt="Novedades4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Novedades 5 eco lapices.png" class="d-block w-100" alt="Novedades5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Novedades 6 pedidos ya.png" class="d-block w-100" alt="Novedades6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/Novedades 7 mooving.png" class="d-block w-100" alt="Novedades7">
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../multimedia/Novedades 3.gif" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <!-- <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p> -->
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <section class="row novedades">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </section>
+        <section>
+            <div class="whatsapp">
+                <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../multimedia/Novedades 4 super soft.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/Novedades 5 eco lapices.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/Novedades 6 pedidos ya.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/Novedades 7 mooving.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>  
-        
-    </section>
+        </section>
+    </main>
 
     <footer class="row footer footerOfertas">
-        <form class="col-lg-12 col-sm-12 col-xs-12 separacion d-flex">
+        <form class="col-lg-12 col-sm-12 col-xs-12 separacion font2 d-flex">
             <label for="email">Recibí nuestras novedades:</label>
-            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" aria-label="email">
-            <button class="btnUnite btn-outline-success btnFooter " type="submit">¡UNITE!</button>
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email"
+                aria-label="email">
+            <button class="btnUnite colorButton btn-outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-
-        <p class="col-lg-2 col-sm-2 col-xs-3 separacion ajuste5">Seguinos en:</p>
+        <p class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</p>
         <div class="col-lg-10 col-sm-10 col-xs-5">
             <ul class="redes">
-                <li><a href="#"> <img src="../multimedia/instagram.png" alt=""></a></li>
-                <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt=""> </a></li>
-                <li><a href="#"> <img src="../multimedia/facebook.png" alt=""> </a></li>
+                <li><a href="#"> <img src="../multimedia/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"> <img src="../multimedia/whatsapp.ico" alt="whatsapp"> </a></li>
+                <li><a href="#"> <img src="../multimedia/facebook.png" alt="facebook"> </a></li>
             </ul>
         </div>
-        <p class="col-lg-1 col-sm-2 col-xs-3 separacion">Contacto:</p>
+        <p class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</p>
         <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
             <ul class="listaContacto">
                 <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
@@ -172,7 +173,7 @@
             <a href="../index.html"><img src="../multimedia/ico.ico" alt="logo linkeado"></a>
         </div>
         <div>
-            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano">2022 (C) </h3>
+            <h3 class="col-lg-12 col-sm-12 col-xs-12 ano font2">2022 (C) </h3>
         </div>
     </footer>
     <!-- Boostrap -->
