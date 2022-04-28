@@ -1,4 +1,24 @@
 @charset "UTF-8";
+.img--redes {
+  width: 4rem; }
+
+.img--logo-principal {
+  width: 15rem; }
+
+.img--logo-final {
+  width: 14rem; }
+
+.btn--general, .btn, .btnAside, .btnProductos, .btnOfertas {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px; }
+
+.card--general, .cards, .cardsProductos {
+  width: 20rem;
+  font-size: 15px;
+  text-align: center;
+  background-color: #f9f9fa; }
+
 @keyframes girar {
   0% {
     transform: rotateY(0deg); }
@@ -12,7 +32,6 @@
     transform: rotateY(360deg); } }
 
 .logoPrincipal {
-  width: 150px;
   position: relative;
   top: 5px;
   left: 50px;
@@ -30,7 +49,8 @@
 
 .menu {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   font-size: 15px;
   margin-top: 85px; }
@@ -82,24 +102,22 @@ h1 {
 
 .carroContent {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-evenly;
-  align-items: flex-start; }
+  flex-wrap: nowrap; }
 
 .contenedor1 {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  flex-wrap: wrap; }
 
 .cards {
-  width: 20rem;
   margin: 3rem;
-  padding: 1rem 1rem 3rem 1rem;
-  font-size: 15px;
-  text-align: center;
-  background-color: #f9f9fa; }
+  padding: 1rem 1rem 3rem 1rem; }
   .cards:hover {
     transform: scale(1.1);
     transition: all 1s; }
@@ -124,9 +142,6 @@ h1 {
   text-decoration: line-through; }
 
 .btn {
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
   font-size: 13px;
   font-weight: 600;
   width: 100%; }
@@ -177,6 +192,9 @@ h1 {
 
 .redes {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: none;
   position: relative;
   right: 80px;
   top: 9px; }
@@ -184,7 +202,6 @@ h1 {
     list-style-type: none;
     padding-right: 10px; }
   .redes img {
-    width: 40px;
     padding-right: 10px; }
 
 .listaContacto {
@@ -200,16 +217,16 @@ h1 {
 .logofinal {
   text-align: center; }
   .logofinal img {
-    width: 15rem;
     margin-top: 20px; }
 
 .ano {
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-size: 2rem; }
 
-.h3Productos {
-  padding: 2rem;
-  text-align: center; }
+.h2Productos {
+  text-align: center;
+  padding: 2rem; }
 
 .ordenarPor {
   font-size: 15px;
@@ -218,32 +235,17 @@ h1 {
   text-align: center; }
 
 .cardsProductos {
-  width: 20rem;
-  margin: 1rem;
-  font-size: 15px;
-  text-align: center;
-  background-color: #f9f9fa; }
-  .cardsProductos:hover {
-    transform: scale(1.1);
-    transition: all 1s; }
-
-.contenedor2 {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  margin-bottom: 70px; }
+  margin: 1rem; }
 
 .btnAside {
-  background-color: #f5f1f8;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #f9f9fa;
   border-right: ridge 2px #d66ec5;
   border-bottom: ridge 2px #d66ec5;
   color: black;
   display: flex;
-  flex-flow: column nowrap; }
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
 
 .contenedorAside {
   width: 90%;
@@ -255,9 +257,6 @@ h1 {
   font-size: 2.5rem; }
 
 .btnProductos {
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
   font-size: 18px;
   margin-left: 520px; }
 
@@ -265,14 +264,8 @@ h1 {
   margin-top: 100px; }
 
 .btnOfertas {
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
   font-size: 18px;
   margin-left: 500px; }
-  .btnOfertas:hover {
-    transform: scale(1.1);
-    transition: all 1s; }
 
 .sobreNosotros {
   font-size: 35px;
@@ -288,8 +281,8 @@ h1 {
 
 .tituloContac {
   text-align: center;
-  font-size: 50px;
-  margin-top: 35px; }
+  margin-top: 35px;
+  font-size: 50px; }
 
 .contactanos {
   font-size: 15px;
@@ -392,9 +385,6 @@ h1 {
   .contenedorAside {
     width: 95%;
     padding: 0px 0px 0px 10px; }
-  .contenedor2 {
-    padding-left: 0px;
-    padding-right: 0px; }
   .cardsProductos {
     width: 16rem;
     margin: 1px 2px 30px 1px; }

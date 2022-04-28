@@ -1,14 +1,7 @@
 
 
 .btnOfertas {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
+    @extend .btn--general;
     font-size: 18px;
     margin-left: 500px;
-
-    &:hover {
-        transform: scale(1.1);
-        transition: all 1s;
-    }
 }

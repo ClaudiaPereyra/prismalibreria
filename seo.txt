@@ -1,0 +1,83 @@
+SEO
+
+Agregué las siguientes keywords:
+
+index:
+<!-- keywords -->
+    <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria,  artística,
+    técnica, computación"> 
+
+productos:
+ <!-- keywords -->
+    <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria, cuadernos, marcadores"> 
+    
+ofertas:
+<!-- keywords -->
+    <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria, cuadernos, marcadores"> 
+   
+novedades:
+ <!-- keywords -->
+    <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria, promo tarjetas">
+
+institucional:
+<!-- keywords -->
+    <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria, ciudad corrientes"> 
+     
+contacto:
+ <!-- keywords -->
+    <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria, ciudad corrientes, +543794736428, claudiapereyra02166@gmail.com">
+   
+
+
+Agregué las siguientes descripciones:
+
+index:
+ <!-- Descripcion -->
+    <meta name="description" content="Gran variedad de marcas y productos en libreria escolar, técnica, comercial y artística. Hacé tu pedido, pagalo online y recibilo donde quieras.">
+
+productos:
+ <!-- Descripcion -->
+     <meta name="description" content="Comprá productos de Librería/Gráfica por internet. Tenemos sellos , mundo lettering, journaling y más...">
+
+ofertas:
+ <!-- Descripcion -->
+    <meta name="description" content="Entrá y conocé nuestras ofertas. ¡Ingresá y comprá! Podrás realizar tu pago de forma fácil, cómoda y segura. Cuotas Sin Intereses. Envío Gratis.">
+
+novedades:
+ <!-- Descripcion -->
+      <meta name="description" content="Entá y enterate de las promos que tenemos con tarjetas y de los nuevos artículos recién llegados">
+
+institucional:
+<!-- Descripcion -->
+     <meta name="description" content="Somos una librería con mucha experiencia y trayectoria dedicada en brindar la mejor experiencia a nuestros clientes.">    
+
+contacto:
+  <!-- Descripcion -->
+     <meta name="description" content="Podés contactar a Librería Prisma por whatsapp al +543794736424, email:claudiapereyra02166@gmail.com"> 
+
+
+
+Agregué los siguientes titulos:
+
+index:
+ <title>Tienda Online de Librería Prisma</title>
+
+productos:
+<title>Artículos de Librería</title>
+
+ofertas:
+<title>Super Ofertas</title>
+
+novedades:
+ <title>Novedades</title>
+
+institucional:
+ <title>Sobre Nosotros</title>
+
+contacto:
+<title>Contactate con Nosotros</title>
+
+
+Arreglé los encabezados porque tenía un h1 y luego un h3.
+Agregué alt a las imágenes.
+Controlé que el contenido textual esté bien escrito.

@@ -1,3 +1,54 @@
 $fondo_navfoot: url(../multimedia/logo2.png);
-   
 
+// MAPS
+$tamaños: (redes: 4rem,
+    logo-principal: 15rem,
+    logo-final: 14rem,
+);
+
+// MAPS-GET
+@each $imagen,
+$width in $tamaños {
+    .img--#{$imagen} {
+        width: $width;
+    }
+}
+
+$estilos: (tamFuente: 50px,
+    padd1: 2rem,
+    centro: center,
+    margen: 35px);
+
+// EXTEND
+// (aplicado a btnAside, btnProductos,btnOfertas,btn)
+.btn--general {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+// (aplicado a cards, cardsProductos)
+.card--general {
+    width: 20rem;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(249, 249, 250);
+}
+
+// MIXINS
+
+// SIN PARAMETROS (aplicado a carroContent, contenedor1)
+@mixin flex-row-flex-start-space-evenly {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+// CON PARAMETROS (aplicado a menu, redes, btnAside)
+@mixin flexbox ($display, $direction, $wrap, $justify-content) {
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+}

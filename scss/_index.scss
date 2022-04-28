@@ -21,7 +21,6 @@
 }
 
 .logoPrincipal {
-    width: 150px;
     position: relative;
     top: 5px;
     left: 50px;
@@ -40,9 +39,7 @@
 }
 
 .menu {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    @include flexbox (flex, row, nowrap, center);
     font-size: 15px;
     margin-top: 85px;
 
@@ -97,10 +94,10 @@
 }
 
 .btnBuscar {
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 h1 {
@@ -111,27 +108,20 @@ h1 {
 }
 
 .carroContent {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    @include flex-row-flex-start-space-evenly;
+    flex-wrap: nowrap
 }
 
 .contenedor1 {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    @include flex-row-flex-start-space-evenly;
     margin-bottom: 70px;
+    flex-wrap: wrap
 }
 
 .cards {
-    width: 20rem;
+    @extend .card--general;
     margin: 3rem;
     padding: 1rem 1rem 3rem 1rem;
-    font-size: 15px;
-    text-align: center;
-    background-color: rgb(249, 249, 250);
 
     &:hover {
         transform: scale(1.1);
@@ -164,9 +154,7 @@ h1 {
 }
 
 .btn {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
+    @extend .btn--general;
     font-size: 13px;
     font-weight: 600;
     width: 100%;
@@ -226,7 +214,7 @@ h1 {
 }
 
 .redes {
-    display: flex;
+    @include flexbox (flex, row, nowrap, none);
     position: relative;
     right: 80px;
     top: 9px;
@@ -237,7 +225,6 @@ h1 {
     }
 
     img {
-        width: 40px;
         padding-right: 10px;
     }
 }
@@ -259,7 +246,6 @@ h1 {
     text-align: center;
 
     img {
-        width: 15rem;
         margin-top: 20px;
     }
 }
@@ -267,4 +253,5 @@ h1 {
 .ano {
     text-align: center;
     margin-top: 20px;
+    font-size: 2rem;
 }
