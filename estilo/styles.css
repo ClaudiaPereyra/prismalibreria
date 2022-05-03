@@ -201,7 +201,7 @@ h1 {
   left: 20rem; }
 
 .logofinal {
-  margin-left: 545px; }
+  text-align: center; }
   .logofinal img {
     margin-top: 20px; }
 
@@ -360,8 +360,6 @@ h1 {
     width: 200px;
     left: 5rem;
     top: 14px; }
-  .logofinal {
-    margin-left: 250px; }
   .whatsapp {
     left: 665px; }
     .whatsapp img {
@@ -457,8 +455,6 @@ h1 {
     height: 20px; }
   .btnUnite {
     font-size: 8px; }
-  .logofinal {
-    margin-left: 70px; }
   h1 {
     font-size: 30px; }
   .h3Productos {
@@ -505,8 +501,6 @@ h1 {
     font-size: 12px; }
   .contacto {
     font-size: 1.2rem; }
-  .logofinal {
-    margin-left: 50px; }
   .btnProductos {
     margin-left: 40px; }
   .btnOfertas {
