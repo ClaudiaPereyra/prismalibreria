@@ -1,12 +1,11 @@
-$fondo_navfoot: url(../multimedia/logo2.png);
 
 // MAPS
 $tamaños: (redes: 4rem,
-    logo-principal: 15rem,
-    logo-final: 14rem,
+    logo-principal: 20rem,
+    logo-final: 18rem,
 );
 
-// MAPS-GET
+
 @each $imagen,
 $width in $tamaños {
     .img--#{$imagen} {
@@ -14,6 +13,7 @@ $width in $tamaños {
     }
 }
 
+// MAPS-GET
 $estilos: (tamFuente: 50px,
     padd1: 2rem,
     centro: center,

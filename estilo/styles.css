@@ -3,10 +3,10 @@
   width: 4rem; }
 
 .img--logo-principal {
-  width: 15rem; }
+  width: 20rem; }
 
 .img--logo-final {
-  width: 14rem; }
+  width: 18rem; }
 
 .btn--general, .btn, .btnAside, .btnProductos, .btnOfertas {
   text-decoration: none;
@@ -19,32 +19,17 @@
   text-align: center;
   background-color: #f9f9fa; }
 
-@keyframes girar {
-  0% {
-    transform: rotateY(0deg); }
-  25% {
-    transform: rotateY(100deg); }
-  50% {
-    transform: rotateY(200deg); }
-  75% {
-    transform: rotateY(300deg); }
-  100% {
-    transform: rotateY(360deg); } }
-
 .logoPrincipal {
   position: relative;
-  top: 5px;
-  left: 50px;
-  animation-name: girar;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: calc(1);
-  animation-timing-function: linear; }
+  height: 20rem; }
+
+.img--logo-principal {
+  bottom: 11px;
+  right: 20px; }
 
 .navbar {
-  background: url(../multimedia/logo2.png);
-  background-position: center;
-  height: 200px;
+  background-image: url(../multimedia/logo2.png);
+  height: 210px;
   position: relative; }
 
 .menu {
@@ -65,9 +50,9 @@
     border: solid 2px #c396d8;
     border-radius: 10px;
     font-weight: bold;
-    color: black; }
+    color: white; }
     .menu li a:hover {
-      color: #6b676a; }
+      color: #f15bcc; }
 
 .submenu {
   display: none;
@@ -83,7 +68,8 @@
     transition: all 1s; }
   .submenu li a {
     display: block;
-    padding: 15px; }
+    padding: 15px;
+    color: black; }
 
 .buscar {
   margin: 7.5rem 2rem 0rem 3rem; }
@@ -168,11 +154,11 @@ h1 {
   width: 100px; }
 
 .footer {
-  background-image: url(../multimedia/logo2.png);
-  background-position: center;
+  background-color: black;
   border: double 5px;
   padding: 20px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: white; }
 
 .controlFooter {
   width: 30%;
@@ -215,7 +201,7 @@ h1 {
   left: 20rem; }
 
 .logofinal {
-  text-align: center; }
+  margin-left: 545px; }
   .logofinal img {
     margin-top: 20px; }
 
@@ -352,18 +338,18 @@ h1 {
 @media screen and (max-width: 768px) {
   /* index */
   .logoPrincipal {
-    left: 350px;
-    width: 100px; }
+    left: 250px;
+    bottom: 22px; }
   .navbar {
-    height: 250px; }
+    height: 360px; }
   .menu {
     margin-top: 20px; }
   .submenu {
     width: 35%; }
   .buscar {
-    margin-left: 30rem;
+    margin-left: 25rem;
     margin-top: 5px;
-    margin-right: 200px; }
+    margin-right: 240px; }
   .cards {
     margin: 0.7rem; }
   .redes {
@@ -374,8 +360,8 @@ h1 {
     width: 200px;
     left: 5rem;
     top: 14px; }
-  .logofinal img {
-    width: 80px; }
+  .logofinal {
+    margin-left: 250px; }
   .whatsapp {
     left: 665px; }
     .whatsapp img {
@@ -411,10 +397,11 @@ h1 {
 /* tamaño MOBILE */
 @media screen and (max-width: 414px) {
   .logoPrincipal {
-    width: 120px;
-    left: 135px; }
+    left: 90px; }
   .navbar {
-    height: 400px; }
+    height: 450px;
+    background-color: black;
+    background-image: none; }
   .menu {
     flex-flow: row wrap;
     margin-top: 0px;
@@ -433,7 +420,7 @@ h1 {
   .buscar {
     position: absolute;
     left: 130px;
-    top: 340px;
+    top: 400px;
     margin: 0px; }
   .btnBuscar {
     padding: 2px 4px;
@@ -470,6 +457,8 @@ h1 {
     height: 20px; }
   .btnUnite {
     font-size: 8px; }
+  .logofinal {
+    margin-left: 70px; }
   h1 {
     font-size: 30px; }
   .h3Productos {
@@ -504,6 +493,8 @@ h1 {
 
 /* tamaño MOBILE */
 @media screen and (max-width: 375px) {
+  .logoPrincipal {
+    left: 60px; }
   .submenu {
     width: 55%; }
   .buscar {
@@ -514,6 +505,8 @@ h1 {
     font-size: 12px; }
   .contacto {
     font-size: 1.2rem; }
+  .logofinal {
+    margin-left: 50px; }
   .btnProductos {
     margin-left: 40px; }
   .btnOfertas {

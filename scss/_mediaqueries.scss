@@ -2,14 +2,14 @@
 @media screen and (max-width:768px) {
 
     /* index */
-    
+
     .logoPrincipal {
-        left: 350px;
-        width: 100px;
+        left: 250px;
+        bottom: 22px;
     }
 
     .navbar {
-        height: 250px;
+        height: 360px;
     }
 
     .menu {
@@ -21,9 +21,9 @@
     }
 
     .buscar {
-        margin-left: 30rem;
+        margin-left: 25rem;
         margin-top: 5px;
-        margin-right: 200px;
+        margin-right: 240px;
     }
 
     .cards {
@@ -44,298 +44,313 @@
         top: 14px
     }
 
-    .logofinal img {
-        width: 80px;
-    }
-
-    .whatsapp {
-        left: 665px;
-
-        img {
-            width: 80px;
-        }
-    }
-
-    //ofertas 
-    .btnOfertas {
+    .logofinal {
         margin-left: 250px;
     }
 
-    //   productos
+        .whatsapp {
+            left: 665px;
 
-    .contenedorAside {
-        width: 95%;
-        padding: 0px 0px 0px 10px;
-    }
-
-    .cardsProductos {
-        width: 16rem;
-        margin: 1px 2px 30px 1px;
-    }
-
-
-    .btn {
-        padding: 6px;
-    }
-
-    .btnProductos {
-        margin-left: 250px;
-    }
-
-    /* institucional */
-    .sobreNosotros {
-        font-size: 30px;
-    }
-
-    /* contacto */
-    .tituloContac {
-        font-size: 35px;
-    }
-
-    .contactanos {
-        padding: 10px 20px;
-        margin-left: 145px;
-    }
-
-    .seccionContact {
-        margin-left: 10px;
-    }
-
-    .consultas {
-        width: 360px;
-    }
-
-    .field {
-        width: 310px;
-    }
-}
-
-/* tamaño MOBILE */
-@media screen and (max-width:414px) {
-
-    // inicio
-
-    .logoPrincipal {
-        width: 120px;
-        left: 135px;
-    }
-
-    .navbar {
-        height: 400px;
-    }
-
-    .menu {
-        flex-flow: row wrap;
-        margin-top: 0px;
-        margin-bottom: 3rem;
-
-        li {
-            padding: 12px 10px;
-
-            a {
-                padding: 6px;
-                border-style: ridge;
+            img {
+                width: 80px;
             }
         }
 
+        //ofertas 
+        .btnOfertas {
+            margin-left: 250px;
+        }
+
+        //   productos
+
+        .contenedorAside {
+            width: 95%;
+            padding: 0px 0px 0px 10px;
+        }
+
+        .cardsProductos {
+            width: 16rem;
+            margin: 1px 2px 30px 1px;
+        }
+
+
+        .btn {
+            padding: 6px;
+        }
+
+        .btnProductos {
+            margin-left: 250px;
+        }
+
+        /* institucional */
+        .sobreNosotros {
+            font-size: 30px;
+        }
+
+        /* contacto */
+        .tituloContac {
+            font-size: 35px;
+        }
+
+        .contactanos {
+            padding: 10px 20px;
+            margin-left: 145px;
+        }
+
+        .seccionContact {
+            margin-left: 10px;
+        }
+
+        .consultas {
+            width: 360px;
+        }
+
+        .field {
+            width: 310px;
+        }
     }
 
-    .submenu {
-        width: 50%;
-        li {
-            padding: 2px 0px;
-            a {
-                margin: 3px 8px;
+    /* tamaño MOBILE */
+    @media screen and (max-width:414px) {
+
+        // inicio
+
+        .logoPrincipal {
+            left: 90px;
+        }
+
+        .navbar {
+            height: 450px;
+            background-color: black;
+            background-image: none;
+        }
+
+        .menu {
+            flex-flow: row wrap;
+            margin-top: 0px;
+            margin-bottom: 3rem;
+
+            li {
+                padding: 12px 10px;
+
+                a {
+                    padding: 6px;
+                    border-style: ridge;
+                }
+            }
+
+        }
+
+        .submenu {
+            width: 50%;
+
+            li {
+                padding: 2px 0px;
+
+                a {
+                    margin: 3px 8px;
+                }
             }
         }
-    }
 
-    .buscar {
-        position: absolute;
-        left: 130px;
-        top: 340px;
-        margin: 0px;
-    }
+        .buscar {
+            position: absolute;
+            left: 130px;
+            top: 400px;
+            margin: 0px;
+        }
 
-    .btnBuscar {
-        padding: 2px 4px;
-        font-size: 10px
-    }
+        .btnBuscar {
+            padding: 2px 4px;
+            font-size: 10px
+        }
 
-    .carroContent {
-        flex-flow: row wrap;
-    }
+        .carroContent {
+            flex-flow: row wrap;
+        }
 
-    .cards {
-        width: 16rem;
-        margin: 1px 2px 30px 1px;
-    }
+        .cards {
+            width: 16rem;
+            margin: 1px 2px 30px 1px;
+        }
 
-    // separacion entre titulos del footer.
-    .separacion {
-        font-size: 15px;
-    }
+        // separacion entre titulos del footer.
+        .separacion {
+            font-size: 15px;
+        }
 
-    // separacion especial del titulo "seguinos en"
-    .ajuste5 {
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-    }
+        // separacion especial del titulo "seguinos en"
+        .ajuste5 {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
 
-    .redes {
-        padding-left: 10px;
-    }
+        .redes {
+            padding-left: 10px;
+        }
 
-    .redes img {
-        width: 33px;
-    }
+        .redes img {
+            width: 33px;
+        }
 
-    .mapa {
-        display: none;
-    }
+        .mapa {
+            display: none;
+        }
 
-    .contacto {
-        font-size: 1.4rem;
-        position: relative;
-        bottom: 15px;
-        right: 20px;
-    }
+        .contacto {
+            font-size: 1.4rem;
+            position: relative;
+            bottom: 15px;
+            right: 20px;
+        }
 
-    .listaContacto {
-        top: 0px;
-    }
+        .listaContacto {
+            top: 0px;
+        }
 
-    .whatsapp {
-        left: 330px;
+        .whatsapp {
+            left: 330px;
 
-        img {
-            width: 60px;
+            img {
+                width: 60px;
+            }
+        }
+
+        .controlFooter {
+            margin-left: 10px;
+            height: 20px;
+        }
+
+        .btnUnite {
+            font-size: 8px;
+        }
+
+        .logofinal {
+            margin-left: 70px;
+        }
+
+        // productos
+        h1 {
+            font-size: 30px;
+        }
+
+        .h3Productos {
+            padding-top: 1rem;
+        }
+
+        .elementosAside {
+            display: none;
+        }
+
+        .btnProductos {
+            margin-left: 60px;
+
+        }
+
+        // ofertas
+
+        .btnOfertas {
+            margin-left: 60px;
+        }
+
+        // nosotros
+
+        .sobreNosotros {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        // contacto
+
+        .contactanos {
+            margin-left: 0px;
+        }
+
+        .consultas {
+            width: 340px;
+            margin-left: 20px;
+        }
+
+        .field {
+            width: 290px;
+        }
+
+        // consultas y ajuste7 pertenecen al area de mensajes
+        .ajuste7 {
+            position: relative;
+            left: 15px;
+        }
+
+        .btnForm {
+            width: 290px;
+        }
+
+        .cards2 {
+            padding: 10px 10px;
+            display: flex;
+            width: 100%;
+        }
+
+        // ajuste la de las card__image de la parte de servicios
+        .ajuste1 {
+            margin-right: 20px;
         }
     }
 
-    .controlFooter {
-        margin-left: 10px;
-        height: 20px;
+    /* tamaño MOBILE */
+    @media screen and (max-width: 375px) {
+
+        // inicio
+
+        .logoPrincipal {
+            left: 60px;
+        }
+
+        .submenu {
+            width: 55%;
+        }
+
+
+        .buscar {
+            left: 110px;
+        }
+
+        .whatsapp {
+            left: 295px;
+        }
+
+        .separacion {
+            font-size: 12px;
+        }
+
+        .contacto {
+            font-size: 1.2rem;
+        }
+
+        .logofinal {
+            margin-left: 50px;
+        }
+
+        // productos
+
+        .btnProductos {
+            margin-left: 40px;
+
+        }
+
+        // ofertas
+
+        .btnOfertas {
+            margin-left: 40px;
+        }
+
+        // contacto
+        .consultas {
+            margin-left: 3px;
+        }
+
+        // consultas y ajuste7 pertenecen al area de mensajes
+        .ajuste7 {
+            left: 7px;
+        }
     }
-
-    .btnUnite {
-        font-size: 8px;
-    }
-
-    // productos
-    h1 {
-        font-size: 30px;
-    }
-
-    .h3Productos {
-        padding-top: 1rem;
-    }
-
-    .elementosAside {
-        display: none;
-    }
-
-    .btnProductos {
-        margin-left: 60px;
-
-    }
-
-    // ofertas
-
-    .btnOfertas {
-        margin-left: 60px;
-    }
-
-    // nosotros
-
-    .sobreNosotros {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    // contacto
-
-    .contactanos {
-        margin-left: 0px;
-    }
-
-    .consultas {
-        width: 340px;
-        margin-left: 20px;
-    }
-
-    .field {
-        width: 290px;
-    }
-
-    // consultas y ajuste7 pertenecen al area de mensajes
-    .ajuste7 {
-        position: relative;
-        left: 15px;
-    }
-
-    .btnForm {
-        width: 290px;
-    }
-
-    .cards2 {
-        padding: 10px 10px;
-        display: flex;
-        width: 100%;
-    }
-
-    // ajuste la de las card__image de la parte de servicios
-    .ajuste1 {
-        margin-right: 20px;
-    }
-}
-
-/* tamaño MOBILE */
-@media screen and (max-width: 375px) {
-
-    // inicio
-
-    .submenu {
-        width: 55%;
-    }
-
-
-    .buscar {
-        left: 110px;
-    }
-
-    .whatsapp {
-        left: 295px;
-    }
-
-    .separacion {
-        font-size: 12px;
-    }
-
-    .contacto{
-        font-size: 1.2rem;
-    }
-
-    // productos
-
-    .btnProductos {
-        margin-left: 40px;
-
-    }
-
-    // ofertas
-
-    .btnOfertas {
-        margin-left: 40px;
-    }
-
-    // contacto
-    .consultas {
-        margin-left: 3px;
-    }
-
-    // consultas y ajuste7 pertenecen al area de mensajes
-    .ajuste7 {
-        left: 7px;
-    }
-}
