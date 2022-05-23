@@ -4,30 +4,64 @@
     /* index */
 
     .logoPrincipal {
-        left: 250px;
-        bottom: 22px;
+        left: 270px;
+        position: absolute;
+        bottom: 84px;
     }
 
     .navbar {
-        height: 360px;
+        height: 280px;
+        background-image: none;
     }
 
     .menu {
-        margin-top: 20px;
+        margin-top: 268px;
+        margin-left: 0px;
+        width: 50%;
+        text-align: center;
+        background-color: black;
+        border-radius: 15px;
+        border: solid 2px #c396d8;
     }
 
     .submenu {
-        width: 35%;
+        background-color: rgb(63, 63, 63);
     }
 
     .buscar {
-        margin-left: 25rem;
-        margin-top: 5px;
-        margin-right: 240px;
+        margin-left: 23rem;
+        position: absolute;
+        bottom: 26px;
+    }
+
+    .btnMenu {
+        position: absolute;
+        right: 670px;
+        bottom: 13px;
+    }
+
+    .icoMenu {
+        width: 40px;
+        height: 45px;
+    }
+
+    .carritoShopp {
+        top: 218px;
+        position: absolute;
     }
 
     .cards {
         margin: 0.7rem;
+    }
+
+    .mapaMenu ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+    }
+
+    .imgPago {
+        width: 313px;
     }
 
     .redes {
@@ -39,18 +73,15 @@
     }
 
     .mapa {
-        width: 200px;
-        left: 5rem;
-        top: 14px
+        width: 440px;
+        left: 13rem;
+        margin-top: 66px;
     }
 
 
-    .whatsapp {
-        left: 665px;
-
-        img {
-            width: 80px;
-        }
+    .whatsapp img {
+        width: 80px;
+        margin: 15px;
     }
 
     //ofertas 
@@ -58,7 +89,7 @@
         margin-left: 250px;
     }
 
-    //   productos
+    // productos
 
     .contenedorAside {
         width: 95%;
@@ -84,6 +115,15 @@
         font-size: 30px;
     }
 
+    .logoInstitucional {
+        left: 40px;
+    }
+
+    // Novedades
+    .h2Novedades{
+        font-size: 26px;
+    }
+
     /* contacto */
     .tituloContac {
         font-size: 35px;
@@ -92,6 +132,7 @@
     .contactanos {
         padding: 10px 20px;
         margin-left: 145px;
+        margin-top: 30px;
     }
 
     .seccionContact {
@@ -113,33 +154,31 @@
     // inicio
 
     .logoPrincipal {
-        left: 90px;
+        left: 126px;
+        top: 0px;
+        width: 153px;
     }
 
     .navbar {
-        height: 450px;
-        background-color: black;
-        background-image: none;
+        height: 275px;
     }
 
     .menu {
-        flex-flow: row wrap;
-        margin-top: 0px;
-        margin-bottom: 3rem;
+        margin-top: 263px;
+        width: 280px;
 
         li {
-            padding: 12px 10px;
+            padding: 0px;
 
             a {
                 padding: 6px;
-                border-style: ridge;
             }
         }
 
     }
 
     .submenu {
-        width: 50%;
+        width: 100%;
 
         li {
             padding: 2px 0px;
@@ -150,15 +189,28 @@
         }
     }
 
+    .btnMenu {
+        bottom: 10px;
+        right: 349px;
+    }
+
+    .icoMenu {
+        width: 36px;
+        height: 34px;
+    }
+
+    .carritoShopp {
+        top: 223px;
+    }
+
     .buscar {
-        position: absolute;
-        left: 130px;
-        top: 400px;
+        left: 33px;
+        width: 339px;
+        bottom: 76px;
         margin: 0px;
     }
 
     .btnBuscar {
-        padding: 2px 4px;
         font-size: 10px
     }
 
@@ -169,6 +221,19 @@
     .cards {
         width: 16rem;
         margin: 1px 2px 30px 1px;
+    }
+
+    .h5map{
+        margin-top: 56px;
+    }
+
+    .mapaMenu ul {
+        flex-wrap: wrap;
+
+        li {
+            padding-right: 31px;
+            padding-top: 15px;
+        }
     }
 
     // separacion entre titulos del footer.
@@ -205,12 +270,8 @@
         top: 0px;
     }
 
-    .whatsapp {
-        left: 330px;
-
-        img {
-            width: 60px;
-        }
+    .whatsapp img {
+        width: 60px;
     }
 
     .controlFooter {
@@ -246,11 +307,27 @@
         margin-left: 60px;
     }
 
-    // nosotros
+    .cardsOfertas {
+        margin: 2rem 0rem;
+        width: 16rem;
+    }
+
+    // Novedades
+
+    .h2Novedades{
+        font-size: 18px;
+    }
+
+    // Institucional
 
     .sobreNosotros {
         font-size: 22px;
         text-align: center;
+    }
+
+    .logoInstitucional {
+        left: 0px;
+        width: 300px;
     }
 
     // contacto
@@ -295,17 +372,38 @@
 
     // inicio
 
-    .logoPrincipal {
-        left: 60px;
+    .navbar {
+        height: 185px;
+    }
+
+    .menu {
+        margin-top: 173px;
     }
 
     .submenu {
-        width: 55%;
+        width: 100%;
     }
 
+    .logoPrincipal {
+        left: 113px;
+    }
+
+    .btnMenu {
+        right: 305px;
+        bottom: 18px;
+    }
+
+    .icoMenu {
+        width: 40px;
+        height: 45px;
+    }
+
+    .carritoShopp {
+        top: 122px;
+    }
 
     .buscar {
-        left: 110px;
+        display: none !important;
     }
 
     .whatsapp {
@@ -334,6 +432,7 @@
     }
 
     // contacto
+
     .consultas {
         margin-left: 3px;
     }

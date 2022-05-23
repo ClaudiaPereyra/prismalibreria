@@ -5,3 +5,18 @@
     font-size: 18px;
     margin-left: 500px;
 }
+
+.cardsOfertas {
+    @extend .card--general;
+    margin: 2rem 2rem;
+    border-radius: 15px;
+    border: ridge 2px violet;
+  }
+
+.imgOfertas{
+margin-top: 10px;
+}  
+
+.precio3 {
+  font-size: 15px;  
+}

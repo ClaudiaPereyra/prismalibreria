@@ -13,7 +13,15 @@
   padding: 10px;
   border-radius: 5px; }
 
-.card--general, .cards, .cardsProductos {
+.btn--general2:hover, .btnBuscar:hover, .btn:hover, .btnUnite:hover, .btnAside:hover, .btnProductos:hover {
+  background-color: #d875b2;
+  color: white;
+  border: outset  #a10e89; }
+
+.btn--general2:active, .btnBuscar:active, .btn:active, .btnUnite:active, .btnAside:active, .btnProductos:active {
+  background-color: #34a4b8; }
+
+.card--general, .cards, .cardsProductos, .cardsOfertas {
   width: 20rem;
   font-size: 15px;
   text-align: center;
@@ -21,76 +29,87 @@
 
 .logoPrincipal {
   position: relative;
-  height: 20rem; }
+  bottom: 26px;
+  left: 20px; }
 
-.img--logo-principal {
-  bottom: 11px;
-  right: 20px; }
-
-.navbar {
+.nav {
   background-image: url(../multimedia/logo2.png);
+  background-color: black;
   height: 210px;
-  position: relative; }
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-x: right; }
 
 .menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  font-size: 15px;
-  margin-top: 85px; }
-  .menu li {
-    list-style-type: none; }
-    .menu li:hover .submenu {
-      display: block; }
+  font-size: 14px;
+  margin-top: 85px;
+  margin-left: 81px; }
   .menu li a {
     text-decoration: none;
     padding: 10px;
     margin: 10px;
     border: solid 2px #c396d8;
     border-radius: 10px;
-    font-weight: bold;
-    color: white; }
+    font-weight: bold; }
     .menu li a:hover {
-      color: #f15bcc; }
+      color: #f15bcc;
+      background-color: black; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #f15bcc; }
 
 .submenu {
-  display: none;
-  width: 20%;
-  position: absolute;
-  background-color: #ebdee9;
+  background-color: black;
   border: solid 2px #c396d8;
   z-index: 1000;
   border-radius: 15px;
-  padding-left: 0px; }
-  .submenu li:hover {
-    transform: scale(1.1);
-    transition: all 1s; }
+  padding-right: 20px;
+  font-size: 13px; }
   .submenu li a {
     display: block;
     padding: 15px;
-    color: black; }
+    color: white;
+    text-align: center; }
 
 .buscar {
-  margin: 7.5rem 2rem 0rem 3rem; }
+  margin: 8.5rem 6rem 0rem 0rem;
+  width: 260px; }
+
+.carrito {
+  font-size: 22px; }
+
+.carritoShopp {
+  position: absolute;
+  right: 22px;
+  top: 128px; }
 
 .btnBuscar {
   padding: 5px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600; }
 
 h1 {
   text-align: center;
   font-size: 40px;
-  padding: 2rem 0rem;
-  font-family: "Lobster", cursive; }
+  padding: 4rem 0rem 2rem 0rem;
+  font-family: "Lobster", cursive;
+  margin-bottom: 35px;
+  text-decoration: underline; }
+
+.btnCarusel {
+  background-color: darkviolet; }
 
 .carroContent {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
+  background: radial-gradient(pink, transparent);
+  border-radius: 10px;
+  border: ridge 2px violet;
   flex-wrap: nowrap; }
 
 .contenedor1 {
@@ -139,19 +158,48 @@ h1 {
   font-size: 13px;
   text-align: center; }
 
+.serviciosIndex {
+  border-bottom: ridge 3px #b1b0b0;
+  box-shadow: 6px 10px 10px #a7a6a6; }
+
 /* ajustes de las imagenes de servicios index */
 .ajuste1 {
   width: 8rem;
   height: 8.5rem; }
 
-.whatsapp {
-  position: fixed;
-  left: 1220px;
-  bottom: 20px;
-  z-index: 1000; }
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 55px 0px 75px 0px; }
+
+.h5map {
+  text-decoration: underline;
+  margin-bottom: 35px;
+  font-weight: bolder; }
+
+.mapaMenu {
+  font-size: 16px; }
+  .mapaMenu ul {
+    padding-left: 0px; }
+    .mapaMenu ul li {
+      list-style-type: none; }
+      .mapaMenu ul li a {
+        text-decoration: none;
+        color: black; }
+        .mapaMenu ul li a:hover {
+          color: #f15bcc; }
+
+.imgPago {
+  width: 368px; }
 
 .iconoWtp {
-  width: 100px; }
+  width: 80px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  right: 0px;
+  margin: 30px; }
 
 .footer {
   background-color: black;
@@ -189,6 +237,8 @@ h1 {
     padding-right: 10px; }
   .redes img {
     padding-right: 10px; }
+    .redes img:hover {
+      filter: grayscale(100%); }
 
 .listaContacto {
   list-style-type: none;
@@ -198,7 +248,9 @@ h1 {
 .mapa {
   position: relative;
   bottom: 1rem;
-  left: 20rem; }
+  left: 20rem;
+  width: 300px;
+  height: 200px; }
 
 .logofinal {
   text-align: center; }
@@ -237,10 +289,15 @@ h1 {
   width: 90%;
   font-size: 15px;
   text-align: center;
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin-top: 40px; }
+
+.h3Productos {
+  padding-bottom: 20px; }
 
 .filtro {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  text-align: center; }
 
 .btnProductos {
   font-size: 18px;
@@ -253,11 +310,38 @@ h1 {
   font-size: 18px;
   margin-left: 500px; }
 
+.cardsOfertas {
+  margin: 2rem 2rem;
+  border-radius: 15px;
+  border: ridge 2px violet; }
+
+.imgOfertas {
+  margin-top: 10px; }
+
+.precio3 {
+  font-size: 15px; }
+
+.h2Novedades {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  text-shadow: 6px 8px 5px #949494; }
+
+.nuevosProd {
+  padding-bottom: 124px; }
+
 .sobreNosotros {
   font-size: 35px;
   -webkit-text-fill-color: #030303;
-  padding: 0px 30px 80px 30px;
+  padding: 40px 30px 80px 30px;
   text-align: justify; }
+
+.parrafo0 {
+  text-decoration: underline; }
+
+.parrafo1 {
+  padding-top: 50px; }
 
 .seccionInstitucional {
   background-image: url(../multimedia/sobre_nosotros.jpg);
@@ -265,10 +349,16 @@ h1 {
   background-position: center;
   background-repeat: no-repeat; }
 
+.logoInstitucional {
+  width: 610px;
+  position: relative;
+  right: 10px; }
+
 .tituloContac {
   text-align: center;
   margin-top: 35px;
-  font-size: 50px; }
+  font-size: 50px;
+  text-decoration: underline; }
 
 .contactanos {
   font-size: 15px;
@@ -279,7 +369,7 @@ h1 {
 .listContact {
   background-color: white;
   border-radius: 10px;
-  border: solid #e7f2fc; }
+  border: solid #7fdbff; }
 
 .contactanosAjuste {
   margin: 20px;
@@ -331,6 +421,16 @@ h1 {
   .btnForm:active {
     background-color: rgba(228, 165, 215, 0.849); }
 
+.h1Contacto {
+  margin: 90px 0px 50px 0px;
+  text-decoration: underline; }
+
+.h1Contacto2 {
+  margin-bottom: 0px; }
+
+.imgContact {
+  width: 100%; }
+
 .ajuste6 {
   margin-top: 70px; }
 
@@ -338,32 +438,55 @@ h1 {
 @media screen and (max-width: 768px) {
   /* index */
   .logoPrincipal {
-    left: 250px;
-    bottom: 22px; }
+    left: 270px;
+    position: absolute;
+    bottom: 84px; }
   .navbar {
-    height: 360px; }
+    height: 280px;
+    background-image: none; }
   .menu {
-    margin-top: 20px; }
+    margin-top: 268px;
+    margin-left: 0px;
+    width: 50%;
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    border: solid 2px #c396d8; }
   .submenu {
-    width: 35%; }
+    background-color: #3f3f3f; }
   .buscar {
-    margin-left: 25rem;
-    margin-top: 5px;
-    margin-right: 240px; }
+    margin-left: 23rem;
+    position: absolute;
+    bottom: 26px; }
+  .btnMenu {
+    position: absolute;
+    right: 670px;
+    bottom: 13px; }
+  .icoMenu {
+    width: 40px;
+    height: 45px; }
+  .carritoShopp {
+    top: 218px;
+    position: absolute; }
   .cards {
     margin: 0.7rem; }
+  .mapaMenu ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px; }
+  .imgPago {
+    width: 313px; }
   .redes {
     right: 10px; }
   .controlFooter {
     width: 40%; }
   .mapa {
-    width: 200px;
-    left: 5rem;
-    top: 14px; }
-  .whatsapp {
-    left: 665px; }
-    .whatsapp img {
-      width: 80px; }
+    width: 440px;
+    left: 13rem;
+    margin-top: 66px; }
+  .whatsapp img {
+    width: 80px;
+    margin: 15px; }
   .btnOfertas {
     margin-left: 250px; }
   .contenedorAside {
@@ -379,12 +502,17 @@ h1 {
   /* institucional */
   .sobreNosotros {
     font-size: 30px; }
+  .logoInstitucional {
+    left: 40px; }
+  .h2Novedades {
+    font-size: 26px; }
   /* contacto */
   .tituloContac {
     font-size: 35px; }
   .contactanos {
     padding: 10px 20px;
-    margin-left: 145px; }
+    margin-left: 145px;
+    margin-top: 30px; }
   .seccionContact {
     margin-left: 10px; }
   .consultas {
@@ -395,39 +523,51 @@ h1 {
 /* tamaño MOBILE */
 @media screen and (max-width: 414px) {
   .logoPrincipal {
-    left: 90px; }
+    left: 126px;
+    top: 0px;
+    width: 153px; }
   .navbar {
-    height: 450px;
-    background-color: black;
-    background-image: none; }
+    height: 275px; }
   .menu {
-    flex-flow: row wrap;
-    margin-top: 0px;
-    margin-bottom: 3rem; }
+    margin-top: 263px;
+    width: 280px; }
     .menu li {
-      padding: 12px 10px; }
+      padding: 0px; }
       .menu li a {
-        padding: 6px;
-        border-style: ridge; }
+        padding: 6px; }
   .submenu {
-    width: 50%; }
+    width: 100%; }
     .submenu li {
       padding: 2px 0px; }
       .submenu li a {
         margin: 3px 8px; }
+  .btnMenu {
+    bottom: 10px;
+    right: 349px; }
+  .icoMenu {
+    width: 36px;
+    height: 34px; }
+  .carritoShopp {
+    top: 223px; }
   .buscar {
-    position: absolute;
-    left: 130px;
-    top: 400px;
+    left: 33px;
+    width: 339px;
+    bottom: 76px;
     margin: 0px; }
   .btnBuscar {
-    padding: 2px 4px;
     font-size: 10px; }
   .carroContent {
     flex-flow: row wrap; }
   .cards {
     width: 16rem;
     margin: 1px 2px 30px 1px; }
+  .h5map {
+    margin-top: 56px; }
+  .mapaMenu ul {
+    flex-wrap: wrap; }
+    .mapaMenu ul li {
+      padding-right: 31px;
+      padding-top: 15px; }
   .separacion {
     font-size: 15px; }
   .ajuste5 {
@@ -446,10 +586,8 @@ h1 {
     right: 20px; }
   .listaContacto {
     top: 0px; }
-  .whatsapp {
-    left: 330px; }
-    .whatsapp img {
-      width: 60px; }
+  .whatsapp img {
+    width: 60px; }
   .controlFooter {
     margin-left: 10px;
     height: 20px; }
@@ -465,9 +603,17 @@ h1 {
     margin-left: 60px; }
   .btnOfertas {
     margin-left: 60px; }
+  .cardsOfertas {
+    margin: 2rem 0rem;
+    width: 16rem; }
+  .h2Novedades {
+    font-size: 18px; }
   .sobreNosotros {
     font-size: 22px;
     text-align: center; }
+  .logoInstitucional {
+    left: 0px;
+    width: 300px; }
   .contactanos {
     margin-left: 0px; }
   .consultas {
@@ -489,12 +635,24 @@ h1 {
 
 /* tamaño MOBILE */
 @media screen and (max-width: 375px) {
-  .logoPrincipal {
-    left: 60px; }
+  .navbar {
+    height: 185px; }
+  .menu {
+    margin-top: 173px; }
   .submenu {
-    width: 55%; }
+    width: 100%; }
+  .logoPrincipal {
+    left: 113px; }
+  .btnMenu {
+    right: 305px;
+    bottom: 18px; }
+  .icoMenu {
+    width: 40px;
+    height: 45px; }
+  .carritoShopp {
+    top: 122px; }
   .buscar {
-    left: 110px; }
+    display: none !important; }
   .whatsapp {
     left: 295px; }
   .separacion {

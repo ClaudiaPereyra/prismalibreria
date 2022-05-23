@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- keywords -->
     <meta name="keywords" content="libreria prisma, articulos escolares, articulos librerias, lettering, journal, vuelta al cole, papeleria,  artística,
-    técnica, computación"> 
+    técnica, computación">
     <!-- Descripcion -->
-    <meta name="description" content="Gran variedad de marcas y productos en libreria escolar, técnica, comercial y artística. Hacé tu pedido, pagalo online y recibilo donde quieras.">
+    <meta name="description"
+        content="Gran variedad de marcas y productos en libreria escolar, técnica, comercial y artística. Hacé tu pedido, pagalo online y recibilo donde quieras.">
     <title>Tienda Online de Librería Prisma</title>
     <!--Logo de la página-->
     <link rel="shortcut icon" href="./multimedia/logoPrstaña.ico" type="image/x-icon">
@@ -23,45 +24,72 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Ramaraja&family=Tienne&display=swap"
         rel="stylesheet">
+    <!-- link para poner iconos de fontAwesome -->
+    <link rel="stylesheet" href="./multimedia/css/all.min.css">
 </head>
 
 <body class="container-fluid fondo">
     <header class="row header">
-        <nav class="navbar">
-            <div class="col-lg-2 col-sm-12 col-xs-12">
-                <a href="./index.html"><img src="./multimedia/logoNuevo1.ico" alt="logo linkeado"
-                        class="logoPrincipal img--logo-principal"></a>
-            </div>
-            <ul class="col-lg-7 col-sm-12 col-xs-12 menu ">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li><a href="#">Cuadernos y agendas</a></li>
-                        <li><a href="#">Biromes y Bolígrafos</a></li>
-                        <li><a href="#">Lettering</a></li>
-                        <li><a href="#">Adhesivos</a></li>
-                        <li><a href="#">Arte</a></li>
-                        <li><a href="#">Marcadores</a></li>
-                        <li><a href="#">Microfibras</a></li>
-                        <li><a href="#">Biromes</a></li>
+        <nav class="nav navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./multimedia/logoPrincipal.ico"
+                        alt="logo linkeado" class="logoPrincipal img--logo-principal"></a>
+                <button class="btnBuscar colorButton carritoShopp"><i
+                        class="carrito fa-solid fa-cart-shopping"></i></button>
+                <button class="navbar-toggler btnMenu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icoMenu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./paginas/productos.html">VER TODOS LOS PRODUCTOS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Cuadernos y agendas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Biromes y Bolígrafos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Lettering</a></li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Adhesivos</a></li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Arte</a></li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Marcadores</a></li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Microfibras</a></li>
+                                <li><a class="dropdown-item" href="./paginas/productos.html">Biromes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./paginas/novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="./paginas/ofertas.html">Ofertas</a></li>
-                <li><a href="./paginas/institucional.html">Institucional</a></li>
-                <li><a href="./paginas/novedades.html">Novedades</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="col-lg-3 col-sm-12 col-xs-5">
+                </div>
                 <form class="d-flex buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btnBuscar colorButton btn-outline-success" type="submit">BUSCAR</button>
+                    <button class="btnBuscar colorButton btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
     </header>
     <main>
         <section class="row novedades">
-            <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Novedades</h1>
+            <h1 class="col-lg-12 col-sm-12 col-xs-12">Novedades</h1>
 
             <div id="carouselExampleCaptions" class="col-lg-12 col-sm-12 col-xs-12 contenedor1 carousel slide"
                 data-bs-ride="carousel">
@@ -103,7 +131,7 @@
             </div>
         </section>
         <section class="row ofertas">
-            <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Ofertas</h1>
+            <h1 class="col-lg-12 col-sm-12 col-xs-12">Ofertas Destacadas</h1>
             <div id="carouselExampleControlsNoTouching"
                 class="col-lg-12 col-sm-12 col-xs-12 contenedor1 ajuste4 carousel slide" data-bs-touch="false"
                 data-bs-interval="false">
@@ -137,12 +165,10 @@
                                 <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
                             </div>
                             <div class="cards">
-                                <img src="./multimedia/producto15.jpg" alt="Ofertas4"
-                                    class="card__image d-block w-100">
-                                <h3 class="card__title">MICROFIBRAS FILGO NEÓN</h3>
-                                <p class="precio2">$980,00</p>
-                                <p class="card__description precio">$510,00</p>
-                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $170,00</p>
+                                <img src="./multimedia/producto17.jpg" alt="Ofertas4" class="card__image d-block w-100">
+                                <h3 class="card__title">CUADERNO GUÍA DE LETTERING</h3>
+                                <p class="card__description precio">$1600,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $533,33</p>
                                 <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
                             </div>
                         </div>
@@ -190,18 +216,18 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon btnCarusel" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon btnCarusel" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
-        <section class="row servicios">
-            <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Servicios</h1>
+        <section class="row serviciosIndex">
+            <h1 class="col-lg-12 col-sm-12 col-xs-12">Servicios Ofrecidos</h1>
             <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1 ajuste6">
                 <div class="cards2">
                     <img src="./multimedia/Importante1.jpg" alt="Envíos" class="card__image ajuste1">
@@ -229,42 +255,65 @@
                 </div>
             </div>
         </section>
-        
-            <div class="whatsapp">
-                <img src="./multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
+        <div class="row container2">
+            <div class="col-lg-3 col-sm-12 col-xs-12 mapaMenu">
+                <h3 class="h5map">MENU</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./paginas/productos.html">Productos</a></li>
+                    <li><a href="./paginas/ofertas.html">Ofertas</a></li>
+                    <li><a href="./paginas/novedades.html">Novedades</a></li>
+                    <li><a href="./paginas/institucional.html">Institucional</a></li>
+                    <li><a href="./paginas/contacto.html">Contacto</a></li>
+                </ul>
             </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mapaMenu">
+                <h3 class="h5map">MEDIOS DE PAGO</h3>
+                <img src="./multimedia/formasPago.png" alt="formasPago" class="imgPago">
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mapaMenu">
+                <h3 class="h5map">FORMAS DE ENVÍO</h3>
+                <img src="./multimedia/formasDeEnvio.png" alt="formasDeEnvio" class="imgPago">
+            </div>
+        </div>
+        <div class="whatsapp">
+            <img src="./multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
+        </div>
     </main>
 
     <footer class="row footer">
         <form class="col-lg-12 col-sm-12 col-xs-12 separacion font2 d-flex">
             <label for="email">Recibí nuestras novedades:</label>
-            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" id="email" aria-label="email">
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" id="email"
+                aria-label="email">
             <button class="btnUnite colorButton -outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-        <p class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</p>
+        <h2 class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</h2>
         <div class="col-lg-10 col-sm-10 col-xs-5">
-            <ul class="redes ">
+            <ul class="redes">
                 <li><a href="#"> <img src="./multimedia/instagram.png" alt="instagram" class="img--redes"></a></li>
                 <li><a href="#"> <img src="./multimedia/whatsapp.ico" alt="whatsapp" class="img--redes"> </a></li>
                 <li><a href="#"> <img src="./multimedia/facebook.png" alt="facebook" class="img--redes"> </a></li>
             </ul>
         </div>
-        <p class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</p>
-        <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
+        <h2 class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</h2>
+        <div class="col-lg-5 col-sm-10 col-xs-5 contacto">
             <ul class="listaContacto">
-                <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
-                <li>Teléfono: 0379 488-8858</li>
-                <li>Whatsapp: +5493794736427</li>
-                <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
-                <li>E-mail: claudiapereyra02166@gmail.com</li>
+                <li><strong>Dirección:</strong> Alvear 1942, Corrientes, Argentina.</li>
+                <li><strong>Teléfono:</strong> 0379 488-8858</li>
+                <li><strong>Whatsapp:</strong> +5493794736427</li>
+                <li><strong>Horarios de atención:</strong> Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00
+                    hs.</li>
+                <li><strong>E-mail:</strong> claudiapereyra02166@gmail.com</li>
             </ul>
         </div>
-        <div class="col-lg-5 col-sm-3 col-xs-5"><iframe
+        <div class="col-lg-5 col-sm-12 col-xs-5"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
-                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
         <div class="col-lg-12 col-sm-12 col-xs-12 logofinal">
-            <a href="./index.html"><img src="./multimedia/logoNuevo1.ico" alt="logo linkeado" class="img--logo-final"></a>
+            <a href="./index.html"><img src="./multimedia/logoPrincipal.ico" alt="logo linkeado"
+                    class="img--logo-final"></a>
         </div>
         <div>
             <h3 class="col-lg-12 col-sm-12 col-xs-12 ano font2">2022 (C) </h3>

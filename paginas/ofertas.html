@@ -26,35 +26,62 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Ramaraja&family=Tienne&display=swap"
         rel="stylesheet">
+    <!-- link para poner iconos de fontAwesome -->
+    <link rel="stylesheet" href="../multimedia/css/all.min.css">
 </head>
 
 <body class="container-fluid fondo">
     <header class="row header">
-        <nav class="navbar">
-            <div class="col-lg-2 col-sm-12 col-xs-12">
-                <a href="./index.html"><img src="../multimedia/logoNuevo1.ico" alt="logo linkeado"
-                        class="logoPrincipal img--logo-principal"></a>
-            </div>
-            <ul class="col-lg-7 col-sm-12 col-xs-12 menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li><a href="#">Cuadernos y agendas</a></li>
-                        <li><a href="#">Biromes y Bolígrafos</a></li>
-                        <li><a href="#">Lettering</a></li>
-                        <li><a href="#">Adhesivos</a></li>
-                        <li><a href="#">Arte</a></li>
-                        <li><a href="#">Marcadores</a></li>
-                        <li><a href="#">Microfibras</a></li>
-                        <li><a href="#">Biromes</a></li>
+        <nav class="nav navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../multimedia/logoPrincipal.ico"
+                        alt="logo linkeado" class="logoPrincipal img--logo-principal"></a>
+                <button class="btnBuscar colorButton carritoShopp"><i
+                        class="carrito fa-solid fa-cart-shopping"></i></button>
+                <button class="navbar-toggler btnMenu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icoMenu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./productos.html">VER TODOS LOS PRODUCTOS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Cuadernos y agendas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Biromes y Bolígrafos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Lettering</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Adhesivos</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Arte</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Marcadores</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Microfibras</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Biromes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="../paginas/ofertas.html">Ofertas</a></li>
-                <li><a href="../paginas/institucional.html">Institucional</a></li>
-                <li><a href="../paginas/novedades.html">Novedades</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="col-lg-3 col-sm-12 col-xs-5">
+                </div>
                 <form class="d-flex buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btnBuscar colorButton btn-outline-success" type="submit">Buscar</button>
@@ -62,85 +89,268 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="row ofertas">
-            <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Ofertas</h1>
-            <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1">
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta1.jpg" alt="Ofertas1" class="card__image">
-                    <h3 class="card__title">ORGANIZADOR DE ACRÍLOCO DE 4 CAJONES
-                    </h3>
-                    <p class="precio2">$4.500,00</p>
-                    <p class="card__description precio">$3.799,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $1.266,33</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+    <main class="row">
+        <section>
+            <h1 class="col-lg-12 col-sm-12 col-xs-12">Ofertas Destacadas</h1>
+            <div id="carouselExampleControlsNoTouching"
+                class="col-lg-12 col-sm-12 col-xs-12 contenedor1 ajuste4 carousel slide" data-bs-touch="false"
+                data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carroContent">
+                            <div class="cards">
+                                <img src="../multimedia/oferta1.jpg" alt="Ofertas1" class="card__image d-block w-100">
+                                <h3 class="card__title">ORGANIZADOR DE ACRÍLOCO DE 4 CAJONES
+                                </h3>
+                                <p class="precio2">$4.500,00</p>
+                                <p class="card__description precio">$3.799,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $1.266,33</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                            <div class="cards">
+                                <img src="../multimedia/oferta2.jpg" alt="Ofertas2" class="card__image d-block w-100">
+                                <h3 class="card__title">SET DE ORGANIZADORES DE 4 PIEZAS PASTEL</h3>
+                                <p class="precio2">$1.500,00</p>
+                                <p class="card__description precio">$999,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $333,00</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                            <div class="cards">
+                                <img src="../multimedia/oferta3.jpg" alt="Ofertas3" class="card__image d-block w-100">
+                                <h3 class="card__title">CARPETA MOOVING JOVENES TITANES
+                                </h3>
+                                <p class="precio2">$1.450,00</p>
+                                <p class="card__description precio">$950,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $316,67</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                            <div class="cards">
+                                <img src="../multimedia/producto17.jpg" alt="Ofertas4"
+                                    class="card__image d-block w-100">
+                                <h3 class="card__title">CUADERNO GUÍA DE LETTERING</h3>
+                                <p class="card__description precio">$1600,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $533,33</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carroContent">
+                            <div class="cards">
+                                <img src="../multimedia/oferta4.jpg" alt="Ofertas5" class="card__image d-block w-100">
+                                <h3 class="card__title">CARPETA 3 SOLAPAS FROZEN
+                                </h3>
+                                <p class="precio2">$450,00</p>
+                                <p class="card__description precio">$387,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $129,00</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                            <div class="cards">
+                                <img src="../multimedia/oferta5.png" alt="Ofertas6" class="card__image d-block w-100">
+                                <h3 class="card__title">CUADERNO RIVADAVIS ABC CUADRICULADO
+                                </h3>
+                                <p class="precio2">$1.299,00</p>
+                                <p class="card__description precio">$800,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $266,67</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                            <div class="cards">
+                                <img src="../multimedia/oferta6.png" alt="Ofertas7" class="card__image d-block w-100">
+                                <h3 class="card__title">CARPETA MOOVING PUSHEEN
+                                </h3>
+                                <p class="precio2">$1.190,00</p>
+                                <p class="card__description precio">$855,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $285,00</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                            <div class="cards">
+                                <img src="../multimedia/oferta7.png" alt="Ofertas8" class="card__image d-block w-100">
+                                <h3 class="card__title">CARTUCHERA CRESKO ARCOIRIS/NUBE
+                                </h3>
+                                <p class="precio2">$1.890,00</p>
+                                <p class="card__description precio">$1485,00</p>
+                                <p class="card__description">3 CUOTAS SIN INTERÉS DE $495,00</p>
+                                <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta2.jpg" alt="Ofertas2" class="card__image">
-                    <h3 class="card__title">SET DE ORGANIZADORES DE 4 PIEZAS PASTEL</h3>
-                    <p class="precio2">$1.500,00</p>
-                    <p class="card__description precio">$999,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $333,00</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta3.jpg" alt="Ofertas3" class="card__image">
-                    <h3 class="card__title">CARPETA MOOVING JOVENES TITANES
-                    </h3>
-                    <p class="precio2">$1.450,00</p>
-                    <p class="card__description precio">$950,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $316,67</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/producto15.jpg" alt="Ofertas4" class="card__image ajuste2">
-                    <h3 class="card__title">MICROFIBRAS FILGO NEÓN</h3>
-                    <p class="precio2">$980,00</p>
-                    <p class="card__description precio">$510,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $170,00</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta4.jpg" alt="Ofertas5" class="card__image">
-                    <h3 class="card__title">CARPETA 3 SOLAPAS FROZEN
-                    </h3>
-                    <p class="precio2">$450,00</p>
-                    <p class="card__description precio">$387,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $129,00</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta5.png" alt="Ofertas6" class="card__image">
-                    <h3 class="card__title">CUADERNO RIVADAVIS ABC CUADRICULADO
-                    </h3>
-                    <p class="precio2">$1.299,00</p>
-                    <p class="card__description precio">$800,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $266,67</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta6.png" alt="Ofertas7" class="card__image">
-                    <h3 class="card__title">CARPETA MOOVING PUSHEEN
-                    </h3>
-                    <p class="precio2">$1.190,00</p>
-                    <p class="card__description precio">$855,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $285,00</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-                <div data-aos="flip-right" class="cards">
-                    <img src="../multimedia/oferta7.png" alt="Ofertas8" class="card__image">
-                    <h3 class="card__title">CARTUCHERA CRESKO ARCOIRIS/NUBE
-                    </h3>
-                    <p class="precio2">$1.890,00</p>
-                    <p class="card__description precio">$1485,00</p>
-                    <p class="card__description">3 CUOTAS SIN INTERÉS DE $495,00</p>
-                    <a href="#" class="btn colorButton">AGREGAR AL CARRITO</a>
-                </div>
-            </div>
-            <div class="col-12 btnHover">
-                <a href="#" class="btnOfertas colorButton">MOSTRAR MÁS PRODUCTOS</a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon btnCarusel" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon btnCarusel" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
+        <section>
+            <h1 class="col-lg-12 col-sm-12 col-xs-12">Más Ofertas</h1>
+            <div class="col-lg-12 col-sm-12 col-xs-12 contenedor1">
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta8.jpg" class="card-img-top imgOfertas" alt="Ofertas8">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">MARCADORES MOOVING METALLIC BRUSH DOBLE PUNTA METAL X8</h5>
+                        <p class="card-text card__description precio3"><strong>$1.799,00</strong><span class="precio2">
+                                $1.960,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $599,67</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta9.jpg" class="card-img-top imgOfertas" alt="Ofertas9">
+                    <div class="card-body imgOfertas">
+                        <h5 class="card-title card__title">MARCADORES SHARPIE 30 COLORES PASTEL + 4 HOJAS C/STICKERS
+                        </h5>
+                        <p class="card-text card__description precio3"><strong>$7.999,00</strong><span class="precio2">
+                                $8.200,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $266,33</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta10.jpg" class="card-img-top imgOfertas" alt="Ofertas10">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">CARPETA ESCOLAR MOOVING N3 LITTLE DREAMER</h5>
+                        <p class="card-text card__description precio3"><strong>$899,00</strong><span class="precio2">
+                                $780,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $299,67</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta11.jpg" class="card-img-top imgOfertas" alt="Ofertas11">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">CARPETA ESCOLAR MOOVING N3 HELLO KITTY KIDS</h5>
+                        <p class="card-text card__description precio3"><strong>$899,00</strong><span class="precio2">
+                                $780,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $299,67</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta12.jpg" class="card-img-top imgOfertas" alt="Ofertas12">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">MARCADORES DOBLE PUNTA MOOVING MISS BRUSH LETTERING X20</h5>
+                        <p class="card-text card__description precio3"><strong>$2.890,00</strong><span class="precio2">
+                                $3.000,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $963,33</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta13.jpg" class="card-img-top imgOfertas" alt="Ofertas13">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">MARCADORES DOBLE PUNTA NUWA TOUCH STAR URANA X24 COLORES</h5>
+                        <p class="card-text card__description precio3"><strong>$2.799,00</strong><span class="precio2">
+                                $3.000,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $933,00</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta14.jpg" class="card-img-top imgOfertas" alt="Ofertas14">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">MARCADORES GIANT GIOTTO X6 TONOS PASTEL XT</h5>
+                        <p class="card-text card__description precio3"><strong>$790,00</strong><span class="precio2">
+                                $890,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $263,33</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta15.jpg" class="card-img-top imgOfertas" alt="Ofertas15">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">SET X5 PINCELES PELO SINTÉTICO TAKLÓN DORADO SIMPLY ROWNEY
+                        </h5>
+                        <p class="card-text card__description precio3"><strong>$950,00</strong><span class="precio2">
+                                $1.100,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $316,67</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta16.jpg" class="card-img-top imgOfertas" alt="Ofertas16">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">CUADERNO 21 X 27 CM X60 HOJAS PUNTILLADAS DE 120G</h5>
+                        <p class="card-text card__description precio3"><strong>$990,00</strong><span class="precio2">
+                                $1.200,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $330,00</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta17.jpg" class="card-img-top imgOfertas" alt="Ofertas17">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">TINTA CALIGRAFÍA DIP PEN METALIZADAS WINSOR & NEWTON FCO 30ml
+                        </h5>
+                        <p class="card-text card__description precio3"><strong>$1.690,00</strong><span class="precio2">
+                                $1.790,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $563,33</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta18.jpg" class="card-img-top imgOfertas" alt="Ofertas18">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">PASTELES TIZA SOFT X24 COLORES FABER CASTELL MD</h5>
+                        <p class="card-text card__description precio3"><strong>$2.990,00</strong><span class="precio2">
+                                $3.100,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $996,67</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta19.jpg" class="card-img-top imgOfertas" alt="Ofertas19">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">MARCADORES POSCA 3M SET X8 COLORES BÁSICOS PM</h5>
+                        <p class="card-text card__description precio3"><strong>$5.190,00</strong><span class="precio2">
+                                $5.300,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $1730,00</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta20.jpg" class="card-img-top imgOfertas" alt="Ofertas20">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">WASHI TAPE CINTAS DECORATIVAS METALIZADAS X3 TALBOT</h5>
+                        <p class="card-text card__description precio3"><strong>$550,00</strong><span class="precio2">
+                                $610,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $183,33</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta21.jpg" class="card-img-top imgOfertas" alt="Ofertas21">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">KIT SELLOMROTATIVO TEMÁTICA "LOVE" 12 MOTIVOS + ALMOHADILLA
+                        </h5>
+                        <p class="card-text card__description precio3"><strong>$990,00</strong><span class="precio2">
+                                $1100,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $330,00</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class=" card cardsOfertas">
+                    <img src="../multimedia/oferta22.jpg" class="card-img-top imgOfertas" alt="Ofertas22">
+                    <div class="card-body">
+                        <h5 class="card-title card__title">BLOCK LETTERING A4 X 20 HOJAS PUNTILLADAS DE 210g</h5>
+                        <p class="card-text card__description precio3"><strong>$690,00</strong><span class="precio2">
+                                $800,00</span></p>
+                        <p class="card-text card__description">3 CUOTAS SIN INTERÉS DE <strong> $230,00</strong></p>
+                        <a href="#" class="btn colorButton btn-primary">AGREGAR AL CARRITO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-lg-12 col-sm-12 col-xs-12 row">
+            <div class="btnHover">
+                <a href="#" class="btnOfertas colorButton">MOSTRAR MÁS PRODUCTOS</a>
+            </div>
+        </div>
         <div class="whatsapp">
             <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
         </div>
@@ -149,10 +359,11 @@
     <footer class="row footer footerOfertas">
         <form class="col-lg-12 col-sm-12 col-xs-12 separacion font2 d-flex">
             <label for="email">Recibí nuestras novedades:</label>
-            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" aria-label="email" id="email">
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email"
+                aria-label="email" id="email">
             <button class="btnUnite colorButton btn-outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-        <p class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</p>
+        <h2 class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</h2>
         <div class="col-lg-10 col-sm-10 col-xs-5">
             <ul class="redes">
                 <li><a href="#"> <img src="../multimedia/instagram.png" alt="instagram" class="img--redes"></a></li>
@@ -160,22 +371,24 @@
                 <li><a href="#"> <img src="../multimedia/facebook.png" alt="facebook" class="img--redes"> </a></li>
             </ul>
         </div>
-        <p class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</p>
-        <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
+        <h2 class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</h2>
+        <div class="col-lg-5 col-sm-10 col-xs-5 contacto">
             <ul class="listaContacto">
-                <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
-                <li>Teléfono: 0379 488-8858</li>
-                <li>Whatsapp: +5493794736427</li>
-                <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
-                <li>E-mail: claudiapereyra02166@gmail.com</li>
+                <li><strong>Dirección:</strong> Alvear 1942, Corrientes, Argentina.</li>
+                <li><strong>Teléfono:</strong> 0379 488-8858</li>
+                <li><strong>Whatsapp:</strong> +5493794736427</li>
+                <li><strong>Horarios de atención:</strong> Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00
+                    hs.</li>
+                <li><strong>E-mail:</strong> claudiapereyra02166@gmail.com</li>
             </ul>
         </div>
-        <div class="col-lg-5 col-sm-3 col-xs-5"><iframe
+        <div class="col-lg-5 col-sm-12 col-xs-5"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
-                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
         <div class="col-lg-12 col-sm-12 col-xs-12 logofinal">
-            <a href="../index.html"><img src="../multimedia/logoNuevo1.ico" alt="logo linkeado" class="img--logo-final"></a>
+            <a href="../index.html"><img src="../multimedia/logoPrincipal.ico" alt="logo linkeado"
+                    class="img--logo-final"></a>
         </div>
         <div>
             <h3 class="col-lg-12 col-sm-12 col-xs-12 ano font2">2022 (C) </h3>

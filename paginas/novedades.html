@@ -24,35 +24,62 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Ramaraja&family=Tienne&display=swap"
         rel="stylesheet">
+    <!-- link para poner iconos de fontAwesome -->
+    <link rel="stylesheet" href="../multimedia/css/all.min.css">
 </head>
 
 <body class="container-fluid fondo">
     <header class="row header">
-        <nav class="navbar">
-            <div class="col-lg-2 col-sm-12 col-xs-12">
-                <a href="./index.html"><img src="../multimedia/logoNuevo1.ico" alt="logo linkeado"
-                        class="logoPrincipal img--logo-principal"></a>
-            </div>
-            <ul class="col-lg-7 col-sm-12 col-xs-12 menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li><a href="#">Cuadernos y agendas</a></li>
-                        <li><a href="#">Biromes y Bolígrafos</a></li>
-                        <li><a href="#">Lettering</a></li>
-                        <li><a href="#">Adhesivos</a></li>
-                        <li><a href="#">Arte</a></li>
-                        <li><a href="#">Marcadores</a></li>
-                        <li><a href="#">Microfibras</a></li>
-                        <li><a href="#">Biromes</a></li>
+        <nav class="nav navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../multimedia/logoPrincipal.ico"
+                        alt="logo linkeado" class="logoPrincipal img--logo-principal"></a>
+                <button class="btnBuscar colorButton carritoShopp"><i
+                        class="carrito fa-solid fa-cart-shopping"></i></button>
+                <button class="navbar-toggler btnMenu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icoMenu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./productos.html">VER TODOS LOS PRODUCTOS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Cuadernos y agendas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Biromes y Bolígrafos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Lettering</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Adhesivos</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Arte</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Marcadores</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Microfibras</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Biromes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="../paginas/ofertas.html">Ofertas</a></li>
-                <li><a href="../paginas/institucional.html">Institucional</a></li>
-                <li><a href="../paginas/novedades.html">Novedades</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="col-lg-3 col-sm-12 col-xs-5">
+                </div>
                 <form class="d-flex buscar">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btnBuscar colorButton btn-outline-success" type="submit">Buscar</button>
@@ -62,7 +89,8 @@
     </header>
     <main>
         <section class="row novedades">
-            <h1 class="col-lg-12 col-sm-12 col-xs-12 h1inicio">Novedades</h1>
+            <h1 class="col-lg-12 col-sm-12 col-xs-12">Novedades</h1>
+            <h2 class="h2Novedades">¡Enterate de las nuevas promos con tarjetas!</h2>
             <div id="carouselExampleCaptions" class="col-lg-12 col-sm-12 col-xs-12 contenedor1 carousel slide"
                 data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -102,7 +130,8 @@
                 </button>
             </div>
         </section>
-        <section class="row novedades">
+        <section class="row serviciosIndex nuevosProd">
+            <h2 class="h2Novedades">¡LLegaron nuevos productos para vos, no te lo pierdas!</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -140,6 +169,27 @@
                 </button>
             </div>
         </section>
+        <div class="row container2">
+            <div class="col-lg-3 col-sm-12 col-xs-12 mapaMenu">
+                <h3 class="h5map">MENU</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./novedades.html">Novedades</a></li>
+                    <li><a href="./institucional.html">Institucional</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mapaMenu">
+                <h3 class="h5map">MEDIOS DE PAGO</h3>
+                <img src="../multimedia/formasPago.png" alt="formasPago" class="imgPago">
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 mapaMenu">
+                <h3 class="h5map">FORMAS DE ENVÍO</h3>
+                <img src="../multimedia/formasDeEnvio.png" alt="formasDeEnvio" class="imgPago">
+            </div>
+        </div>
         <div class="whatsapp">
             <img src="../multimedia/whatsapp.ico" alt="wtp" class="iconoWtp">
         </div>
@@ -148,10 +198,11 @@
     <footer class="row footer footerOfertas">
         <form class="col-lg-12 col-sm-12 col-xs-12 separacion font2 d-flex">
             <label for="email">Recibí nuestras novedades:</label>
-            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" id="email" aria-label="email">
+            <input class="form-control me-2 controlFooter" type="email" placeholder="Ingresa tu email" id="email"
+                aria-label="email">
             <button class="btnUnite colorButton btn-outline-success btnFooter " type="submit">¡UNITE!</button>
         </form>
-        <p class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</p>
+        <h2 class="col-lg-2 col-sm-2 col-xs-3 separacion font2 ajuste5">Seguinos en:</h2>
         <div class="col-lg-10 col-sm-10 col-xs-5">
             <ul class="redes">
                 <li><a href="#"> <img src="../multimedia/instagram.png" alt="instagram" class="img--redes"></a></li>
@@ -159,22 +210,23 @@
                 <li><a href="#"> <img src="../multimedia/facebook.png" alt="facebook" class="img--redes"> </a></li>
             </ul>
         </div>
-        <p class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</p>
-        <div class="col-lg-5 col-sm-5 col-xs-5 contacto">
+        <h2 class="col-lg-1 col-sm-2 col-xs-3 separacion font2">Contacto:</h2>
+        <div class="col-lg-5 col-sm-10 col-xs-5 contacto">
             <ul class="listaContacto">
-                <li>Dirección: Alvear 1942, Corrientes, Argentina.</li>
-                <li>Teléfono: 0379 488-8858</li>
-                <li>Whatsapp: +5493794736427</li>
-                <li>Horarios de atención: Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
-                <li>E-mail: claudiapereyra02166@gmail.com</li>
+                <li><strong>Dirección:</strong> Alvear 1942, Corrientes, Argentina.</li>
+                <li><strong>Teléfono:</strong> 0379 488-8858</li>
+                <li><strong>Whatsapp:</strong> +5493794736427</li>
+                <li><strong>Horarios de atención:</strong> Lunes a viernes de 10:00 a 19:30 hs. Sábados de 10:00 a 13:00 hs.</li>
+                <li><strong>E-mail:</strong> claudiapereyra02166@gmail.com</li>
             </ul>
         </div>
-        <div class="col-lg-5 col-sm-3 col-xs-5"><iframe
+        <div class="col-lg-5 col-sm-12 col-xs-5"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.278217252158!2d-58.825886065187!3d-27.46059654951592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b59d0a7a867%3A0xe852238c1dd067ad!2sAlvear%201942%2C%20W3402%20Corrientes!5e0!3m2!1ses-419!2sar!4v1647292940162!5m2!1ses-419!2sar"
-                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
         <div class="col-lg-12 col-sm-12 col-xs-12 logofinal">
-            <a href="../index.html"><img src="../multimedia/logoNuevo1.ico" alt="logo linkeado" class="img--logo-final"></a>
+            <a href="../index.html"><img src="../multimedia/logoPrincipal.ico" alt="logo linkeado"
+                    class="img--logo-final"></a>
         </div>
         <div>
             <h3 class="col-lg-12 col-sm-12 col-xs-12 ano font2">2022 (C) </h3>

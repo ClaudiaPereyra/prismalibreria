@@ -2,6 +2,7 @@
     text-align: map-get($map: $estilos, $key: centro);
     margin-top: map-get($map: $estilos, $key: margen );
     font-size: map-get($map: $estilos, $key: tamFuente ); 
+    text-decoration: underline;
 }
 
 .contactanos {
@@ -14,7 +15,7 @@
 .listContact {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border: solid rgb(231, 242, 252);
+    border: solid rgb(127, 219, 255);
 }
 
 .contactanosAjuste {
@@ -80,6 +81,19 @@
     &:active {
         background-color: rgba(228, 165, 215, 0.849);
     }
+}
+
+.h1Contacto {
+    margin: 90px 0px 50px 0px;
+    text-decoration: underline;
+}
+
+.h1Contacto2{
+    margin-bottom: 0px;
+}
+
+.imgContact {
+    width: 100%;
 }
 
 .ajuste6 {

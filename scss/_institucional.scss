@@ -1,14 +1,26 @@
 .sobreNosotros {
     font-size: 35px;
     -webkit-text-fill-color: rgb(3, 3, 3);
-    padding: 0px 30px 80px 30px;
+    padding: 40px 30px 80px 30px;
     text-align: justify;
   }
   
-  
+  .parrafo0{
+    text-decoration: underline;
+  }
+
+  .parrafo1{
+    padding-top: 50px;
+  }
   .seccionInstitucional {
     background-image: url(../multimedia/sobre_nosotros.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .logoInstitucional {
+    width: 610px;
+    position: relative;
+    right: 10px;
   }
